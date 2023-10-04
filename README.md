@@ -1,2 +1,1 @@
-# website
-Static webpage for ASVPA 
+updated readme 
