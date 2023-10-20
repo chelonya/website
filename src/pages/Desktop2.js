@@ -48,12 +48,12 @@ const Desktop2 = () => {
         />
       </div>
       <div className="absolute w-[14.31%] top-[2365px] right-[42.71%] left-[42.99%] bg-silver h-14 flex flex-row items-center justify-center py-4 px-8 box-border text-center text-11xl">
-        <b className="relative flex items-center justify-center w-[136.07px] shrink-0">
+        <b className="relative flex items-center justify-center w-[136.1px] shrink-0">
           Pacuare
         </b>
       </div>
       <div className="absolute w-[14.31%] top-[2365px] right-[68.82%] left-[16.88%] bg-silver h-14 flex flex-row items-center justify-center py-4 px-8 box-border text-center text-11xl">
-        <b className="relative flex items-center justify-center w-[136.07px] shrink-0">
+        <b className="relative flex items-center justify-center w-[136.1px] shrink-0">
           Matapalo
         </b>
       </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Routes,
   Route,
@@ -5,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Desktop2 from "./pages/Desktop2";
-import { useEffect } from "react";
 
 function App() {
   const action = useNavigationType();
