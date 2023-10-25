@@ -5,7 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Desktop2 from "./pages/Desktop2";
+import Desktop2 from "./pages/Home";
 
 function App() {
   const action = useNavigationType();
