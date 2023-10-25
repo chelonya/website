@@ -5,6 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import Project from "./pages/Project";
 import Desktop2 from "./pages/Home";
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/home":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -45,7 +50,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Desktop2 />} />
+      <Route path="/" element={<Project />} />
+      <Route path="/home" element={<Desktop2 />} />
     </Routes>
   );
 }

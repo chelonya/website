@@ -7,7 +7,7 @@ import NavHome from "../components/NavHome";
 const Desktop2 = () => {
   return (
     <div className="relative bg-white shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-full h-[2782px] overflow-hidden text-justify text-29xl text-darkslategray font-lato">
-      <FooterHome />
+      <FooterHome colorFooterHome="/rectangle-131.svg" />
       <BtnsCardsHome />
       <CardsProjectHome />
       <div className="absolute top-[1787px] left-[calc(50%_-_227px)] text-[130px] flex items-center w-[589px]">

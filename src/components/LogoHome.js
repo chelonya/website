@@ -1,6 +1,17 @@
-const LogoHome = () => {
+import { useMemo } from "react";
+
+const LogoHome = ({ logoHomeTop }) => {
+  const logoHomeStyle = useMemo(() => {
+    return {
+      top: logoHomeTop,
+    };
+  }, [logoHomeTop]);
+
   return (
-    <div className="absolute top-[12px] left-[160px] flex flex-row items-start justify-start gap-[9px] text-left text-21xl text-white font-lato">
+    <div
+      className="absolute top-[12px] left-[160px] flex flex-row items-start justify-start gap-[9px] text-left text-21xl text-white font-lato"
+      style={logoHomeStyle}
+    >
       <img
         className="relative w-16 h-[50px] overflow-hidden shrink-0"
         alt=""
