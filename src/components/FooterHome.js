@@ -78,7 +78,7 @@ const FooterHome = ({
 
   return (
     <div
-      className="absolute w-[calc(100%_+_39px)] right-[0px] bottom-[0px] left-[-39px] flex flex-col items-start justify-start gap-[10px] text-justify text-mini text-teal-200 font-lato"
+      className="absolute w-[calc(100%_+_39px)] right-[0px] bottom-[0px] left-[-39px] flex flex-col items-start justify-start gap-[10px] text-justify text-mini text-teal font-lato"
       style={footerHomeStyle}
     >
       <img

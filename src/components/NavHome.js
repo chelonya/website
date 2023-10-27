@@ -7,12 +7,14 @@ const NavHome = ({
   sERVICESFontWeight,
   pROJECTSFontWeight,
   rEGISTERFontWeight,
+  navHomeHeight,
 }) => {
   const navHomeStyle = useMemo(() => {
     return {
       top: navHomeTop,
+      height: navHomeHeight,
     };
-  }, [navHomeTop]);
+  }, [navHomeTop, navHomeHeight]);
 
   const hOMEStyle = useMemo(() => {
     return {

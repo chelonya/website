@@ -15,7 +15,7 @@ const FooterProjects = () => {
         footerHomeGap="unset"
         footerHomeTop="0px"
         footerHomeHeight="142px"
-        colorFooterHome="/rectangle-13.svg"
+        colorFooterHome="/rectangle-132.svg"
         colorFooterHomePosition="absolute"
         colorFooterHomeWidth="1446px"
         colorFooterHomeZIndex="unset"

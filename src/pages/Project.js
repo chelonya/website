@@ -4,7 +4,7 @@ import LogoHome from "../components/LogoHome";
 
 const Project = () => {
   return (
-    <div className="relative bg-white w-full h-[6273px] overflow-hidden text-justify text-21xl text-teal-100 font-lato">
+    <div className="relative bg-white w-full h-[6273px] overflow-hidden text-justify text-21xl text-esmeralda font-lato">
       <FooterProjects />
       <div className="absolute top-[4300px] left-[169px] w-[1114px] h-[1680px]">
         <img
@@ -39,10 +39,10 @@ const Project = () => {
         </div>
         <div className="absolute top-[1298px] left-[0px] bg-gainsboro w-[1114px] h-[382px]" />
         <div className="absolute top-[636px] left-[0px] inline-block w-[542px] text-11xl text-black">
-          <p className="m-0 text-13xl font-extrabold text-teal-100">
+          <p className="m-0 text-13xl font-extrabold text-esmeralda">
             ACCOMMODATIONS
           </p>
-          <p className="m-0 text-13xl font-extrabold text-teal-100">&nbsp;</p>
+          <p className="m-0 text-13xl font-extrabold text-esmeralda">&nbsp;</p>
           <p className="m-0">
             The Matapalo site offers hostel-style accommodations. There are
             mixed gender accommodations with shared bathrooms.
@@ -175,6 +175,7 @@ const Project = () => {
         sERVICESFontWeight="800"
         pROJECTSFontWeight="800"
         rEGISTERFontWeight="800"
+        navHomeHeight="unset"
       />
       <LogoHome logoHomeTop="32px" />
     </div>
