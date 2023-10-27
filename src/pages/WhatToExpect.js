@@ -99,7 +99,7 @@ const WhatToExpect = () => {
         <b className="absolute top-[0px] left-[380px] tracking-[-0.02em] leading-[150%] inline-block w-[360px] [-webkit-text-stroke:1px_#3b7a7d]">
           What To Bring
         </b>
-        <div className="absolute top-[119px] left-[649px] text-inherit tracking-[-0.02em] leading-[150%] font-inherit text-black text-justify inline-block w-[463px] h-[770px]">
+        <p className="m-0 absolute top-[119px] left-[649px] text-inherit tracking-[-0.02em] leading-[150%] font-inherit text-black text-justify inline-block w-[463px] h-[770px]">
           <ul className="m-0 pl-[43px]">
             <li className="mb-0">Sunscreen and sunglasses</li>
             <li className="mb-0">Insect repellent (with DEET)</li>
@@ -118,7 +118,7 @@ const WhatToExpect = () => {
               books)
             </li>
           </ul>
-        </div>
+        </p>
         <img
           className="absolute top-[170px] left-[0px] rounded-[11px] w-[657px] h-[703px] object-cover"
           alt=""

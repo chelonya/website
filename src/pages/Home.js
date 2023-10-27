@@ -17,7 +17,7 @@ const Desktop2 = () => {
         <p className="m-0">
           <b>&nbsp;</b>
         </p>
-        <p className="m-0 text-[36px] text-black">
+        <p className="m-0 text-17xl text-black">
           At ASVPA's project sites, volunteers from around the world come
           together to engage in ecological conservation alongside local
           biologists. We primarily deal with the protection of sea turtles but

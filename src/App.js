@@ -5,6 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import FAQ from "./pages/FAQ";
 import WhatToExpect from "./pages/WhatToExpect";
 import Desktop2 from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -27,6 +28,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/what-to-expect":
         title = "";
         metaDescription = "";
         break;
@@ -60,7 +65,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<WhatToExpect />} />
+      <Route path="/" element={<FAQ />} />
+      <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/home" element={<Desktop2 />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/project" element={<Project />} />
