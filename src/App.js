@@ -5,9 +5,10 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import Services from "./pages/Services";
+import Desktop2 from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import WhatToExpect from "./pages/WhatToExpect";
-import Desktop2 from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Project from "./pages/Project";
 
@@ -31,11 +32,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/what-to-expect":
+      case "/home":
         title = "";
         metaDescription = "";
         break;
-      case "/home":
+      case "/faq":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/what-to-expect":
         title = "";
         metaDescription = "";
         break;
@@ -65,9 +70,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<FAQ />} />
-      <Route path="/what-to-expect" element={<WhatToExpect />} />
+      <Route path="/" element={<Services />} />
       <Route path="/home" element={<Desktop2 />} />
+      <Route path="/faq" element={<FAQ />} />
+      <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/project" element={<Project />} />
     </Routes>
