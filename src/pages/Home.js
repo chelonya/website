@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import FooterHome from "../components/FooterHome";
 import BtnsCardsHome from "../components/BtnsCardsHome";
 import CardsProjectHome from "../components/CardsProjectHome";
@@ -6,7 +5,7 @@ import LogoHome from "../components/LogoHome";
 import NavHome from "../components/NavHome";
 import styles from "./Desktop2.module.css";
 
-const Desktop2: FunctionComponent = () => {
+const Desktop2 = () => {
   return (
     <div className={styles.home}>
       <FooterHome colorFooterHome="/rectangle-131.svg" />

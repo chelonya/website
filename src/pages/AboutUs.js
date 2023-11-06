@@ -1,10 +1,9 @@
-import { FunctionComponent } from "react";
 import FooterHome from "../components/FooterHome";
 import LogoHome from "../components/LogoHome";
 import NavHome from "../components/NavHome";
 import styles from "./AboutUs.module.css";
 
-const AboutUs: FunctionComponent = () => {
+const AboutUs = () => {
   return (
     <div className={styles.aboutUs}>
       <FooterHome

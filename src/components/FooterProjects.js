@@ -1,8 +1,7 @@
-import { FunctionComponent } from "react";
 import FooterHome from "./FooterHome";
 import styles from "./FooterProjects.module.css";
 
-const FooterProjects: FunctionComponent = () => {
+const FooterProjects = () => {
   return (
     <div className={styles.footerprojects}>
       <FooterHome

@@ -1,10 +1,9 @@
-import { FunctionComponent } from "react";
 import FooterProjects from "../components/FooterProjects";
 import NavHome from "../components/NavHome";
 import LogoHome from "../components/LogoHome";
 import styles from "./Project.module.css";
 
-const Project: FunctionComponent = () => {
+const Project = () => {
   return (
     <div className={styles.project}>
       <FooterProjects />

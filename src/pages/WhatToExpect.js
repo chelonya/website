@@ -1,10 +1,9 @@
-import { FunctionComponent } from "react";
 import FooterHome from "../components/FooterHome";
 import NavHome from "../components/NavHome";
 import LogoHome from "../components/LogoHome";
 import styles from "./WhatToExpect.module.css";
 
-const WhatToExpect: FunctionComponent = () => {
+const WhatToExpect = () => {
   return (
     <div className={styles.whatToExpect}>
       <FooterHome

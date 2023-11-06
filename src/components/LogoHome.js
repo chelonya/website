@@ -1,13 +1,8 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./LogoHome.module.css";
 
-type LogoHomeType = {
-  /** Style props */
-  logoHomeTop?: CSSProperties["top"];
-};
-
-const LogoHome: FunctionComponent<LogoHomeType> = ({ logoHomeTop }) => {
-  const logoHomeStyle: CSSProperties = useMemo(() => {
+const LogoHome = ({ logoHomeTop }) => {
+  const logoHomeStyle = useMemo(() => {
     return {
       top: logoHomeTop,
     };

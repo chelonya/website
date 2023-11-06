@@ -1,33 +1,7 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./FooterHome.module.css";
 
-type FooterHomeType = {
-  colorFooterHome?: string;
-
-  /** Style props */
-  footerHomeWidth?: CSSProperties["width"];
-  footerHomeRight?: CSSProperties["right"];
-  footerHomeBottom?: CSSProperties["bottom"];
-  footerHomeLeft?: CSSProperties["left"];
-  footerHomeDisplay?: CSSProperties["display"];
-  footerHomeFlexDirection?: CSSProperties["flexDirection"];
-  footerHomeAlignItems?: CSSProperties["alignItems"];
-  footerHomeJustifyContent?: CSSProperties["justifyContent"];
-  footerHomeGap?: CSSProperties["gap"];
-  footerHomeTop?: CSSProperties["top"];
-  footerHomeHeight?: CSSProperties["height"];
-  colorFooterHomePosition?: CSSProperties["position"];
-  colorFooterHomeWidth?: CSSProperties["width"];
-  colorFooterHomeZIndex?: CSSProperties["zIndex"];
-  colorFooterHomeTop?: CSSProperties["top"];
-  colorFooterHomeLeft?: CSSProperties["left"];
-  frameDivMargin?: CSSProperties["margin"];
-  frameDivLeft?: CSSProperties["left"];
-  frameDivWidth?: CSSProperties["width"];
-  frameDivZIndex?: CSSProperties["zIndex"];
-};
-
-const FooterHome: FunctionComponent<FooterHomeType> = ({
+const FooterHome = ({
   footerHomeWidth,
   footerHomeRight,
   footerHomeBottom,
@@ -50,7 +24,7 @@ const FooterHome: FunctionComponent<FooterHomeType> = ({
   frameDivWidth,
   frameDivZIndex,
 }) => {
-  const footerHomeStyle: CSSProperties = useMemo(() => {
+  const footerHomeStyle = useMemo(() => {
     return {
       width: footerHomeWidth,
       right: footerHomeRight,
@@ -78,7 +52,7 @@ const FooterHome: FunctionComponent<FooterHomeType> = ({
     footerHomeHeight,
   ]);
 
-  const colorFooterHomeStyle: CSSProperties = useMemo(() => {
+  const colorFooterHomeStyle = useMemo(() => {
     return {
       position: colorFooterHomePosition,
       width: colorFooterHomeWidth,
@@ -94,7 +68,7 @@ const FooterHome: FunctionComponent<FooterHomeType> = ({
     colorFooterHomeLeft,
   ]);
 
-  const frameDivStyle: CSSProperties = useMemo(() => {
+  const frameDivStyle = useMemo(() => {
     return {
       margin: frameDivMargin,
       left: frameDivLeft,

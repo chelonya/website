@@ -1,18 +1,7 @@
-import { FunctionComponent, useMemo, type CSSProperties } from "react";
+import { useMemo } from "react";
 import styles from "./NavHome.module.css";
 
-type NavHomeType = {
-  /** Style props */
-  navHomeTop?: CSSProperties["top"];
-  hOMEFontWeight?: CSSProperties["fontWeight"];
-  aBOUTUSFontWeight?: CSSProperties["fontWeight"];
-  sERVICESFontWeight?: CSSProperties["fontWeight"];
-  pROJECTSFontWeight?: CSSProperties["fontWeight"];
-  rEGISTERFontWeight?: CSSProperties["fontWeight"];
-  navHomeHeight?: CSSProperties["height"];
-};
-
-const NavHome: FunctionComponent<NavHomeType> = ({
+const NavHome = ({
   navHomeTop,
   hOMEFontWeight,
   aBOUTUSFontWeight,
@@ -21,38 +10,38 @@ const NavHome: FunctionComponent<NavHomeType> = ({
   rEGISTERFontWeight,
   navHomeHeight,
 }) => {
-  const navHomeStyle: CSSProperties = useMemo(() => {
+  const navHomeStyle = useMemo(() => {
     return {
       top: navHomeTop,
       height: navHomeHeight,
     };
   }, [navHomeTop, navHomeHeight]);
 
-  const hOMEStyle: CSSProperties = useMemo(() => {
+  const hOMEStyle = useMemo(() => {
     return {
       fontWeight: hOMEFontWeight,
     };
   }, [hOMEFontWeight]);
 
-  const aBOUTUSStyle: CSSProperties = useMemo(() => {
+  const aBOUTUSStyle = useMemo(() => {
     return {
       fontWeight: aBOUTUSFontWeight,
     };
   }, [aBOUTUSFontWeight]);
 
-  const sERVICESStyle: CSSProperties = useMemo(() => {
+  const sERVICESStyle = useMemo(() => {
     return {
       fontWeight: sERVICESFontWeight,
     };
   }, [sERVICESFontWeight]);
 
-  const pROJECTSStyle: CSSProperties = useMemo(() => {
+  const pROJECTSStyle = useMemo(() => {
     return {
       fontWeight: pROJECTSFontWeight,
     };
   }, [pROJECTSFontWeight]);
 
-  const rEGISTERStyle: CSSProperties = useMemo(() => {
+  const rEGISTERStyle = useMemo(() => {
     return {
       fontWeight: rEGISTERFontWeight,
     };

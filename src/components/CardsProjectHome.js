@@ -1,7 +1,6 @@
-import { FunctionComponent } from "react";
 import styles from "./CardsProjectHome.module.css";
 
-const CardsProjectHome: FunctionComponent = () => {
+const CardsProjectHome = () => {
   return (
     <div className={styles.cardsprojecthome}>
       <img
