@@ -1,0 +1,77 @@
+.thirdtitlehome {
+  position: absolute;
+  top: 127.64rem;
+  left: calc(50% - 227px);
+  font-size: 9.29rem;
+  display: flex;
+  align-items: center;
+  width: 42.07rem;
+}
+.blankLine {
+  margin: 0;
+}
+.atAsvpasProject {
+  margin: 0;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+}
+.secondtitlehome,
+.texthome {
+  position: absolute;
+  line-height: 113.5%;
+}
+.texthome {
+  top: 82.64rem;
+  left: 20rem;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 62.71rem;
+}
+.secondtitlehome {
+  top: 80.71rem;
+  left: 19.93rem;
+}
+.volunteerAssociationFor {
+  margin: 0;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+}
+.firsttitlehome {
+  position: absolute;
+  top: 66.5rem;
+  left: 19.93rem;
+  text-align: left;
+  display: inline-block;
+  width: 64.71rem;
+}
+.bannerimghomeIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102.71rem;
+  height: 53.93rem;
+  object-fit: cover;
+}
+.bannertitlehome {
+  position: absolute;
+  top: 16.36rem;
+  left: 11.36rem;
+  font-size: var(--font-size-21xl);
+  display: inline-block;
+  color: var(--color-white);
+  text-align: left;
+  width: 35rem;
+  height: 10.64rem;
+}
+.home {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 198.71rem;
+  overflow: hidden;
+  text-align: justify;
+  font-size: var(--font-size-29xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-lato);
+}

@@ -1,0 +1,246 @@
+.imgesteIcon {
+  position: absolute;
+  top: 1.64rem;
+  left: 40.14rem;
+  width: 39.43rem;
+  height: 40.21rem;
+  object-fit: cover;
+}
+.esterillosPacificCoast {
+  margin: 0;
+  font-weight: 800;
+}
+.asMatapaloAnd {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.titledescreste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 38.71rem;
+  height: 41.86rem;
+}
+.saturdayAfternoonsAnd {
+  margin: 0;
+  color: var(--color-black);
+}
+.textactiveste {
+  position: absolute;
+  top: 45.14rem;
+  left: 40.14rem;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  width: 38.86rem;
+}
+.mapeste {
+  position: absolute;
+  top: 92.71rem;
+  left: 0;
+  background-color: var(--color-gainsboro);
+  width: 79.57rem;
+  height: 27.29rem;
+}
+.accommodations {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  font-weight: 800;
+  color: var(--esmeralda);
+}
+.theMatapaloSite {
+  margin: 0;
+}
+.textaccomeste {
+  position: absolute;
+  top: 45.43rem;
+  left: 0;
+  display: inline-block;
+  width: 38.71rem;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.infesterillos {
+  position: absolute;
+  top: 307.14rem;
+  left: 12.07rem;
+  width: 79.57rem;
+  height: 120rem;
+}
+.mappacuare {
+  position: absolute;
+  top: 92.14rem;
+  left: 0;
+  background-color: var(--color-gainsboro);
+  width: 80rem;
+  height: 27.29rem;
+}
+.textactivpacu {
+  position: absolute;
+  top: 49.5rem;
+  left: 41.07rem;
+  display: inline-block;
+  width: 38.93rem;
+}
+.likeAllOf {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.titledescrpacu {
+  position: absolute;
+  top: 0;
+  left: 0.43rem;
+  display: inline-block;
+  width: 38.5rem;
+  height: 48.36rem;
+  font-size: var(--font-size-21xl);
+}
+.thePacuareHouse {
+  margin: 0;
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+}
+.textaccopacu {
+  position: absolute;
+  top: 48.79rem;
+  left: 0.43rem;
+  display: inline-block;
+  width: 39.29rem;
+}
+.imgpacuIcon {
+  position: absolute;
+  top: 1.64rem;
+  left: 41.07rem;
+  width: 39.43rem;
+  height: 42.57rem;
+  object-fit: cover;
+}
+.infpacuare {
+  position: absolute;
+  top: 181.57rem;
+  left: 11.64rem;
+  width: 80.5rem;
+  height: 119.43rem;
+  font-size: var(--font-size-11xl);
+}
+.mapmatapalo {
+  position: absolute;
+  top: 90.71rem;
+  left: 3.57rem;
+  background-color: var(--color-gainsboro);
+  width: 79.57rem;
+  height: 25.14rem;
+}
+.matapaloPacificCoast {
+  position: relative;
+  font-weight: 800;
+}
+.likeAllOf1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.matapaloPacificCoastParent,
+.titledescriptionmata {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.matapaloPacificCoastParent {
+  width: 43.79rem;
+  height: 44.93rem;
+  flex-direction: column;
+  padding: 0 2.43rem;
+  gap: 1.36rem;
+}
+.titledescriptionmata {
+  position: absolute;
+  width: calc(100% - 552px);
+  top: 0;
+  right: 39.43rem;
+  left: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  font-size: var(--font-size-21xl);
+}
+.textaccommmata {
+  position: absolute;
+  top: 46.36rem;
+  left: 3.14rem;
+  display: inline-block;
+  width: 39.07rem;
+  height: 39.29rem;
+}
+.imgmataIcon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 42.57rem;
+  object-fit: cover;
+}
+.imgmata {
+  position: absolute;
+  width: calc(100% - 614px);
+  top: 0.71rem;
+  right: 0;
+  left: 43.86rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textactivmata {
+  position: absolute;
+  top: 46.36rem;
+  right: 0.36rem;
+  display: inline-block;
+  width: 38.64rem;
+  height: 43.29rem;
+}
+.infmata {
+  position: absolute;
+  top: 58.64rem;
+  left: 8.5rem;
+  width: 83.14rem;
+  height: 115.86rem;
+  font-size: var(--font-size-11xl);
+}
+.bannerimgprojectsIcon {
+  position: absolute;
+  width: 118.04%;
+  top: 0;
+  right: -18.04%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  height: 53.43rem;
+  object-fit: cover;
+}
+.bannertextprojects {
+  position: absolute;
+  top: 45.07rem;
+  right: 9.57rem;
+  font-weight: 800;
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 15.43rem;
+  height: 4.36rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.project {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 448.07rem;
+  overflow: hidden;
+  text-align: justify;
+  font-size: var(--font-size-21xl);
+  color: var(--esmeralda);
+  font-family: var(--font-lato);
+}

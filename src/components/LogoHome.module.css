@@ -1,0 +1,29 @@
+.drawLogoHome,
+.textLogo {
+  position: relative;
+  flex-shrink: 0;
+}
+.drawLogoHome {
+  width: 4.57rem;
+  height: 3.57rem;
+  overflow: hidden;
+}
+.textLogo {
+  display: inline-block;
+  width: 9.21rem;
+  height: 3.07rem;
+}
+.logohome {
+  position: absolute;
+  top: 0.86rem;
+  left: 11.43rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}

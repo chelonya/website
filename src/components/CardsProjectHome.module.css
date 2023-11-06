@@ -1,0 +1,20 @@
+.cardMatapalo,
+.cardPacuare {
+  position: relative;
+  width: 21.43rem;
+  height: 28rem;
+  object-fit: cover;
+}
+.cardPacuare {
+  width: 21.36rem;
+}
+.cardsprojecthome {
+  position: absolute;
+  top: 139.29rem;
+  left: 14rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-57xl);
+}

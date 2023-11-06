@@ -1,0 +1,212 @@
+.wheater {
+  top: 0;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 800;
+  display: inline-block;
+}
+.titleone,
+.wheater,
+.wheaterWrapper {
+  position: absolute;
+  width: 12.57rem;
+  height: 3.93rem;
+}
+.wheaterWrapper {
+  top: 0;
+  left: 0;
+}
+.titleone {
+  top: 6.43rem;
+  left: 1.71rem;
+}
+.currency {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 800;
+  display: inline-block;
+  width: 13.68rem;
+}
+.currencyWrapper,
+.titlethree {
+  position: absolute;
+  width: 13.68rem;
+  height: 3.43rem;
+}
+.currencyWrapper {
+  top: 0;
+  left: 0;
+}
+.titlethree {
+  top: 55.86rem;
+  left: 1.39rem;
+}
+.food {
+  top: 0;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 800;
+  display: inline-block;
+}
+.food,
+.foodWrapper,
+.titlefour {
+  position: absolute;
+  width: 11.04rem;
+  height: 3.61rem;
+}
+.foodWrapper {
+  top: 0;
+  left: 0;
+}
+.titlefour {
+  top: 72.29rem;
+  left: 3.21rem;
+}
+.language {
+  top: 0;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 800;
+  display: inline-block;
+}
+.language,
+.titletwo,
+.titletwoInner {
+  position: absolute;
+  left: 0;
+  width: 15.4rem;
+  height: 4.59rem;
+}
+.titletwoInner {
+  top: 0;
+}
+.titletwo {
+  top: 35.86rem;
+}
+.youCanExpect {
+  margin: 0;
+}
+.textfour,
+.textone,
+.textthree,
+.texttwo {
+  position: absolute;
+  color: var(--color-black);
+  text-align: justify;
+  display: inline-block;
+}
+.textone {
+  top: 0;
+  left: 19.29rem;
+  width: 58.93rem;
+}
+.textfour,
+.textthree,
+.texttwo {
+  top: 30.86rem;
+  left: 18.57rem;
+  width: 59.64rem;
+}
+.textfour,
+.textthree {
+  top: 50.93rem;
+}
+.textfour {
+  top: 65.57rem;
+}
+.sectiononetext {
+  position: absolute;
+  top: 58.71rem;
+  left: 13.21rem;
+  width: 78.21rem;
+  height: 84.57rem;
+  font-size: var(--font-size-13xl);
+}
+.titlesection2 {
+  position: absolute;
+  top: 0;
+  left: 27.14rem;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  display: inline-block;
+  width: 25.71rem;
+  -webkit-text-stroke: 1px #3b7a7d;
+}
+.sunscreenAndSunglasses {
+  margin-bottom: false;
+}
+.sunscreenAndSunglassesInsec {
+  margin: 0;
+  padding-left: false;
+}
+.descritionsectiontwo {
+  margin: 0;
+  position: absolute;
+  top: 8.5rem;
+  left: 46.36rem;
+  font-size: var(--font-inherit);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-family: var(--font-inherit);
+  color: var(--color-black);
+  text-align: justify;
+  display: inline-block;
+  width: 33.07rem;
+  height: 55rem;
+}
+.whatsappImage20230921At1 {
+  position: absolute;
+  top: 12.14rem;
+  left: 0;
+  border-radius: 11px;
+  width: 46.93rem;
+  height: 50.21rem;
+  object-fit: cover;
+}
+.sectiontwotext {
+  position: absolute;
+  top: 150.07rem;
+  left: 11.43rem;
+  width: 79.43rem;
+  height: 63.5rem;
+}
+.img202301111653161Icon {
+  object-fit: cover;
+}
+.banner,
+.img202301111653161Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102.86rem;
+  height: 55.36rem;
+}
+.titlebanner {
+  position: absolute;
+  top: 44.57rem;
+  left: 61.29rem;
+  font-weight: 800;
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 39.37rem;
+  height: 4.46rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.whatToExpect {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 231.43rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--esmeralda);
+  font-family: var(--font-lato);
+}

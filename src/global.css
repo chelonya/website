@@ -1,13 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Hebrew:wght@400;700;800&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-body {
-  @apply leading-[normal] m-0;
+html {
+  font-size: 14;
 }
-*,
-::before,
-::after {
-  border-width: 0;
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-lato: Lato;
+  --font-open-sans-hebrew: "Open Sans Hebrew";
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-21xl: 2.86rem;
+  --font-size-xl: 1.43rem;
+  --font-size-13xl: 2.29rem;
+  --font-size-29xl: 3.43rem;
+  --font-size-mini: 1.07rem;
+  --font-size-17xl: 2.57rem;
+  --font-size-11xl: 2.14rem;
+  --font-size-9xl: 2rem;
+  --font-size-45xl: 4.57rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-silver: #a7bfc7;
+  --color-black: #000;
+  --esmeralda: #3b7a7d;
+  --color-teal-100: #157075;
+  --color-darkslategray: #0c6267;
+  --color-lightblue: #9bc0c2;
+  --color-gainsboro: #d9d9d9;
+
+  /* Gaps */
+  --gap-4xs: 0.64rem;
+  --gap-20xl: 2.79rem;
+  --gap-13xl: 2.29rem;
+  --gap-3xs: 0.71rem;
+  --gap-6xs: 0.5rem;
+  --gap-86xl: 7.5rem;
+  --gap-5xs: 0.57rem;
+  --gap-57xl: 5.43rem;
+  --gap-623xl: 45.86rem;
+
+  /* Paddings */
+  --padding-3xs: 0.71rem;
+  --padding-base: 1.14rem;
+  --padding-13xl: 2.29rem;
 }

@@ -1,29 +1,31 @@
+import { FunctionComponent } from "react";
 import FooterHome from "./FooterHome";
+import styles from "./FooterProjects.module.css";
 
-const FooterProjects = () => {
+const FooterProjects: FunctionComponent = () => {
   return (
-    <div className="absolute top-[6131px] left-[0px] w-[1446px] h-[142px]">
+    <div className={styles.footerprojects}>
       <FooterHome
-        footerHomeWidth="1446px"
+        footerHomeWidth="103.29rem"
         footerHomeRight="unset"
         footerHomeBottom="unset"
-        footerHomeLeft="0px"
+        footerHomeLeft="0rem"
         footerHomeDisplay="unset"
         footerHomeFlexDirection="unset"
         footerHomeAlignItems="unset"
         footerHomeJustifyContent="unset"
         footerHomeGap="unset"
-        footerHomeTop="0px"
-        footerHomeHeight="142px"
+        footerHomeTop="0rem"
+        footerHomeHeight="10.14rem"
         colorFooterHome="/rectangle-132.svg"
         colorFooterHomePosition="absolute"
-        colorFooterHomeWidth="1446px"
+        colorFooterHomeWidth="103.29rem"
         colorFooterHomeZIndex="unset"
-        colorFooterHomeTop="0px"
-        colorFooterHomeLeft="0px"
+        colorFooterHomeTop="0rem"
+        colorFooterHomeLeft="0rem"
         frameDivMargin="unset"
-        frameDivLeft="158.7px"
-        frameDivWidth="1124.7px"
+        frameDivLeft="11.34rem"
+        frameDivWidth="80.34rem"
         frameDivZIndex="unset"
       />
     </div>
