@@ -16,8 +16,8 @@ body {
   /* font sizes */
   --font-size-21xl: 2.86rem;
   --font-size-xl: 1.43rem;
-  --font-size-13xl: 2.29rem;
   --font-size-29xl: 3.43rem;
+  --font-size-13xl: 2.29rem;
   --font-size-mini: 1.07rem;
   --font-size-17xl: 2.57rem;
   --font-size-11xl: 2.14rem;
@@ -27,9 +27,9 @@ body {
   /* Colors */
   --color-white: #fff;
   --color-silver: #a7bfc7;
-  --color-black: #000;
   --esmeralda: #3b7a7d;
   --color-teal-100: #157075;
+  --color-black: #000;
   --color-darkslategray: #0c6267;
   --color-lightblue: #9bc0c2;
   --color-gainsboro: #d9d9d9;
@@ -37,11 +37,11 @@ body {
   /* Gaps */
   --gap-4xs: 0.64rem;
   --gap-20xl: 2.79rem;
-  --gap-13xl: 2.29rem;
   --gap-3xs: 0.71rem;
   --gap-6xs: 0.5rem;
   --gap-86xl: 7.5rem;
   --gap-5xs: 0.57rem;
+  --gap-13xl: 2.29rem;
   --gap-57xl: 5.43rem;
   --gap-623xl: 45.86rem;
 

@@ -1,4 +1,4 @@
-.footerservicesChild {
+.footerwrapperIcon {
   position: relative;
   width: 102.86rem;
   height: 10.14rem;
@@ -14,8 +14,8 @@
 .frameIcon {
   position: relative;
 }
-.frameParent,
-.termsConditionsParent {
+.termsppsection,
+.wasection {
   margin: 0 !important;
   position: absolute;
   top: 2.57rem;
@@ -23,14 +23,14 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.frameParent {
+.wasection {
   left: 14.21rem;
   align-items: center;
   gap: var(--gap-5xs);
   z-index: 1;
   color: var(--color-darkslategray);
 }
-.termsConditionsParent {
+.termsppsection {
   left: 70.71rem;
   align-items: flex-start;
   gap: var(--gap-86xl);
@@ -43,13 +43,13 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.footerservices,
-.layer1Parent {
+.emailsection,
+.footerservices {
   position: absolute;
   display: flex;
   justify-content: flex-start;
 }
-.layer1Parent {
+.emailsection {
   margin: 0 !important;
   top: 4.86rem;
   left: 14.21rem;
@@ -70,15 +70,11 @@
   font-size: var(--font-size-mini);
 }
 .thisIsHow {
-  position: absolute;
-  top: 0;
-  left: 14.29rem;
+  position: relative;
   font-weight: 800;
 }
 .image1Icon {
-  position: absolute;
-  top: 6.5rem;
-  left: 0;
+  position: relative;
   width: 80rem;
   height: 36.5rem;
   object-fit: cover;
@@ -87,432 +83,329 @@
   position: absolute;
   top: 258.93rem;
   left: 11.43rem;
-  width: 80rem;
-  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.36rem;
   text-align: left;
   color: var(--esmeralda);
   font-family: var(--font-open-sans-hebrew);
 }
-.hatchery {
+.night {
   margin: 0;
 }
-.hatcheryWatch {
+.nightPatrols {
   position: relative;
   letter-spacing: -0.02em;
   line-height: 150%;
 }
-.hatcheryWatchWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 19.43rem;
+.nightpatrolsheader {
+  width: 18.71rem;
+  height: 26.57rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.sectiontwotextInner {
-  position: absolute;
-  top: 35.07rem;
-  left: 0;
-  width: 19.43rem;
-  height: 6.86rem;
-}
-.nightPatrols {
-  top: 0;
-  left: 0;
+.nightpatrolstext {
+  position: relative;
   letter-spacing: -0.02em;
   line-height: 150%;
-  display: inline-block;
-}
-.nightPatrols,
-.nightPatrolsWrapper,
-.sectiontwotextChild {
-  position: absolute;
-  width: 11rem;
-  height: 7.71rem;
-}
-.nightPatrolsWrapper {
-  top: 0;
-  left: 0;
-}
-.sectiontwotextChild {
-  top: 12.86rem;
-  left: 4.36rem;
-}
-.localReforestation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  width: 18.71rem;
-}
-.groupDiv,
-.localReforestationWrapper {
-  position: absolute;
-  width: 18.71rem;
-  height: 6.86rem;
-}
-.localReforestationWrapper {
-  top: 0;
-  left: 0;
-}
-.groupDiv {
-  top: 56.79rem;
-  left: 0.36rem;
-}
-.slothMonitor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-}
-.sectiontwotextInner1,
-.slothMonitorWrapper {
-  position: absolute;
-  width: 7.86rem;
-  height: 6.86rem;
-}
-.slothMonitorWrapper {
-  top: 0;
-  left: 0;
-}
-.sectiontwotextInner1 {
-  top: 87.71rem;
-  left: 5.5rem;
-}
-.kitchenHelpWrapper,
-.sectiontwotextInner2 {
-  position: absolute;
-  width: 8.14rem;
-  height: 6.86rem;
-}
-.kitchenHelpWrapper {
-  top: 0;
-  left: 0;
-}
-.sectiontwotextInner2 {
-  top: 108.43rem;
-  left: 5.93rem;
-}
-.buildingHatcheries {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  width: 14.43rem;
-}
-.buildingHatcheriesWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14.43rem;
-  height: 6.86rem;
-}
-.sectiontwotextInner3 {
-  position: absolute;
-  top: 122.14rem;
-  left: 2.79rem;
-  width: 14.43rem;
-  height: 6.86rem;
-}
-.houseCleaningWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 9rem;
-  height: 6.86rem;
-}
-.sectiontwotextInner4 {
-  position: absolute;
-  top: 72.79rem;
-  left: 4.93rem;
-  width: 9rem;
-  height: 6.86rem;
-}
-.weWorkOn,
-.youWillBe1,
-.youWillBe2,
-.youWillBe3,
-.youWillBe4,
-.youWillBeContainer,
-.youWillHaveContainer {
-  position: absolute;
   font-family: var(--font-open-sans-hebrew);
   color: var(--color-black);
   text-align: justify;
   display: inline-block;
+  width: 59.79rem;
+  flex-shrink: 0;
 }
-.youWillBeContainer {
-  top: 0;
-  left: 22.43rem;
+.hatcherywatchheader,
+.nightpatrolsdescription {
+  width: 80rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hatcherywatchheader {
+  width: 20.36rem;
+  height: 16.64rem;
+}
+.localReforestation,
+.youWillBe1 {
+  position: relative;
   letter-spacing: -0.02em;
   line-height: 150%;
-  width: 59.79rem;
-}
-.weWorkOn,
-.youWillBe1,
-.youWillBe2,
-.youWillBe3,
-.youWillBe4,
-.youWillHaveContainer {
-  left: 22.57rem;
-  width: 59.64rem;
+  display: inline-block;
+  flex-shrink: 0;
 }
 .youWillBe1 {
-  top: 31.14rem;
-  letter-spacing: -0.02em;
-  line-height: 150%;
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+  text-align: justify;
+  width: 59.64rem;
+  height: 17.36rem;
 }
-.weWorkOn,
-.youWillBe2,
-.youWillBe3,
-.youWillBe4,
+.localReforestation {
+  width: 18.71rem;
+  height: 11.93rem;
+}
+.localreforestationheader {
+  width: 18.71rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.houseCleaning,
 .youWillHaveContainer {
-  top: 54.93rem;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
 }
-.weWorkOn,
-.youWillBe2,
-.youWillBe3,
-.youWillBe4 {
-  top: 69.93rem;
-  left: 23.14rem;
-  width: 59.07rem;
-}
-.weWorkOn,
-.youWillBe3,
-.youWillBe4 {
-  top: 85.86rem;
-  left: 22.57rem;
+.youWillHaveContainer {
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+  text-align: justify;
   width: 59.64rem;
 }
-.weWorkOn,
-.youWillBe4 {
-  top: 106.57rem;
+.houseCleaning {
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  width: 20.21rem;
+  height: 11.75rem;
+}
+.housecleaningheader {
+  width: 20.21rem;
+  height: 12.86rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.youWillBe2 {
+  position: relative;
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+  text-align: justify;
+  display: inline-block;
+  width: 59.79rem;
+  flex-shrink: 0;
+}
+.kitchenhelpheader,
+.slothheader {
+  width: 18.71rem;
+  height: 15.71rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.kitchenhelpheader {
+  height: 10.36rem;
+}
+.buildingHatcheries {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  display: inline-block;
+  width: 18.71rem;
+  height: 6.57rem;
+  flex-shrink: 0;
+}
+.buildinghatcheriesheader {
+  width: 20.14rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .weWorkOn {
-  top: 122.71rem;
-}
-.sectiontwotext {
-  position: absolute;
-  top: 123.43rem;
-  left: 9.21rem;
-  width: 82.21rem;
-  height: 129rem;
-}
-.nightPatrols1,
-.volunteersMainDuties {
-  position: absolute;
+  position: relative;
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+  text-align: justify;
   display: inline-block;
+  width: 58.64rem;
+  flex-shrink: 0;
 }
-.volunteersMainDuties {
-  top: 60.07rem;
-  left: 29.89rem;
-  font-size: var(--font-size-29xl);
-  color: var(--esmeralda);
-  width: 51.86rem;
-}
-.nightPatrols1 {
-  height: 56.68%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-}
-.componentChild {
-  position: absolute;
-  height: 47.6%;
-  width: 76.22%;
-  top: 52.4%;
-  right: 12.59%;
-  bottom: 0;
-  left: 11.19%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.nightPatrolsParent {
-  position: relative;
-  width: 10.21rem;
-  height: 16.36rem;
-  z-index: 0;
-}
-.hatcheryWatch1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-}
-.componentItem {
-  position: absolute;
-  height: 41.75%;
-  width: 57.33%;
-  top: 58.25%;
-  right: 23.33%;
-  bottom: 0;
-  left: 19.33%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.hatcheryWatchParent {
-  position: relative;
-  width: 10.71rem;
-  height: 14.71rem;
-  z-index: 1;
-}
-.componentInner {
-  position: absolute;
-  height: 52.34%;
-  width: 58.29%;
-  top: 47.66%;
-  right: 20.85%;
-  bottom: 0;
-  left: 20.85%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.localReforestationParent {
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  left: 53.5rem;
-  width: 15.07rem;
-  height: 16.79rem;
-  z-index: 2;
-}
-.componentParent {
-  position: absolute;
-  top: 69.29rem;
-  left: 21rem;
-  width: 69.64rem;
-  height: 16.79rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 16.29rem;
-  color: var(--color-black);
-  font-family: var(--font-open-sans-hebrew);
-}
-.rectangleIcon {
-  position: absolute;
-  height: 50.38%;
-  width: 98.5%;
-  top: 49.62%;
-  right: 0;
-  bottom: 0;
-  left: 1.5%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.slothMonitorParent {
-  position: relative;
-  width: 9.5rem;
-  height: 18.57rem;
-  z-index: 0;
-}
-.componentChild1 {
-  position: absolute;
-  height: 49.38%;
-  width: 80.41%;
-  top: 50.62%;
-  right: 0;
-  bottom: 0;
-  left: 19.59%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.houseCleaningParent {
-  position: absolute;
-  margin: 0 !important;
-  top: 2.86rem;
-  left: 25.57rem;
-  width: 10.57rem;
-  height: 17.21rem;
-  z-index: 1;
-}
-.componentChild2 {
-  position: absolute;
-  height: 43.53%;
-  width: 88.1%;
-  top: 56.47%;
-  right: 5.56%;
-  bottom: 0;
-  left: 6.35%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.kitchenHelpParent {
-  position: absolute;
-  margin: 0 !important;
-  top: 1.64rem;
-  left: 58.07rem;
-  width: 9rem;
-  height: 18.21rem;
-  z-index: 2;
-}
-.componentGroup {
-  position: absolute;
-  top: 93.5rem;
-  left: 12.36rem;
-  width: 88.64rem;
-  height: 21.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: var(--color-black);
-  font-family: var(--font-open-sans-hebrew);
-}
-.img20220604221056Copia1 {
-  position: relative;
-  width: 102.86rem;
-  height: 55.07rem;
-  object-fit: cover;
-}
-.banner,
-.homeParent {
-  display: flex;
-  align-items: flex-start;
-}
-.banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 55.07rem;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.homeParent {
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-}
-.navservices,
-.registerWrapper {
+.buildinghatcheriesdescription,
+.sectiontwotext {
+  width: 80rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.registerWrapper {
+.buildinghatcheriesdescription {
+  height: 6.57rem;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.sectiontwotext {
+  position: absolute;
+  top: 123.43rem;
+  left: 11.43rem;
+  height: 124.71rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.housecleaningwrapperChild {
+  position: relative;
+  width: 8.5rem;
+  height: 8.5rem;
+  object-fit: cover;
+}
+.housecleaningwrapper {
+  margin: 0 !important;
+  position: absolute;
+  top: 2rem;
+  left: 2.79rem;
+  height: 17.21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 0;
+}
+.slothmonitorwrapperChild {
+  position: relative;
+  width: 9.36rem;
+  height: 9.36rem;
+  object-fit: cover;
+}
+.slothmonitorwrapper {
+  height: 18.57rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+}
+.kitchenhelpwrapperChild {
+  position: relative;
+  width: 7.93rem;
+  height: 7.93rem;
+  object-fit: cover;
+}
+.kitchenhelpwrapper,
+.maindutiesbottomgroup {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.kitchenhelpwrapper {
+  margin: 0 !important;
+  top: 1rem;
+  left: 59.57rem;
+  height: 18.21rem;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+.maindutiesbottomgroup {
+  top: 93.5rem;
+  left: 19.07rem;
+  width: 71rem;
+  height: 19.86rem;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-black);
+  font-family: var(--font-open-sans-hebrew);
+}
+.nightPatrols1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  display: inline-block;
+  width: 11.93rem;
+  height: 9.51rem;
+  flex-shrink: 0;
+}
+.nightpatrolswrapperChild {
+  position: relative;
+  width: 9.14rem;
+  height: 8.36rem;
+  object-fit: cover;
+}
+.nightpatrolswrapper {
+  width: 15.5rem;
+  height: 21.93rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hatcheryWatch1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  display: inline-block;
+  width: 10.71rem;
+  height: 7.82rem;
+  flex-shrink: 0;
+}
+.hatcherywatchwrapperChild {
+  position: relative;
+  width: 9.07rem;
+  height: 7rem;
+  object-fit: cover;
+}
+.hatcherywatchwrapper {
+  width: 12.57rem;
+  height: 21.93rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.localreforestationwrapperChild {
+  position: relative;
+  width: 8.79rem;
+  height: 8.79rem;
+  object-fit: cover;
+}
+.localreforestationwrapper,
+.maindutiestopgroup {
+  width: 16.07rem;
+  height: 21.93rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.maindutiestopgroup {
+  position: absolute;
+  top: 69.29rem;
+  left: 21rem;
+  width: 69.57rem;
+  flex-direction: row;
+  color: var(--color-black);
+  font-family: var(--font-open-sans-hebrew);
+}
+.volunteersMainDuties {
+  position: absolute;
+  top: 60.07rem;
+  left: 29.89rem;
+  font-size: var(--font-size-29xl);
+  display: inline-block;
+  color: var(--esmeralda);
+  width: 51.86rem;
+}
+.imgbannerIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102.86rem;
+  height: 55.07rem;
+  object-fit: cover;
+}
+.btnregister,
+.navservices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btnregister {
   background-color: var(--color-silver);
   justify-content: center;
   padding: var(--padding-3xs);
@@ -529,19 +422,16 @@
   color: var(--color-white);
 }
 .asvpa,
-.layer1Icon1 {
+.imgturtleIcon {
   position: relative;
-  flex-shrink: 0;
-}
-.layer1Icon1 {
-  width: 4.57rem;
-  height: 3.57rem;
-  overflow: hidden;
+  width: 3.57rem;
+  height: 3.43rem;
 }
 .asvpa {
   display: inline-block;
   width: 9.21rem;
   height: 3.07rem;
+  flex-shrink: 0;
 }
 .logoservices {
   position: absolute;
