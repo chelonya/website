@@ -10,7 +10,7 @@ const LogoHome = ({ logoHomeTop }) => {
 
   return (
     <div className={styles.logoprojects} style={logoProjectsStyle}>
-      <img className={styles.layer1Icon} alt="" src="/layer-12.svg" />
+      <img className={styles.layer1Icon} alt="" src="/layer-121.svg" />
       <b className={styles.asvpa}>ASVPA</b>
     </div>
   );

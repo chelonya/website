@@ -154,8 +154,8 @@
   width: 43.79rem;
   height: 44.93rem;
   flex-direction: column;
-  padding: 0 2.43rem;
-  gap: 1.36rem;
+  padding: 0 var(--padding-15xl);
+  gap: var(--gap-lgi);
 }
 .titledescriptionmata {
   position: absolute;

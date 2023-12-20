@@ -1,0 +1,341 @@
+.vectorIcon {
+  position: relative;
+  width: 13.33rem;
+  height: 3.43rem;
+  object-fit: cover;
+}
+.home {
+  flex: 1;
+}
+.home,
+.register {
+  position: relative;
+}
+.btnregister,
+.navservices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btnregister {
+  flex: 1;
+  background-color: var(--color-silver);
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.navservices {
+  margin: 0;
+  width: 47.07rem;
+  justify-content: flex-start;
+  gap: var(--gap-20xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}
+.bannertextprojects {
+  position: relative;
+  font-weight: 800;
+  display: inline-block;
+  width: 15.43rem;
+  height: 4.36rem;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bannersection {
+  width: 105.64rem;
+  height: 55.07rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-lgi) var(--padding-141xl) var(--padding-685xl);
+  box-sizing: border-box;
+  gap: var(--gap-294xl);
+  background-image: url(/public/bannersection@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  color: var(--color-white);
+}
+.matapaloPacificCoast {
+  position: relative;
+  font-weight: 800;
+}
+.likeAllOf {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.matapaloPacificCoastParent,
+.titledescriptionmata {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.matapaloPacificCoastParent {
+  width: 43.79rem;
+  height: 44.93rem;
+  flex-direction: column;
+  padding: 0 var(--padding-15xl);
+  gap: var(--gap-lgi);
+}
+.titledescriptionmata {
+  width: 43.71rem;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  font-size: var(--font-size-21xl);
+}
+.imgmataIcon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 42.57rem;
+  object-fit: cover;
+}
+.imgmata {
+  width: 39.29rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.accommodations {
+  margin: 0;
+  font-weight: 800;
+}
+.theMatapaloSite {
+  margin: 0;
+  color: var(--color-black);
+}
+.textaccommmata,
+.textactivmata {
+  position: relative;
+  display: inline-block;
+  width: 39.07rem;
+  height: 39.29rem;
+  flex-shrink: 0;
+}
+.textactivmata {
+  width: 38.64rem;
+  height: 43.29rem;
+}
+.mapmatapalo {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 79.57rem;
+  height: 25.14rem;
+}
+.infmata {
+  width: 84rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: var(--font-size-11xl);
+}
+.likeAllOf1 {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+}
+.titledescrpacu {
+  position: relative;
+  display: inline-block;
+  width: 38.5rem;
+  height: 48.36rem;
+  flex-shrink: 0;
+  font-size: var(--font-size-21xl);
+}
+.imgpacuIcon {
+  position: relative;
+  width: 39.43rem;
+  height: 42.57rem;
+  object-fit: cover;
+}
+.thePacuareHouse {
+  margin: 0;
+  font-family: var(--font-open-sans-hebrew);
+  color: var(--color-black);
+}
+.textaccopacu,
+.textactivpacu {
+  position: relative;
+  display: inline-block;
+  width: 39.29rem;
+  flex-shrink: 0;
+}
+.textactivpacu {
+  width: 38.93rem;
+}
+.mappacuare {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 80rem;
+  height: 27.29rem;
+}
+.asMatapaloAnd,
+.infpacuare {
+  font-size: var(--font-size-11xl);
+}
+.infpacuare {
+  width: 80rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.71rem;
+}
+.asMatapaloAnd {
+  margin: 0;
+  color: var(--color-black);
+}
+.titledescreste {
+  position: relative;
+  display: inline-block;
+  width: 38.71rem;
+  height: 41.86rem;
+  flex-shrink: 0;
+}
+.imgesteIcon {
+  position: relative;
+  width: 39.43rem;
+  height: 40.21rem;
+  object-fit: cover;
+}
+.accommodations2 {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  font-weight: 800;
+  color: var(--esmeralda);
+}
+.threeMealsPer {
+  margin: 0;
+}
+.textaccomeste,
+.textactiveste {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.textaccomeste {
+  width: 38.71rem;
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+}
+.textactiveste {
+  font-size: var(--font-size-13xl);
+  width: 38.86rem;
+}
+.mapeste {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 79.57rem;
+  height: 27.29rem;
+}
+.infesterillos {
+  width: 79.57rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.43rem;
+}
+.footerwrapperIcon,
+.frameIcon {
+  position: relative;
+  object-fit: cover;
+}
+.footerwrapperIcon {
+  width: 101.36rem;
+  height: 10.14rem;
+  z-index: 0;
+}
+.frameIcon {
+  width: 2.29rem;
+  height: 2.29rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.termsppsection,
+.wasection {
+  margin: 0 !important;
+  position: absolute;
+  top: 2.57rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.wasection {
+  left: 14.21rem;
+  align-items: center;
+  gap: var(--gap-5xs);
+  z-index: 1;
+  color: var(--color-darkslategray);
+}
+.termsppsection {
+  left: 70.71rem;
+  align-items: flex-start;
+  gap: var(--gap-86xl);
+  z-index: 2;
+}
+.layer1Icon {
+  position: relative;
+  width: 2.43rem;
+  height: 2.93rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.emailsection {
+  margin: 0 !important;
+  position: absolute;
+  top: 4.86rem;
+  left: 14.21rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+  z-index: 3;
+}
+.footerservices,
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footerservices {
+  width: 102.86rem;
+  align-items: flex-start;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-mini);
+  color: var(--color-teal-100);
+}
+.projects {
+  background-color: var(--color-white);
+  width: 100%;
+  align-items: center;
+  gap: 6.93rem;
+  text-align: justify;
+  font-size: var(--font-size-21xl);
+  color: var(--esmeralda);
+  font-family: var(--font-lato);
+}

@@ -87,7 +87,7 @@ const FooterHome = ({
       />
       <div className={styles.frameParent} style={frameDivStyle}>
         <div className={styles.frameGroup}>
-          <img className={styles.frameIcon} alt="" src="/frame.svg" />
+          <img className={styles.frameIcon} alt="" src="/frame1.svg" />
           <b className={styles.b}>+506 86161973</b>
         </div>
         <div className={styles.termsConditionsParent}>

@@ -1,28 +1,8 @@
-.frame1 {
+.vectorIcon {
   position: relative;
-  width: 102.86rem;
-  height: 113.36rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.asvpa,
-.imgturtleIcon {
-  position: relative;
-  width: 3.57rem;
+  width: 13.33rem;
   height: 3.43rem;
-}
-.asvpa {
-  display: inline-block;
-  width: 9.21rem;
-  height: 3.07rem;
-  flex-shrink: 0;
-}
-.logoservices {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-4xs);
+  object-fit: cover;
 }
 .home {
   flex: 1;
@@ -31,8 +11,8 @@
 .register {
   position: relative;
 }
+.bannersection,
 .btnregister,
-.frame4,
 .navservices {
   display: flex;
   flex-direction: row;
@@ -45,58 +25,39 @@
   justify-content: center;
   padding: var(--padding-3xs);
 }
-.frame4,
+.bannersection,
 .navservices {
   justify-content: flex-start;
 }
 .navservices {
   margin: 0;
-  width: 44.21rem;
+  width: 47.07rem;
   gap: var(--gap-20xl);
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--color-white);
   font-family: var(--font-lato);
 }
-.frame4 {
-  width: 102.86rem;
+.bannersection {
+  width: 105.64rem;
   height: 55.07rem;
   overflow: hidden;
   flex-shrink: 0;
   padding: var(--padding-lgi) var(--padding-141xl) var(--padding-685xl);
   box-sizing: border-box;
   gap: var(--gap-294xl);
-  background-image: url(/public/img-20220604-221056--copia-1@2x.png);
+  background-image: url(/public/bannersection1@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
 .volunteersMainDuties {
   position: relative;
-  display: inline-block;
-  width: 51.86rem;
-}
-.frame3,
-.frame5 {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.frame5 {
-  width: 60.64rem;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
   font-size: var(--font-size-29xl);
+  display: inline-block;
+  font-family: var(--font-lato);
   color: var(--esmeralda);
-}
-.frame3 {
-  width: 102.86rem;
-  height: 64.21rem;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5rem;
+  width: 51.86rem;
 }
 .night {
   margin: 0;
@@ -171,7 +132,7 @@
   width: 69.57rem;
   flex-direction: row;
 }
-.frame7 {
+.maindutieswrapper {
   width: 78.29rem;
   overflow: hidden;
   display: flex;
@@ -241,60 +202,29 @@
   align-items: center;
   z-index: 0;
 }
-.frame2,
-.frame6,
-.frame8 {
+.maindutiesbottomwrapper,
+.volunteersmainsection {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.frame8 {
+.maindutiesbottomwrapper {
   width: 77.29rem;
-  overflow: hidden;
   align-items: flex-end;
   justify-content: center;
   position: relative;
 }
-.frame2,
-.frame6 {
+.volunteersmainsection {
+  width: 78.29rem;
+  height: 52.93rem;
+  flex-shrink: 0;
   align-items: center;
   justify-content: flex-start;
-}
-.frame6 {
-  width: 78.29rem;
-  height: 44.07rem;
-  overflow: hidden;
-  flex-shrink: 0;
   gap: var(--gap-13xl);
   text-align: center;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-open-sans-hebrew);
-}
-.frame2 {
-  height: 113.36rem;
-  gap: 5.07rem;
-}
-.frame,
-.frame10,
-.frame2 {
-  width: 102.86rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.frame {
-  height: 113.36rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  font-size: var(--font-size-21xl);
-  color: var(--color-white);
-  font-family: var(--font-lato);
-}
-.frame10 {
-  position: relative;
-  height: 192rem;
 }
 .nightpatrolsheader {
   width: 18.71rem;
@@ -454,24 +384,37 @@
   height: 36.5rem;
   object-fit: cover;
 }
+.dutiesdescriptionsection,
 .sectionthreetext {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+.sectionthreetext {
   gap: 3.36rem;
   text-align: left;
   color: var(--esmeralda);
   font-family: var(--font-open-sans-hebrew);
 }
-.footerwrapperIcon {
+.dutiesdescriptionsection {
+  width: 102.86rem;
+  height: 199.43rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 10.79rem;
+}
+.footerwrapperIcon,
+.frameIcon {
   position: relative;
+  object-fit: cover;
+}
+.footerwrapperIcon {
   width: 101.36rem;
   height: 10.14rem;
   z-index: 0;
 }
 .frameIcon {
-  position: relative;
   width: 2.29rem;
   height: 2.29rem;
   overflow: hidden;
@@ -505,68 +448,43 @@
   height: 2.93rem;
   overflow: hidden;
   flex-shrink: 0;
-}
-.emailsection,
-.footerservices {
-  display: flex;
-  justify-content: flex-start;
+  object-fit: cover;
 }
 .emailsection {
   margin: 0 !important;
   position: absolute;
   top: 4.86rem;
   left: 14.21rem;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: var(--gap-6xs);
   z-index: 3;
 }
+.footerservices,
+.services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 .footerservices {
   width: 102.86rem;
-  flex-direction: column;
   align-items: flex-start;
-  position: relative;
+  justify-content: flex-start;
   gap: var(--gap-3xs);
   text-align: justify;
   font-size: var(--font-size-mini);
 }
-.frame12 {
-  width: 102.86rem;
-  height: 56.5rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.frame11,
-.frame9,
 .services {
+  background-color: var(--color-white);
+  width: 100%;
+  height: 322.86rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.frame11 {
-  width: 102.86rem;
-  height: 199.43rem;
-  flex-shrink: 0;
-  justify-content: flex-start;
-  gap: 10.79rem;
-}
-.frame9,
-.services {
   justify-content: space-between;
-}
-.frame9 {
-  width: 102.86rem;
-  height: 199.43rem;
-  flex-shrink: 0;
   text-align: center;
   font-size: var(--font-size-13xl);
   color: var(--color-teal-100);
   font-family: var(--font-lato);
-}
-.services {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 322.86rem;
 }

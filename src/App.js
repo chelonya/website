@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Services from "./pages/Services";
+import Projects from "./pages/Projects";
 import Desktop2 from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import WhatToExpect from "./pages/WhatToExpect";
@@ -29,6 +30,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/projects":
         title = "";
         metaDescription = "";
         break;
@@ -71,6 +76,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Services />} />
+      <Route path="/projects" element={<Projects />} />
       <Route path="/home" element={<Desktop2 />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/what-to-expect" element={<WhatToExpect />} />
