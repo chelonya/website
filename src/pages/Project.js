@@ -160,15 +160,14 @@ const Project = () => {
       />
       <div className={styles.bannertextprojects}>PROJECTS</div>
       <NavHome
-        navHomeTop="2.71rem"
+        navHomeTop="38px"
         hOMEFontWeight="800"
         aBOUTUSFontWeight="800"
         sERVICESFontWeight="800"
         pROJECTSFontWeight="800"
         rEGISTERFontWeight="800"
-        navHomeHeight="unset"
       />
-      <LogoHome logoHomeTop="2.29rem" />
+      <LogoHome logoHomeTop="32px" />
     </div>
   );
 };

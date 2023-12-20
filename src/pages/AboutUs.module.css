@@ -6,7 +6,7 @@
   display: inline-block;
   color: var(--esmeralda);
   width: 47.5rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .butWhatIs {
   margin: 0;
@@ -68,6 +68,7 @@
 .dataone {
   top: 2.29rem;
   left: 2.21rem;
+  white-space: pre-wrap;
   height: 7.07rem;
 }
 .textdataone {

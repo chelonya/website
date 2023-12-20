@@ -10,7 +10,7 @@ const NavHome = ({
   rEGISTERFontWeight,
   navHomeHeight,
 }) => {
-  const navHomeStyle = useMemo(() => {
+  const navPrajectsStyle = useMemo(() => {
     return {
       top: navHomeTop,
       height: navHomeHeight,
@@ -48,25 +48,25 @@ const NavHome = ({
   }, [rEGISTERFontWeight]);
 
   return (
-    <div className={styles.navhome} style={navHomeStyle}>
-      <div className={styles.textnavhome}>
-        <b className={styles.home} style={hOMEStyle}>
+    <div className={styles.navprajects} style={navPrajectsStyle}>
+      <div className={styles.homeParent}>
+        <div className={styles.home} style={hOMEStyle}>
           HOME
-        </b>
-        <b className={styles.home} style={aBOUTUSStyle}>
+        </div>
+        <div className={styles.home} style={aBOUTUSStyle}>
           ABOUT US
-        </b>
-        <b className={styles.home} style={sERVICESStyle}>
+        </div>
+        <div className={styles.home} style={sERVICESStyle}>
           SERVICES
-        </b>
-        <b className={styles.home} style={pROJECTSStyle}>
+        </div>
+        <div className={styles.home} style={pROJECTSStyle}>
           PROJECTS
-        </b>
+        </div>
       </div>
-      <div className={styles.btnregisterhome}>
-        <b className={styles.home} style={rEGISTERStyle}>
+      <div className={styles.registerWrapper}>
+        <div className={styles.home} style={rEGISTERStyle}>
           REGISTER
-        </b>
+        </div>
       </div>
     </div>
   );

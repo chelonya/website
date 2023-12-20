@@ -123,11 +123,11 @@ const AboutUs = () => {
       <LogoHome logoHomeTop="1.43rem" />
       <NavHome
         navHomeTop="1.43rem"
-        hOMEFontWeight="unset"
-        aBOUTUSFontWeight="unset"
-        sERVICESFontWeight="unset"
-        pROJECTSFontWeight="unset"
-        rEGISTERFontWeight="unset"
+        hOMEFontWeight="bold"
+        aBOUTUSFontWeight="bold"
+        sERVICESFontWeight="bold"
+        pROJECTSFontWeight="bold"
+        rEGISTERFontWeight="bold"
         navHomeHeight="2.92rem"
       />
     </div>

@@ -9,9 +9,7 @@
   width: 21.36rem;
 }
 .cardsprojecthome {
-  position: absolute;
-  top: 139.29rem;
-  left: 14rem;
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;

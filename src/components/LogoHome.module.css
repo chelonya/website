@@ -1,21 +1,21 @@
-.drawLogoHome,
-.textLogo {
+.asvpa,
+.layer1Icon {
   position: relative;
   flex-shrink: 0;
 }
-.drawLogoHome {
+.layer1Icon {
   width: 4.57rem;
   height: 3.57rem;
   overflow: hidden;
 }
-.textLogo {
+.asvpa {
   display: inline-block;
   width: 9.21rem;
   height: 3.07rem;
 }
-.logohome {
+.logoprojects {
   position: absolute;
-  top: 0.86rem;
+  top: 2.29rem;
   left: 11.43rem;
   display: flex;
   flex-direction: row;

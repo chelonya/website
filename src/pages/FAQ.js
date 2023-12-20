@@ -164,11 +164,11 @@ const FAQ = () => {
       </div>
       <NavHome
         navHomeTop="2.14rem"
-        hOMEFontWeight="unset"
-        aBOUTUSFontWeight="unset"
-        sERVICESFontWeight="unset"
-        pROJECTSFontWeight="unset"
-        rEGISTERFontWeight="unset"
+        hOMEFontWeight="bold"
+        aBOUTUSFontWeight="bold"
+        sERVICESFontWeight="bold"
+        pROJECTSFontWeight="bold"
+        rEGISTERFontWeight="bold"
         navHomeHeight="2.92rem"
       />
       <LogoHome logoHomeTop="1.79rem" />

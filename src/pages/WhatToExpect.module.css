@@ -136,13 +136,15 @@
   line-height: 150%;
   display: inline-block;
   width: 25.71rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .sunscreenAndSunglasses {
   margin-bottom: false;
 }
 .sunscreenAndSunglassesInsec {
   margin: 0;
+  font-family: inherit;
+  font-size: inherit;
   padding-left: false;
 }
 .descritionsectiontwo {
@@ -150,10 +152,9 @@
   position: absolute;
   top: 8.5rem;
   left: 46.36rem;
-  font-size: var(--font-inherit);
+  font-size: var(--font-size-13xl);
   letter-spacing: -0.02em;
   line-height: 150%;
-  font-family: var(--font-inherit);
   color: var(--color-black);
   text-align: justify;
   display: inline-block;

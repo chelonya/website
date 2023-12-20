@@ -71,7 +71,7 @@
   top: 0;
   left: 0;
   width: 55.55rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .weHaveStaff {
   top: 5.07rem;
@@ -99,7 +99,7 @@
   left: 0;
   width: 33.63rem;
   height: 2.57rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .youMustBe {
   top: 4.21rem;
@@ -126,7 +126,7 @@
   top: 0;
   left: 0;
   width: 54.89rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .duringPeakSeason {
   top: 4.64rem;
@@ -159,7 +159,7 @@
   color: var(--esmeralda);
   text-align: center;
   width: 42.85rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .whileVolunteersTypicallyAreParent {
   position: absolute;
@@ -182,7 +182,7 @@
   left: 0;
   color: var(--esmeralda);
   text-align: center;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .volunteersHelpWithConstructParent {
   position: absolute;
@@ -206,7 +206,7 @@
   left: 0;
   color: var(--esmeralda);
   width: 65.54rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .itIsNotMandatoryToHaveAnParent {
   position: absolute;
@@ -231,7 +231,7 @@
   color: var(--esmeralda);
   text-align: center;
   width: 16.86rem;
-  -webkit-text-stroke: 1px #3b7a7d;
+  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
 }
 .sectiononetext,
 .thereIsWifiAtTheSiteButParent {

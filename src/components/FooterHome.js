@@ -24,7 +24,7 @@ const FooterHome = ({
   frameDivWidth,
   frameDivZIndex,
 }) => {
-  const footerHomeStyle = useMemo(() => {
+  const footerProjectsStyle = useMemo(() => {
     return {
       width: footerHomeWidth,
       right: footerHomeRight,
@@ -52,7 +52,7 @@ const FooterHome = ({
     footerHomeHeight,
   ]);
 
-  const colorFooterHomeStyle = useMemo(() => {
+  const rectangleIconStyle = useMemo(() => {
     return {
       position: colorFooterHomePosition,
       width: colorFooterHomeWidth,
@@ -78,12 +78,12 @@ const FooterHome = ({
   }, [frameDivMargin, frameDivLeft, frameDivWidth, frameDivZIndex]);
 
   return (
-    <div className={styles.footerhome} style={footerHomeStyle}>
+    <div className={styles.footerprojects} style={footerProjectsStyle}>
       <img
-        className={styles.colorFooterHome}
+        className={styles.footerprojectsChild}
         alt=""
         src={colorFooterHome}
-        style={colorFooterHomeStyle}
+        style={rectangleIconStyle}
       />
       <div className={styles.frameParent} style={frameDivStyle}>
         <div className={styles.frameGroup}>

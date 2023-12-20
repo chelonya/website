@@ -137,11 +137,11 @@ const WhatToExpect = () => {
       </div>
       <NavHome
         navHomeTop="1.43rem"
-        hOMEFontWeight="unset"
-        aBOUTUSFontWeight="unset"
-        sERVICESFontWeight="unset"
-        pROJECTSFontWeight="unset"
-        rEGISTERFontWeight="unset"
+        hOMEFontWeight="bold"
+        aBOUTUSFontWeight="bold"
+        sERVICESFontWeight="bold"
+        pROJECTSFontWeight="bold"
+        rEGISTERFontWeight="bold"
         navHomeHeight="2.92rem"
       />
       <div className={styles.titlebanner}>WHAT TO EXPECT WHILE STAYING</div>
