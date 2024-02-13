@@ -1,101 +1,66 @@
-.vectorIcon {
-  position: relative;
-  width: 13.33rem;
-  height: 3.43rem;
-  object-fit: cover;
+
+.titleOneHome {
+  color: #0c6267;
+  font-size: 2rem;
+
 }
-.aboutUs {
-  flex: 1;
-}
-.aboutUs,
-.register {
-  position: relative;
-}
-.bannersection,
-.btnregister,
-.navservices {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.btnregister {
-  flex: 1;
-  background-color: var(--color-silver);
-  flex-shrink: 0;
-  justify-content: center;
-  padding: var(--padding-3xs);
-}
-.bannersection,
-.navservices {
-  justify-content: flex-start;
-}
-.navservices {
-  margin: 0;
-  width: 47.07rem;
-  gap: var(--gap-20xl);
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-  font-family: var(--font-lato);
-}
-.bannersection {
-  width: 105.64rem;
-  height: 55.07rem;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: var(--padding-lgi) var(--padding-141xl) var(--padding-685xl);
-  box-sizing: border-box;
-  gap: var(--gap-294xl);
-  background-image: url(/public/bannersection2@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.welcomeToAsvpa {
-  margin: 0;
-}
-.volunteerAssociationFor {
-  margin: 0;
-  font-size: var(--font-size-21xl);
+.descriptionOneHome {
+  font-size: 1.5rem;
   color: var(--color-black);
+  padding-left: 5px;
+
 }
-.firsttitlehome {
+.sectionOneHomeWrapper {
   position: relative;
   text-align: left;
   display: inline-block;
-  width: 64.71rem;
+  width: 69.71rem;
+  padding: 52px;
+  height: 204px;
+
+
 }
-.secondtitlehome {
+.titleTwoHome {
   position: relative;
   line-height: 113.5%;
+  color: #0c6267;
+  font-size: 2rem;
 }
-.atAsvpasProject {
-  margin: 0;
-  font-size: var(--font-size-17xl);
+.descriptionTwoHome {
+  font-size: 1.5rem;
   color: var(--color-black);
+  padding-right: 138px;
+  padding-bottom: 27px;
+
+
 }
-.texthome {
+.sectionTwoHomeWrapper { 
+  text-align: justify;
   position: relative;
-  line-height: 113.5%;
+  line-height: 305.5%;
   white-space: pre-wrap;
   display: inline-block;
   width: 62.71rem;
 }
-.descriptionsection {
-  flex-shrink: 0;
+.contentHomeWraper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: var(--gap-61xl);
+  padding-left: 153px;
+
+
 }
-.thirdtitlehome {
+.titleThreeHome {
   position: relative;
   display: flex;
   align-items: center;
   width: 42.07rem;
+  color: #0c6267;
+  padding-left: 180px;
+  font-size: 6.29rem;
+
 }
-.projectssection {
+.sectionThreeHomeWrapper {
   height: 52.57rem;
   flex-shrink: 0;
   display: flex;
@@ -103,7 +68,9 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-61xl);
-  font-size: 9.29rem;
+  line-height: 1.0;
+
+
 }
 .footerwrapperIcon,
 .frameIcon {

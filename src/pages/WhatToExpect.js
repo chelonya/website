@@ -1,11 +1,9 @@
-import FooterHome from "../components/FooterHome";
-import NavHome from "../components/NavHome";
-import LogoHome from "../components/LogoHome";
 import styles from "./WhatToExpect.module.css";
 
 const WhatToExpect = () => {
   return (
-    <div className={styles.whatToExpect}>
+    <div>Comentado tiene que arreglarse</div>
+    /*     <div className={styles.whatToExpect}>
       <FooterHome
         footerHomeWidth="100%"
         footerHomeRight="0rem"
@@ -146,7 +144,7 @@ const WhatToExpect = () => {
       />
       <div className={styles.titlebanner}>WHAT TO EXPECT WHILE STAYING</div>
       <LogoHome logoHomeTop="1.43rem" />
-    </div>
+    </div> */
   );
 };
 

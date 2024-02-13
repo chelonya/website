@@ -1,22 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Hebrew:wght@400;700;800&display=swap");
-html {
-  font-size: 14;
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-body {
+/*
+  2. Remove default margin
+*/
+* {
   margin: 0;
-  line-height: normal;
 }
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
 :root {
   /* fonts */
   --font-lato: Lato;
   --font-open-sans-hebrew: "Open Sans Hebrew";
 
   /* font sizes */
-  --font-size-mini: 1.07rem;
-  --font-size-13xl: 2.29rem;
+  --font-size-mini: 0.87rem;
+  --font-size-13xl: 1.5rem;
   --font-size-11xl: 2.14rem;
-  --font-size-21xl: 2.86rem;
+  --font-size-21xl: 1.6rem;
   --font-size-xl: 1.43rem;
   --font-size-29xl: 3.43rem;
   --font-size-17xl: 2.57rem;
@@ -32,27 +81,4 @@ body {
   --color-black: #000;
   --color-silver: #a7bfc7;
   --color-lightblue: #9bc0c2;
-
-  /* Gaps */
-  --gap-3xs: 0.71rem;
-  --gap-6xs: 0.5rem;
-  --gap-86xl: 7.5rem;
-  --gap-5xs: 0.57rem;
-  --gap-lgi: 1.36rem;
-  --gap-294xl: 22.36rem;
-  --gap-20xl: 2.79rem;
-  --gap-13xl: 2.29rem;
-  --gap-61xl: 5.71rem;
-  --gap-57xl: 5.43rem;
-  --gap-4xs: 0.64rem;
-  --gap-623xl: 45.86rem;
-
-  /* Paddings */
-  --padding-3xs: 0.71rem;
-  --padding-15xl: 2.43rem;
-  --padding-lgi: 1.36rem;
-  --padding-141xl: 11.43rem;
-  --padding-685xl: 50.29rem;
-  --padding-base: 1.14rem;
-  --padding-13xl: 2.29rem;
 }

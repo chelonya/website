@@ -1,0 +1,29 @@
+.logoNavComponent {
+  position: absolute;
+  top: 42px;
+  right: 63rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+  text-align: left;
+  font-size: 1rem;
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}
+
+.textLogoNav,
+.imgLogoNav {
+  position: relative;
+  flex-shrink: 0;
+}
+.imgLogoNav {
+  width: 4.57rem;
+  height: 2.57rem;
+  overflow: hidden;
+}
+.textLogoNav {
+
+  align-self: center;
+}

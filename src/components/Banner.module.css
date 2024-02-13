@@ -1,0 +1,26 @@
+.bannerImg {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: 66%;
+  }
+  .bannerContainer {
+    height: 534px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .bannerText {
+    position: relative;
+    top: 27.07rem;
+    left: 63.57rem ;
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    width: 15.43rem;
+    height: 4.36rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-lato);
+
+  }

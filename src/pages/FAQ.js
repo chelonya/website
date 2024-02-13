@@ -1,11 +1,9 @@
-import FooterHome from "../components/FooterHome";
-import NavHome from "../components/NavHome";
-import LogoHome from "../components/LogoHome";
 import styles from "./FAQ.module.css";
 
 const FAQ = () => {
   return (
-    <div className={styles.faq}>
+    <div>Comentado tiene que arreglarse</div>
+    /*     <div className={styles.faq}>
       <FooterHome
         footerHomeWidth="100%"
         footerHomeRight="0rem"
@@ -172,7 +170,7 @@ const FAQ = () => {
         navHomeHeight="2.92rem"
       />
       <LogoHome logoHomeTop="1.79rem" />
-    </div>
+    </div> */
   );
 };
 

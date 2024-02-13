@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
-import Desktop2 from "./pages/Home";
+import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import WhatToExpect from "./pages/WhatToExpect";
 import AboutUs from "./pages/AboutUs";
-import Project from "./pages/Project";
+
 
 function App() {
   const action = useNavigationType();
@@ -53,10 +53,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/project":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -75,13 +71,12 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Services />} />
+      <Route path="/" element={< Home />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/home" element={<Desktop2 />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/project" element={<Project />} />
     </Routes>
   );
 }

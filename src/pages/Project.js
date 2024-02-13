@@ -153,12 +153,19 @@ const Project = () => {
           </p>
         </div>
       </div>
+
+
+
       <img
         className={styles.bannerimgprojectsIcon}
         alt=""
         src="/bannerimgprojects@2x.png"
       />
       <div className={styles.bannertextprojects}>PROJECTS</div>
+
+
+
+
       <NavHome
         navHomeTop="38px"
         hOMEFontWeight="800"
@@ -169,6 +176,8 @@ const Project = () => {
       />
       <LogoHome logoHomeTop="32px" />
     </div>
+
+    
   );
 };
 
