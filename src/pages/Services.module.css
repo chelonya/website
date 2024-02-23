@@ -1,490 +1,185 @@
-.vectorIcon {
+/* SECCION UNO */
+.mainTitle {
   position: relative;
-  width: 13.33rem;
-  height: 3.43rem;
-  object-fit: cover;
-}
-.home {
-  flex: 1;
-}
-.home,
-.register {
-  position: relative;
-}
-.bannersection,
-.btnregister,
-.navservices {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.btnregister {
-  flex: 1;
-  background-color: var(--color-silver);
-  flex-shrink: 0;
-  justify-content: center;
-  padding: var(--padding-3xs);
-}
-.bannersection,
-.navservices {
-  justify-content: flex-start;
-}
-.navservices {
-  margin: 0;
-  width: 47.07rem;
-  gap: var(--gap-20xl);
-  text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-  font-family: var(--font-lato);
-}
-.bannersection {
-  width: 105.64rem;
-  height: 55.07rem;
-  overflow: hidden;
-  flex-shrink: 0;
-  padding: var(--padding-lgi) var(--padding-141xl) var(--padding-685xl);
-  box-sizing: border-box;
-  gap: var(--gap-294xl);
-  background-image: url(/public/bannersection1@3x.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-.volunteersMainDuties {
-  position: relative;
-  font-size: var(--font-size-29xl);
+  font-size: 1.5rem;
   display: inline-block;
   font-family: var(--font-lato);
   color: var(--esmeralda);
-  width: 51.86rem;
-}
-.night {
-  margin: 0;
-}
-.nightPatrols {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  width: 11.93rem;
-  height: 9.51rem;
-  flex-shrink: 0;
-}
-.nightpatrolswrapperChild {
-  position: relative;
-  width: 9.14rem;
-  height: 8.36rem;
-  object-fit: cover;
-}
-.nightpatrolswrapper {
-  width: 15.5rem;
-  height: 21.93rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.hatcheryWatch {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  width: 10.71rem;
-  height: 7.82rem;
-  flex-shrink: 0;
-}
-.hatcherywatchwrapperChild {
-  position: relative;
-  width: 9.07rem;
-  height: 7rem;
-  object-fit: cover;
-}
-.hatcherywatchwrapper {
-  width: 12.57rem;
-  height: 21.93rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.localReforestation {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-}
-.localreforestationwrapperChild {
-  position: relative;
-  width: 8.79rem;
-  height: 8.79rem;
-  object-fit: cover;
-}
-.localreforestationwrapper,
-.maindutiestopgroup {
-  width: 16.07rem;
-  height: 21.93rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.maindutiestopgroup {
-  width: 69.57rem;
-  flex-direction: row;
-}
-.maindutieswrapper {
-  width: 78.29rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-.housecleaningwrapperChild {
-  position: relative;
-  width: 8.5rem;
-  height: 8.5rem;
-  object-fit: cover;
-}
-.housecleaningwrapper {
-  margin: 0 !important;
-  position: absolute;
-  top: 2rem;
-  left: 2.79rem;
-  height: 17.21rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  z-index: 0;
-}
-.slothmonitorwrapperChild {
-  position: relative;
-  width: 9.36rem;
-  height: 9.36rem;
-  object-fit: cover;
-}
-.slothmonitorwrapper {
-  height: 18.57rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  z-index: 1;
-}
-.kitchenhelpwrapperChild {
-  position: relative;
-  width: 7.93rem;
-  height: 7.93rem;
-  object-fit: cover;
-}
-.kitchenhelpwrapper,
-.maindutiesbottomgroup {
-  margin: 0 !important;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-}
-.kitchenhelpwrapper {
-  top: 1rem;
-  left: 59.57rem;
-  height: 18.21rem;
-  flex-direction: column;
-  align-items: flex-start;
-  z-index: 2;
-}
-.maindutiesbottomgroup {
-  top: 0;
-  left: 6.29rem;
-  width: 71rem;
-  height: 19.86rem;
-  flex-direction: row;
-  align-items: center;
-  z-index: 0;
-}
-.maindutiesbottomwrapper,
-.volunteersmainsection {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.maindutiesbottomwrapper {
-  width: 77.29rem;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-}
-.volunteersmainsection {
-  width: 78.29rem;
-  height: 52.93rem;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-  text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-black);
-  font-family: var(--font-open-sans-hebrew);
-}
-.nightpatrolsheader {
-  width: 18.71rem;
-  height: 26.57rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.nightpatrolstext {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  font-family: var(--font-open-sans-hebrew);
-  color: var(--color-black);
-  text-align: justify;
-  display: inline-block;
-  width: 59.79rem;
-  flex-shrink: 0;
-}
-.hatcherywatchheader,
-.nightpatrolsdescription {
-  width: 80rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.hatcherywatchheader {
-  width: 20.36rem;
-  height: 16.64rem;
-}
-.localReforestation1,
-.youWillBe1 {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.youWillBe1 {
-  font-family: var(--font-open-sans-hebrew);
-  color: var(--color-black);
-  white-space: pre-wrap;
-  text-align: justify;
-  width: 59.64rem;
-  height: 17.36rem;
-}
-.localReforestation1 {
-  width: 18.71rem;
-  height: 11.93rem;
-}
-.localreforestationheader {
-  width: 18.71rem;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.houseCleaning1,
-.youWillHaveContainer {
-  position: relative;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.youWillHaveContainer {
-  font-family: var(--font-open-sans-hebrew);
-  color: var(--color-black);
-  text-align: justify;
-  width: 59.64rem;
-}
-.houseCleaning1 {
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  width: 20.21rem;
-  height: 11.75rem;
-}
-.housecleaningheader {
-  width: 20.21rem;
-  height: 12.86rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.youWillBe2 {
-  position: relative;
-  font-family: var(--font-open-sans-hebrew);
-  color: var(--color-black);
-  text-align: justify;
-  display: inline-block;
-  width: 59.79rem;
-  flex-shrink: 0;
-}
-.kitchenhelpheader,
-.slothheader {
-  width: 18.71rem;
-  height: 15.71rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.kitchenhelpheader {
-  height: 10.36rem;
-}
-.buildingHatcheries {
-  position: relative;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-  width: 18.71rem;
-  height: 6.57rem;
-  flex-shrink: 0;
-}
-.buildinghatcheriesheader {
-  width: 20.14rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.weWorkOn {
-  position: relative;
-  font-family: var(--font-open-sans-hebrew);
-  color: var(--color-black);
-  text-align: justify;
-  display: inline-block;
-  width: 58.64rem;
-  flex-shrink: 0;
-}
-.buildinghatcheriesdescription,
-.sectiontwotext {
-  width: 80rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.buildinghatcheriesdescription {
-  height: 6.57rem;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-.sectiontwotext {
-  height: 124.71rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.thisIsHow {
-  position: relative;
-  font-weight: 800;
-}
-.image1Icon {
-  position: relative;
-  width: 80rem;
-  height: 36.5rem;
-  object-fit: cover;
-}
-.dutiesdescriptionsection,
-.sectionthreetext {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.sectionthreetext {
-  gap: 3.36rem;
-  text-align: left;
-  color: var(--esmeralda);
-  font-family: var(--font-open-sans-hebrew);
-}
-.dutiesdescriptionsection {
-  width: 102.86rem;
-  height: 199.43rem;
-  overflow: hidden;
-  flex-shrink: 0;
-  gap: 10.79rem;
-}
-.footerwrapperIcon,
-.frameIcon {
-  position: relative;
-  object-fit: cover;
-}
-.footerwrapperIcon {
-  width: 101.36rem;
-  height: 10.14rem;
-  z-index: 0;
-}
-.frameIcon {
-  width: 2.29rem;
-  height: 2.29rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.termsppsection,
-.wasection {
-  margin: 0 !important;
-  position: absolute;
-  top: 2.57rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.wasection {
-  left: 14.21rem;
-  align-items: center;
-  gap: var(--gap-5xs);
-  z-index: 1;
-  color: var(--color-darkslategray);
-}
-.termsppsection {
-  left: 70.71rem;
-  align-items: flex-start;
-  gap: var(--gap-86xl);
-  z-index: 2;
-}
-.layer1Icon {
-  position: relative;
-  width: 2.43rem;
-  height: 2.93rem;
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.emailsection {
-  margin: 0 !important;
-  position: absolute;
-  top: 4.86rem;
-  left: 14.21rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-6xs);
-  z-index: 3;
-}
-.footerservices,
-.services {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.footerservices {
-  width: 102.86rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  text-align: justify;
-  font-size: var(--font-size-mini);
-}
-.services {
-  background-color: var(--color-white);
   width: 100%;
-  height: 322.86rem;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
   text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-teal-100);
-  font-family: var(--font-lato);
+  padding: 3% 0;
+
 }
+
+.sectionOneWrapper {
+ width: 100%;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-lato);
+
+}
+
+.dutiesWrapper {
+  width: 78.29rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 365px;
+}
+
+.dutiesGroupWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
+.eachIconWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.iconImgPatrols {
+  position: relative;
+  width: 4.6rem;
+  object-fit: cover;
+}
+
+.iconImgHatchery{
+
+  position: relative;
+  width: 4.6rem;
+  object-fit: cover;
+}
+
+.iconImgReforestation{
+  position: relative;
+  width: 4.6rem;
+ 
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* SECCION  DOS*/
+
+
+.sectionTwoWrapper {             
+  height: 59.57rem;
+  font-size: 1.2rem;
+  font-family: var(--font-lato);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.eachSegmentWrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.titleStyle {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--esmeralda);
+  line-height: 150%;
+  width: 11%;
+
+}
+.paragraphStyle {
+  color: var(--color-black);
+  text-align: justify;
+  width: 60%;
+}
+
+/* SECTION THREE */
+.sectionThreeWrapper{
+display:flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.secondTitle{
+
+  position: relative;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: var(--font-lato);
+  color: var(--esmeralda);
+  width: 100%;
+  text-align: center;
+  padding: 3% 0;
+}
+
+
+.imgSchedule{
+
+  width: 51.93rem;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

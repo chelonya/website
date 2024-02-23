@@ -1,289 +1,91 @@
-.iWillHave,
-.iWillHaveAMoneyRefundIfWrapper {
-  position: absolute;
-  top: 0;
-  width: 69.71rem;
-  height: 7.5rem;
-}
-.iWillHave {
-  left: 0;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-}
-.iWillHaveAMoneyRefundIfWrapper {
-  left: 5.36rem;
-  text-align: center;
-  font-size: var(--font-size-17xl);
-  color: var(--esmeralda);
-}
-.eachVolunteerIs {
-  margin: 0;
-}
-.considerationOfThe,
-.eachVolunteerIsContainer {
-  position: absolute;
-  letter-spacing: -0.02em;
-  line-height: 150%;
-  display: inline-block;
-}
-.eachVolunteerIsContainer {
-  top: 44.86rem;
-  left: 0.07rem;
-  width: 79.79rem;
-  height: 67.21rem;
-}
-.considerationOfThe {
-  top: 93.21rem;
-  left: 0;
-  width: 79.86rem;
-}
-.sectiontwoingIcon {
-  position: absolute;
-  top: 12.86rem;
-  left: 13.57rem;
-  border-radius: 60px;
-  width: 52.86rem;
-  height: 26.71rem;
-  object-fit: cover;
-}
-.refundimgIcon {
-  position: absolute;
-  top: 106rem;
-  left: 0.14rem;
-  width: 79.71rem;
-  height: 41.79rem;
-  object-fit: cover;
-}
-.sectiontwotext {
-  position: absolute;
-  top: 195.14rem;
-  left: 11.43rem;
-  width: 79.86rem;
-  height: 147.79rem;
-}
-.doINeed,
-.weHaveStaff {
-  position: absolute;
-  display: inline-block;
-}
-.doINeed {
-  top: 0;
-  left: 0;
-  width: 55.55rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.weHaveStaff {
-  top: 5.07rem;
-  left: 2rem;
-  color: var(--color-black);
-  text-align: justify;
-  width: 79.86rem;
-}
-.doINeedToSpeakSpanishToParent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 81.86rem;
-  height: 10.5rem;
-  text-align: center;
-  color: var(--esmeralda);
-}
-.howOldDo,
-.youMustBe {
-  position: absolute;
-  display: inline-block;
-}
-.howOldDo {
-  top: 0;
-  left: 0;
-  width: 33.63rem;
-  height: 2.57rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.youMustBe {
-  top: 4.21rem;
-  left: 1.14rem;
-  color: var(--color-black);
-  text-align: justify;
-  width: 79.64rem;
-}
-.howOldDoIHaveToBeParent {
-  position: absolute;
-  top: 14.57rem;
-  left: 1.07rem;
-  width: 80.79rem;
-  height: 12.36rem;
-  text-align: center;
-  color: var(--esmeralda);
-}
-.duringPeakSeason,
-.howLongIs {
-  position: absolute;
-  display: inline-block;
-}
-.howLongIs {
-  top: 0;
-  left: 0;
-  width: 54.89rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.duringPeakSeason {
-  top: 4.64rem;
-  left: 1.08rem;
-  color: var(--color-black);
-  text-align: justify;
-  width: 79.92rem;
-}
-.howLongIsTheMinimummaximuParent {
-  position: absolute;
-  top: 30.71rem;
-  left: 0.86rem;
-  width: 81rem;
-  height: 12.79rem;
-  text-align: center;
-  color: var(--esmeralda);
-}
-.whileVolunteersTypically {
-  position: absolute;
-  top: 4.79rem;
-  left: 0.93rem;
-  display: inline-block;
-  width: 79.86rem;
-}
-.amIGuaranteed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  color: var(--esmeralda);
-  text-align: center;
-  width: 42.85rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.whileVolunteersTypicallyAreParent {
-  position: absolute;
-  top: 47.5rem;
-  left: 1.07rem;
-  width: 80.79rem;
-  height: 15.64rem;
-}
-.volunteersHelpWith {
-  position: absolute;
-  top: 4.36rem;
-  left: 0.36rem;
-  display: inline-block;
-  width: 79.57rem;
-  height: 17.71rem;
-}
-.whatKindOf {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--esmeralda);
-  text-align: center;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.volunteersHelpWithConstructParent {
-  position: absolute;
-  top: 67.64rem;
-  left: 2rem;
-  width: 79.93rem;
-  height: 22.07rem;
-}
-.doINeed1,
-.itIsNot {
-  position: absolute;
-  display: inline-block;
-}
-.itIsNot {
-  top: 4.5rem;
-  left: 0.14rem;
-  width: 79.86rem;
-}
-.doINeed1 {
-  top: 0;
-  left: 0;
-  color: var(--esmeralda);
-  width: 65.54rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.itIsNotMandatoryToHaveAnParent {
-  position: absolute;
-  top: 93.07rem;
-  left: 2rem;
-  width: 80rem;
-  height: 15.36rem;
-}
-.isThereWifi,
-.thereIsWifi {
-  position: absolute;
-  display: inline-block;
-}
-.thereIsWifi {
-  top: 5rem;
-  left: 0.36rem;
-  width: 79.79rem;
-}
-.isThereWifi {
-  top: 0;
-  left: 0;
-  color: var(--esmeralda);
-  text-align: center;
-  width: 16.86rem;
-  text-shadow: 1px 0 0#3b7a7d, 0 1px 0#3b7a7d, -1px 0 0#3b7a7d, 0-1px 0#3b7a7d;
-}
-.sectiononetext,
-.thereIsWifiAtTheSiteButParent {
-  position: absolute;
-  top: 112.43rem;
-  left: 1.71rem;
-  width: 80.14rem;
-  height: 15.86rem;
-}
-.sectiononetext {
-  top: 59.36rem;
-  left: 9.43rem;
-  width: 82rem;
-  height: 128.29rem;
-  font-size: var(--font-size-13xl);
-}
-.img2022111210161711 {
-  position: absolute;
-  top: 5.5rem;
-  left: 4.5rem;
-  width: 133.93rem;
-  height: 60.14rem;
-  object-fit: cover;
-}
-.frequentlyAskedQuestions {
-  position: absolute;
-  top: 53.29rem;
-  left: 50.57rem;
-  font-weight: 800;
-  display: inline-block;
-  width: 47.93rem;
-  height: 4.34rem;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-.banner {
-  position: absolute;
-  top: -5.5rem;
-  left: -4.5rem;
-  width: 133.93rem;
-  height: 60.14rem;
-  text-align: left;
-  font-size: var(--font-size-21xl);
-  color: var(--color-white);
-}
-.faq {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 365.07rem;
-  overflow: hidden;
-  text-align: justify;
-  font-size: var(--font-size-9xl);
-  color: var(--color-black);
+/* SECTION ONE */
+
+.sectionOneWrapper {    
+  padding: 2% 15%;         
+  height: 73.57rem;
+  font-size: 1.2rem;
   font-family: var(--font-lato);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
 }
+
+.eachSegmentWrapper{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+ 
+.titleStyle {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--esmeralda);
+  line-height: 150%;
+  width: 63%;
+
+}
+
+.paragraphStyle {
+  color: var(--color-black);
+  text-align: justify;
+}
+
+/* SECTION TWO */
+
+.titleSectionTwo {
+  color: var(--esmeralda);
+  font-family: var(--font-lato);
+  font-weight: bold;
+  font-size: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 48px;
+}
+.paragraphRefundWrapper{
+  font-family: var(--font-lato);
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 2% 15%;}
+
+
+/* SECTION THREE */
+
+.sectionThreeWrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.titleSectionThree{
+  padding: 0 15%;
+  font-family: var(--font-lato);
+  font-size: 1.2rem;
+  text-align: justify;
+  height: 92px;
+
+}
+ 
+.imgSectionThree{
+  width: 47.93rem;
+  height: 25.21rem;
+  object-fit: cover;
+
+}
+
+.imgWrapper{
+  height: 441px;
+
+}
+
+
+
