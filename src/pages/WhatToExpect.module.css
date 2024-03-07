@@ -1,8 +1,6 @@
-
-
 /* SECCION UNO */
 
-.sectionOneWrapper {             
+.sectionOneWrapper {
   height: 59.57rem;
   font-size: 1.2rem;
   font-family: var(--font-lato);
@@ -11,17 +9,15 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
-.eachSegmentWrapper{
+.eachSegmentWrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
- 
 .titleStyle {
   font-size: 1.5rem;
   letter-spacing: -0.02em;
@@ -29,7 +25,6 @@
   color: var(--esmeralda);
   line-height: 150%;
   width: 11%;
-
 }
 
 .paragraphStyle {
@@ -38,13 +33,9 @@
   width: 60%;
 }
 
-
-
-
 /*SECCION DOS */
 
-.sectionTwoWrapper{
-
+.sectionTwoWrapper {
   height: 570px;
 }
 .titleList {
@@ -56,8 +47,6 @@
   flex-direction: row;
   justify-content: center;
   height: 91px;
-
-
 }
 
 .listAndImg {
@@ -86,7 +75,6 @@
   font-family: var(--font-lato);
 }
 
-
 ul {
-  list-style-image: url("C:\Users\Usuario\Documents\ASVPA WEBSITE 2024\website\public\turtleList.png");
+  list-style-type: none;
 }

@@ -42,3 +42,26 @@
   flex-shrink: 0;
   justify-content: center;
 }
+a { color: inherit;
+  text-decoration: none !important;
+} 
+
+.openState {
+  display: block;
+}
+.closeState {
+  display: none;
+}
+
+.aboutUsList {
+  position: absolute;
+  top: 25px;
+  background-color: #a7bfc7;
+  border-radius: var(--border-radius);
+  padding: 4px;
+  width: 180px;
+}
+
+.aboutUsTrigger:hover {
+  cursor: pointer;
+}

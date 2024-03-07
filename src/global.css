@@ -59,16 +59,18 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
   /* fonts */
   --font-lato: Lato;
-  --font-open-sans-hebrew: "Open Sans Hebrew";
 
   /* font sizes */
  /* 1rem = 16 pt */ 
  /* Paraghrap 16 to 20 px */
  /* Titles 18 to 29px */
 
+/*  title 24px = 1.5rem
+ big title 28.8px = 1.8rem */
 
-  --font-size-mini: 0.87rem;
-  --font-size-13xl: 1.5rem;
+  --font-size-title: 1.5rem; 
+  --font-size-bigtitle: 1.8rem; 
+  
   --font-size-11xl: 2.14rem;
   --font-size-21xl: 1.6rem;
   --font-size-xl: 1.43rem;

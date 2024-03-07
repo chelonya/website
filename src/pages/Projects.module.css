@@ -1,5 +1,4 @@
-.sectionOneWrapper {             
-  height: 59.57rem;
+.sectionOneWrapper, .sectionTwoWrapper {             
   font-size: 1.2rem;
   font-family: var(--font-lato);
   width: 100%;
@@ -9,6 +8,28 @@
   align-items: center;
 
 }
+
+.sectionOneWrapper{
+padding-bottom: 50px;
+
+}
+
+.wrapperOne{
+  width: 33%;
+  margin: 1%;
+
+}
+.wrapperImg{
+  width: 26%;
+  margin:1%;
+
+}
+
+.twoWrapper{
+  display: flex;
+  justify-content: center;
+}
+
 
 .eachSegmentWrapper{
   width: 100%;
@@ -24,19 +45,20 @@
   font-weight: 800;
   color: var(--esmeralda);
   line-height: 150%;
-  width: 25%%;
+  width: 72%;
 
 }
 
 .paragraphStyle {
   color: var(--color-black);
   text-align: justify;
-  width: 35%;
+  width: 100%;
 }
 
 
 .imgMtp{
-  width: 21%;
-  height: 55%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+
 }

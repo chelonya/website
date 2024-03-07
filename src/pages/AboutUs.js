@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const AboutUs = () => {
   return (
     <div>
-      <Banner bannerImg="bannerAboutUs.png" bannerText="ABOUT US" />
+      <Banner bannerImg="BannerAboutUs2.jpg" bannerText="ABOUT US" />
 
       <div className={styles.aboutUs}>
         <div className={styles.sectionone}>

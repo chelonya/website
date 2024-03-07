@@ -38,7 +38,7 @@ const WhatToExpect = () => {
 
             <div className={styles.eachIconWrapper}>
               <b>
-                <p>Reforestation Local</p>
+                <p>Local Reforestation</p>
               </b>
               <img
                 className={styles.iconImgReforestation}
