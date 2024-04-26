@@ -4,10 +4,13 @@ import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import HamMenu from "../components/HamMenu";
+
 
 const Home = () => {
   return (
     <div>
+      <HamMenu></HamMenu>
       <Banner
         bannerImg="bannerHero.jpeg"
         bannerText="VOLUNTEERING A WORK OF HEART"
@@ -30,7 +33,7 @@ const Home = () => {
         <div className={styles.sectionTwoHomeWrapper}>
           
           <b className={styles.titleTwoHome}>
-            Volunteering driven ecological conservation
+            VOLUNTEERING DRIVEN ECOLOGICAL CONSERVATION 
           </b>
 
          

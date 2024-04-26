@@ -12,10 +12,10 @@ const Nav = () => {
         </div>
         <div className={styles.navItem}>
           <div className={styles.aboutUsTrigger} onClick={()=>setOpenAboutUs(!openAboutUs)}>
-              ABOUT US
+            ABOUT US
           </div>
           <div className={`${styles.aboutUsList} ${openAboutUs ? styles.openState : styles.closeState}`}>
-            <ul>
+            <ul className={styles.myList}>
               <li>
                 <Link to="/about-us">ABOUT US</Link>
               </li>

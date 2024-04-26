@@ -21,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "phone-start": "npm run start --host 192.168.0.10"
   },
   "eslintConfig": {
     "root": true

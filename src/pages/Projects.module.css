@@ -1,3 +1,34 @@
+@media (max-width: 450px) {
+  .wrapperImg {
+    display: none;
+  }
+  .twoWrapper{
+    flex-direction: column;
+
+  }
+
+  .wrapperOne{
+    width: 100%;
+  }
+
+
+
+}
+
+@media (min-width: 451px) {
+  .wrapperImg {
+    display: flex;
+  }
+  .wrapperOne{
+    width: 33%;
+  }
+
+}
+
+
+
+
+
 .sectionOneWrapper, .sectionTwoWrapper {             
   font-size: 1.2rem;
   font-family: var(--font-lato);
@@ -15,7 +46,7 @@ padding-bottom: 50px;
 }
 
 .wrapperOne{
-  width: 33%;
+
   margin: 1%;
 
 }

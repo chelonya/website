@@ -1,35 +1,64 @@
+@media (max-width: 450px) {
+.eachSegmentWrapper{
+  width: 80%;
+
+}
+.paragraphRefundWrapper{
+  width: 80%;
+}
+
+
+}
+
+
+@media (min-width: 451px) {
+
+  .eachSegmentWrapper{
+    width: 70%;
+  
+  }
+  .paragraphRefundWrapper{
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* SECTION ONE */
 
-.sectionOneWrapper {    
-  padding: 2% 15%;         
-  height: 73.57rem;
+.sectionOneWrapper {
   font-size: 1.2rem;
   font-family: var(--font-lato);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
-
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-.eachSegmentWrapper{
-  width: 100%;
+.eachSegmentWrapper {
+  margin: 15px 0px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
   flex-direction: column;
 }
 
- 
 .titleStyle {
   font-size: 1.5rem;
   letter-spacing: -0.02em;
   font-weight: 800;
   color: var(--esmeralda);
   line-height: 150%;
-  width: 63%;
-
+  width: 100%;
 }
 
 .paragraphStyle {
@@ -39,6 +68,12 @@
 
 /* SECTION TWO */
 
+.sectionTwoWrapper {
+  display: flex;
+  margin: 15px 0px;
+  flex-direction: column;
+}
+
 .titleSectionTwo {
   color: var(--esmeralda);
   font-family: var(--font-lato);
@@ -47,45 +82,43 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 48px;
+  width: 70%;
 }
-.paragraphRefundWrapper{
+.paragraphRefundWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
   font-family: var(--font-lato);
   font-size: 1.2rem;
-  text-align: justify;
-  padding: 2% 15%;}
-
+}
 
 /* SECTION THREE */
 
-.sectionThreeWrapper{
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
+.sectionThreeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.titleSectionThree{
+.titleSectionThree {
   padding: 0 15%;
   font-family: var(--font-lato);
   font-size: 1.2rem;
   text-align: justify;
   height: 92px;
-
 }
- 
-.imgSectionThree{
+
+.imgSectionThree {
   width: 47.93rem;
-  height: 25.21rem;
+  height: 100%;
   object-fit: cover;
-
 }
 
-.imgWrapper{
-  height: 441px;
-
+.imgWrapper {
 }
 
-
-
+.paragraphRefundInf {
+  width: 70%;
+}

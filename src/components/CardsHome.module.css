@@ -1,23 +1,24 @@
-.cardMatapalo,
-.cardPacuare {
-  position: relative;
-  width: 15.43rem;
-  height: 20rem;
-  object-fit: cover;
-
-
+@media (max-width: 450px) {
+  .cardsprojecthome {
+    flex-direction: column;
+  }
 }
 
-.cardMatapalo>img {
-  max-width: 100%;
-  min-height: 100%;
+@media (min-width: 450px) {
+  .cardsprojecthome {
+    flex-direction: row;
+  }
+}
+
+.cardMatapalo,
+.cardPacuare {
+  width: 15.43rem;
+  margin: 0% 2%;
 }
 
 .cardsprojecthome {
-  padding-top: 30px;
   flex-shrink: 0;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
   width: 52%;
@@ -29,7 +30,6 @@
 
 .btnscardshome {
   width: 42%;
-  height: 4rem;
   text-align: center;
   font-size: var(--font-size-11xl);
   color: var(--color-white);
@@ -47,12 +47,9 @@
   max-width: 11.48rem;
   min-width: 11.48rem;
   background-color: var(--color-silver);
-  height: 4rem;
   margin: 30%;
 }
 .btnPacuare {
-  right: 39.42%;
-  left: 57.1%;
   display: flex;
   align-items: center;
   justify-content: center;

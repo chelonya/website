@@ -3,6 +3,7 @@ import styles from "./CardsHome.module.css";
 const CardsProjectHome = () => {
   return (
     <div className={styles.cardsprojecthome}>
+
       <div className={styles.cardMatapalo}>
         <img alt="" src="/card--esterillos@2x.png" />
         <div className={styles.btnscardshome}>
@@ -15,6 +16,7 @@ const CardsProjectHome = () => {
           <div className={styles.btnPacuare}>Pacuare</div>
         </div>
       </div>
+      
     </div>
   );
 };

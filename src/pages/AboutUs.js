@@ -3,10 +3,15 @@ import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import HamMenu from "../components/HamMenu";
 
 const AboutUs = () => {
   return (
     <div>
+      <HamMenu></HamMenu>
+
+      <Nav />
+      <LogoNav />
       <Banner bannerImg="BannerAboutUs2.jpg" bannerText="ABOUT US" />
 
       <div className={styles.aboutUs}>
@@ -32,12 +37,22 @@ const AboutUs = () => {
           </div>
         </div>
 
+
+
+
+
+
+
+
         <div className={styles.sectiontwo}>
+
           <div className={styles.factsWrapper}>
+            
             <div className={styles.textfacts}>
+              <p>Some Cool Facts</p>
               <b>
-                <p>Some Cool Facts</p>
-                <p>{`These number were made with your support `}</p>
+                <p>These number were</p>
+                <p>made with your support</p>
               </b>
             </div>
 
@@ -74,53 +89,51 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className={styles.sectionthree}>
-          <b className={styles.titlesectionthree}>
-            OUR NATURE NEEDS VOLUNTEERS
-          </b>
 
-          <b className={styles.subtitlesectionthree}>
-            <p className={styles.butWhatIs}>But what is being</p>
-            <p className={styles.butWhatIs}> a volunteer?</p>
-          </b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className={styles.sectionthree}>
+
+          <div className={styles.titlesectionthree1}>
+            <b>OUR NATURE NEEDS VOLUNTEERS</b>
+          </div>
+
+          <div className={styles.titlesectionthree2}>
+            <b>But what is being a volunteer?</b>
+          </div>
 
           <div className={styles.textsectionthree}>
-            <p className={styles.butWhatIs}>
+            <p>
               Voluntary refers to the subject who decides to provide a service
               or perform a job of his own free will, without being obliged to do
               so for legal, contractual, or economic reasons. In other words, a
               volunteer is a person who has the will to invest time and money to
-              help a cause.
+              help a cause. Therefore. A volunteer does not go to a conservation project to complain.
+              On the contrary, the volunteer is the person who looks for options
+              and solutions in the face of adversity. A volunteer does not
+              criticize the project but rather supports it to improve.
+      
             </p>
-            <p className={styles.butWhatIs}>Therefore.</p>
-            <p className={styles.butWhatIs}>
-              A volunteer does not go to a conservation project to complain. On
-              the contrary, the volunteer is the person who looks for options
-              and solutions in the face of adversity.
-            </p>
-            <p className={styles.butWhatIs}>
-              A volunteer does not go to a conservation project in search of
-              comforts and luxuries. These things are found in his house, in his
-              country. The volunteer rather seeks adventure, a simple and happy
-              life.
-            </p>
-            <p className={styles.butWhatIs}>
-              <span>{`A volunteer does `}</span>
-              <b className={styles.notCriticize}>not criticize</b>
-              <span
-                className={styles.notCriticize}
-              >{` the project but rather `}</span>
-              <b className={styles.notCriticize}>supports it to improve</b>
-              <span className={styles.notCriticize}>.</span>
-            </p>
+           
           </div>
         </div>
+
+
+
       </div>
 
       <Footer />
-
-      <LogoNav />
-      <Nav />
     </div>
   );
 };

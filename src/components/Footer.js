@@ -17,12 +17,19 @@ const Footer = ({ colorFooter = "/rectangle-132.svg" }) => {
 
         <div className={styles.emailDiv}>
           <img alt="" src="/layer-11.svg" />
-          <b>volunteercoordination@asvpa.org</b>
+          <a href="mailto:volunteercoordination@asvpa.org">volunteercoordination@asvpa.org</a>
         </div>
       </div>
-      <div className={styles.termsDiv}>
-        <b>{`Terms & Conditions `}</b>
-        <b>{`Privacy Policy `}</b>
+
+      <div>
+        <div>
+          {" "}
+          <b>Terms & Conditions</b>
+        </div>
+        <div>
+          {" "}
+          <b>Privacy Policy</b>
+        </div>
       </div>
     </div>
   );

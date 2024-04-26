@@ -1,7 +1,49 @@
+@media (max-width: 450px) {
+  .imgList {
+    display: none;
+  }
+  .sectionTwoWrapper {   
+    height: 435px;
+  }
+  .eachSegmentWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+  .list {
+    width: 70%;
+  }
+
+}
+
+@media (min-width: 451px) {
+ 
+  .sectionTwoWrapper{
+    height: 570px;
+  }
+  .eachSegmentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
 /* SECCION UNO */
 
 .sectionOneWrapper {
-  height: 59.57rem;
   font-size: 1.2rem;
   font-family: var(--font-lato);
   width: 100%;
@@ -9,16 +51,20 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 4%;
+
 }
 
 .eachSegmentWrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  margin: 15px 0px;
+
 }
 
 .titleStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: 1.5rem;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -35,9 +81,7 @@
 
 /*SECCION DOS */
 
-.sectionTwoWrapper {
-  height: 570px;
-}
+
 .titleList {
   color: var(--esmeralda);
   font-family: var(--font-lato);
@@ -56,12 +100,26 @@
   text-align: justify;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--font-lato);
+
+
 }
 .imgList {
   width: 25.93rem;
   height: 26.21rem;
   object-fit: cover;
 }
+
+
+
+
 
 .whatToExpect {
   position: relative;
@@ -75,6 +133,4 @@
   font-family: var(--font-lato);
 }
 
-ul {
-  list-style-type: none;
-}
+

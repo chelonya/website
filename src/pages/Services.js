@@ -3,11 +3,15 @@ import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import HamMenu from "../components/HamMenu";
+
 
 const WhatToExpect = () => {
   return (
     <div>
-      <Banner bannerImg="bannerServices.png" bannerText="Services" />
+     <HamMenu></HamMenu>
+
+      <Banner bannerImg="bannerServices.png" bannerText="SERVICES" />
 
       <div className={styles.sectionOneWrapper}>
         <b className={styles.mainTitle}>VOLUNTEERS MAIN DUTIES</b>
@@ -25,7 +29,7 @@ const WhatToExpect = () => {
               />
             </div>
 
-            <div className={styles.eachIconWrapper}>
+            <div className={styles.eachIconWrapperEye}>
               <b>
                 <p>Hatchery Watch</p>
               </b>

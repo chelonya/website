@@ -3,16 +3,20 @@ import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import styles from "./FAQ.module.css";
+import HamMenu from "../components/HamMenu";
 
 const WhatToExpect = () => {
   return (
     <div>
+     <HamMenu></HamMenu>
+
       <Banner
         bannerImg="bannerFAQ.png"
         bannerText="FREQUENTLY ASKED QUESTIONS"
       />
 
       <div className={styles.sectionOneWrapper}>
+
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
             DO I NEED TO SPEAK SPANISH TO VOLUNTEER?
@@ -98,13 +102,19 @@ const WhatToExpect = () => {
         </div>
       </div>
 
+
+
+
+
       <div className={styles.sectionTwoWrapper}>
-        <b className={styles.titleSectionTwo}>
-          I WILL HAVE A MONEY REFUND IF I LEAVE BEFORE FINISHING MY
-          VOLUNTEERING?
-        </b>
+        
+       
 
         <div className={styles.paragraphRefundWrapper}>
+        <div className={styles.titleSectionTwo}>
+          WILL I HAVE A MONEY REFUND IF I LEAVE BEFORE FINISHING MY
+          VOLUNTEERING?
+        </div>
           <p className={styles.paragraphRefundInf}>
             Each volunteer is free to choose how long they will participate in
             volunteering, therefore the organization makes its budget according

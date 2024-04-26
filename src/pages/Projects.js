@@ -3,10 +3,12 @@ import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import HamMenu from "../components/HamMenu";
 
 const WhatToExpect = () => {
   return (
     <div>
+      <HamMenu></HamMenu>
       <Banner bannerImg="voluntariosLiberando.jpg" bannerText="PROJECTS" />
 
       <div className={styles.sectionOneWrapper} id="seccion1">

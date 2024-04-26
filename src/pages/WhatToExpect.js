@@ -3,10 +3,13 @@ import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import HamMenu from "../components/HamMenu";
 
 const WhatToExpect = () => {
   return (
     <div>
+      <HamMenu></HamMenu>
+
       <Banner bannerImg="bannerWTE.png" bannerText="WHAT TO EXPECT" />
 
       <div className={styles.sectionOneWrapper}>
@@ -64,26 +67,27 @@ const WhatToExpect = () => {
       </div>
 
       <div className={styles.sectionTwoWrapper}>
-
+        
         <b className={styles.titleList}>What To Bring</b>
 
         <div className={styles.listAndImg}>
-          <ul>
-            <li>Sunscreen and sunglasses</li>
-            <li>Insect repellent (with DEET)</li>
-            <li>Mosquito net (there are some on site)</li>
-            <li>Open and closed-toed shoes</li>
-            <li>Rain clothes</li>
-            <li>Swimsuit</li>
-            <li>Red light (you cannot use white light around the turtles)</li>
-            <li>Towel (microfibre & beach towel)</li>
-            <li>Working clothes</li>
-            <li>Dark clothes for patrols</li>
-            <li>
-              Activities for your free time (i.e. music, board games, cards,
+          <div className={styles.list}>
+            <p>•Sunscreen and sunglasses</p>
+            <p>•Insect repellent (with DEET)</p>
+            <p>•Mosquito net (there are some on site)</p>
+            <p>•Open and closed-toed shoes</p>
+            <p>•Rain clothes</p>
+            <p>•Swimsuit</p>
+            <p>•Red light (you cannot use white light around the turtles)</p>
+            <p>•Towel (microfibre & beach towel)</p>
+            <p>•Working clothes</p>
+            <p>•Dark clothes for patrols</p>
+            <p>
+              {" "}
+              •Activities for your free time (i.e. music, board games, cards,
               books)
-            </li>
-          </ul>
+            </p>
+          </div>
 
           <img
             className={styles.imgList}

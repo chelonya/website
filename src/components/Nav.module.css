@@ -1,3 +1,8 @@
+@media (max-width: 450px) {
+  .navComponent {
+    display: none;
+  }
+}
 .navComponent {
   position: absolute;
   top: 51px;
@@ -64,4 +69,10 @@ a { color: inherit;
 
 .aboutUsTrigger:hover {
   cursor: pointer;
+}
+
+
+
+ul.myList  {
+  list-style-type: none;
 }

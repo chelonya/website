@@ -2,20 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 153px;
+  width: 100%;
   font-family: var(--font-lato);
-
+  margin-bottom: 30px ;
 
 }
 
 .sectionOneHomeWrapper {
-  position: relative;
-  text-align: left;
-  display: inline-block;
-  width: 69.71rem;
-  padding: 52px;
-  height: 204px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 154px;
 
 }
 .titleOneHome {
@@ -27,17 +25,16 @@
 .descriptionOneHome {
   font-size: 1.5rem;
   color: var(--color-black);
-  padding-left: 5px;
 
 }
 
 .sectionTwoHomeWrapper { 
   text-align: justify;
-  position: relative;
-  line-height: 305.5%;
+
+  line-height: 240.5%;
   white-space: pre-wrap;
-  display: inline-block;
-  width: 62.71rem;
+ 
+  width: 70%;
 }
 .titleTwoHome {
   position: relative;
@@ -48,21 +45,14 @@
 .descriptionTwoHome {
   font-size: 1.5rem;
   color: var(--color-black);
-  padding-right: 138px;
-  padding-bottom: 27px;
+  width: 100%;
 
 
 }
 .sectionThreeHomeWrapper {
-  height: 52.57rem;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-61xl);
-  line-height: 1.0;
-
+  align-items: center;  line-height: 1.0;
   font-family: var(--font-lato);
 
 
@@ -70,11 +60,12 @@
 .titleThreeHome {
   position: relative;
   display: flex;
-  align-items: center;
-  width: 42.07rem;
+  width: 100%;
   color: #0c6267;
-  padding-left: 180px;
   font-size: 6.29rem;
+  justify-content: center;
+  margin: 16px 0;
+
 
 }
 
