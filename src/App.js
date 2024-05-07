@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import WhatToExpect from "./pages/WhatToExpect";
 import AboutUs from "./pages/AboutUs";
-
+import Register from "./pages/Register";
 
 function App() {
   const action = useNavigationType();
@@ -53,6 +53,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+        case "/register":
+          title = "";
+          metaDescription = "";
+          break;
+
     }
 
     if (title) {
@@ -77,6 +82,8 @@ function App() {
       <Route path="/faq" element={<FAQ />} />
       <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/about-us" element={<AboutUs />} />
+      <Route path="/register" element={<Register />} />
+
     </Routes>
   );
 }

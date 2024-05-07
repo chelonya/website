@@ -4,14 +4,14 @@ import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import HamMenu from "../components/HamMenu";
-
+import FooterMobile from "../components/FooterMobile";
 
 const WhatToExpect = () => {
   return (
     <div>
      <HamMenu></HamMenu>
 
-      <Banner bannerImg="bannerServices.png" bannerText="SERVICES" />
+      <Banner bannerImg="bannerServices.jpg" bannerText="SERVICES" />
 
       <div className={styles.sectionOneWrapper}>
         <b className={styles.mainTitle}>VOLUNTEERS MAIN DUTIES</b>
@@ -166,6 +166,7 @@ const WhatToExpect = () => {
         <img className={styles.imgSchedule} alt="" src="/image-1@2x.png" />
       </div>
       <Footer />
+      <FooterMobile/>
 
       <LogoNav />
       <Nav />

@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import styles from "./FAQ.module.css";
 import HamMenu from "../components/HamMenu";
+import FooterMobile from "../components/FooterMobile";
 
 const WhatToExpect = () => {
   return (
@@ -160,6 +161,7 @@ const WhatToExpect = () => {
       </div>
 
       <Footer />
+      <FooterMobile/>
 
       <LogoNav />
       <Nav />

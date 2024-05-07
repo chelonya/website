@@ -4,6 +4,7 @@ import LogoNav from "../components/LogoNav";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import HamMenu from "../components/HamMenu";
+import FooterMobile from "../components/FooterMobile";
 
 const AboutUs = () => {
   return (
@@ -132,6 +133,7 @@ const AboutUs = () => {
 
 
       </div>
+      <FooterMobile/>
 
       <Footer />
     </div>

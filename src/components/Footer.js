@@ -9,19 +9,19 @@ const Footer = ({ colorFooter = "/rectangle-132.svg" }) => {
         backgroundImage: `url(${colorFooter})`,
       }}
     >
-      <div>
+      <div className={styles.wrapLeft}>
         <div className={styles.whatsappDiv}>
           <img alt="" src="/whatsapp.svg" />
-          <b>+506 86161973</b>
+          <b>+506 86161973</b> 
         </div>
 
         <div className={styles.emailDiv}>
-          <img alt="" src="/layer-11.svg" />
-          <a href="mailto:volunteercoordination@asvpa.org">volunteercoordination@asvpa.org</a>
+          <img alt="" src="/email.svg" />
+          <b>volunteercoordination@asvpa.org</b>
         </div>
       </div>
 
-      <div>
+      <div className={styles.wrapRight}>
         <div>
           {" "}
           <b>Terms & Conditions</b>

@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70%;
+  width: 60%;
   height: 154px;
 
 }
@@ -23,7 +23,7 @@
 }
 
 .descriptionOneHome {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-black);
 
 }
@@ -34,7 +34,7 @@
   line-height: 240.5%;
   white-space: pre-wrap;
  
-  width: 70%;
+  width: 60%;
 }
 .titleTwoHome {
   position: relative;
@@ -43,7 +43,7 @@
   font-size: 1.5rem;
 }
 .descriptionTwoHome {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-black);
   width: 100%;
 
@@ -69,9 +69,28 @@
 
 }
 
+.cardd{
+display: flex;
+justify-content: center;
+
+}
 
 
 
+.titleCard{
+  position: relative;
+  line-height: 113.5%;
+  color: #0c6267;
+  font-size: 1.5rem;
+  font-family: var(--font-lato);
+  display: flex;
+  justify-content: center;
+}
+
+.sectionTwo{
+  margin: 10% 0%;
+
+}
 
 
 

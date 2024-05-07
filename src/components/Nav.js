@@ -34,7 +34,11 @@ const Nav = () => {
         <div className={styles.navItem}>
         <Link to="/projects">PROJECTS</Link>
         </div>
-        <div className={styles.navItemRegister}>REGISTER</div>
+        <div className={styles.navItemRegister}>
+        <Link to="/register">REGISTER</Link>
+
+
+        </div>
       </div>
     </div>
   );

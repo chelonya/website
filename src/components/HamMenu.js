@@ -33,6 +33,15 @@ const HamMenu = () => {
           <li>
             <Link to="/projects">Projects</Link>
           </li>
+          <li>
+            <Link to="/what-to-expect">What to expect</Link>
+          </li>
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
+          <li>
+            <Link to="/register">REGISTER</Link>
+          </li>
         </ul>
       </nav>
     </div>

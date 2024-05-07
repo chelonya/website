@@ -1,12 +1,10 @@
 .footer {
   text-align: justify;
-  font-size: var(--font-size-mini);
+  font-size: 0.9rem;
   color: var(--color-teal-100);
   font-family: var(--font-lato);
-  display: flex;
   justify-content: space-evenly;
-
-
+  display: flex;
 }
 
 
@@ -19,7 +17,23 @@
   align-items: center;
 }
 
+.wrapLeft{
+
+  margin: 3px;
+}
+
+.wrapRight{
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 
+@media (max-width: 450px) {
+  .footer {
+    display: none; 
+  }
+}
 
 
