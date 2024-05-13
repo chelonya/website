@@ -8,12 +8,12 @@ import Footer from "../components/Footer";
 import HamMenu from "../components/HamMenu";
 import FooterMobile from "../components/FooterMobile";
 
-const Home = () => {
+const Home = () => { 
   return (
     <div>
       <HamMenu></HamMenu>
       <Banner
-        bannerImg="bannerHome.jpg"
+        bannerImg="bannerHome.webp"
         bannerText="VOLUNTEERING A WORK OF HEART"
       />
       <div className={styles.contentHomeWraper}>

@@ -4,36 +4,31 @@
   align-items: center;
   width: 100%;
   font-family: var(--font-lato);
-  margin-bottom: 30px ;
-
+  margin-bottom: 30px;
 }
 
 .sectionOneHomeWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
   height: 154px;
-
 }
 .titleOneHome {
   color: #0c6267;
   font-size: 1.5rem;
-
 }
 
 .descriptionOneHome {
   font-size: 1.2rem;
   color: var(--color-black);
-
 }
 
-.sectionTwoHomeWrapper { 
+.sectionTwoHomeWrapper {
   text-align: justify;
 
   line-height: 240.5%;
   white-space: pre-wrap;
- 
+
   width: 60%;
 }
 .titleTwoHome {
@@ -46,16 +41,13 @@
   font-size: 1.2rem;
   color: var(--color-black);
   width: 100%;
-
-
 }
 .sectionThreeHomeWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;  line-height: 1.0;
+  align-items: center;
+  line-height: 1;
   font-family: var(--font-lato);
-
-
 }
 .titleThreeHome {
   position: relative;
@@ -65,19 +57,9 @@
   font-size: 6.29rem;
   justify-content: center;
   margin: 16px 0;
-
-
 }
 
-.cardd{
-display: flex;
-justify-content: center;
-
-}
-
-
-
-.titleCard{
+.titleCard {
   position: relative;
   line-height: 113.5%;
   color: #0c6267;
@@ -87,17 +69,36 @@ justify-content: center;
   justify-content: center;
 }
 
-.sectionTwo{
+.sectionTwo {
   margin: 10% 0%;
-
 }
 
+@media (max-width: 450px) {
+  .sectionOneHomeWrapper {
+    width: 70%;
+  }
+  .sectionTwoHomeWrapper {
+    width: 70%;
+  }
 
+  .cardd {
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
+@media (min-width: 451px) {
+  .sectionOneHomeWrapper {
+    width: 60%;
+  }
+  .sectionTwoHomeWrapper {
+    width: 60%;
+  }
 
-
-
-
-
-
-
+  .cardd {
+    display: flex;
+    justify-content: center;
+  }
+}

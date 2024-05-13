@@ -13,7 +13,7 @@ const AboutUs = () => {
 
       <Nav />
       <LogoNav />
-      <Banner bannerImg="BannerAboutUs2.jpg" bannerText="ABOUT US" />
+      <Banner bannerImg="BannerAboutUs2.webp" bannerText="ABOUT US" />
 
       <div className={styles.aboutUs}>
         <div className={styles.sectionone}>

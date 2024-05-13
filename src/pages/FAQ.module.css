@@ -6,6 +6,9 @@
 .paragraphRefundWrapper{
   width: 80%;
 }
+.paragraphRefundInf {
+  width: 80%;
+}
 
 
 }
@@ -20,6 +23,10 @@
   .paragraphRefundWrapper{
     width: 80%;
   }
+  .paragraphRefundInf {
+    width: 70%;
+  }
+  
 
 }
 
@@ -82,7 +89,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 70%;
+  width: 80%;
 }
 .paragraphRefundWrapper {
   width: 100%;
@@ -92,6 +99,8 @@
   text-align: justify;
   font-family: var(--font-lato);
   font-size: 1.2rem;
+  margin-bottom: 15px;
+
 }
 
 /* SECTION THREE */
@@ -107,18 +116,13 @@
   font-family: var(--font-lato);
   font-size: 1.2rem;
   text-align: justify;
-  height: 92px;
+  margin-bottom: 40px;
 }
 
 .imgSectionThree {
-  width: 47.93rem;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.imgWrapper {
-}
 
-.paragraphRefundInf {
-  width: 70%;
-}

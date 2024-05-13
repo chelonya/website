@@ -12,8 +12,8 @@ const Register = () => {
       <HamMenu></HamMenu>
 
       <Banner
-        bannerImg="formBanner.jpg"
-        bannerText=" "
+        bannerImg="bannerRegister.webp"
+        bannerText="REGISTER"
       />
 
       <div className={styles.wrapperForm}>

@@ -11,7 +11,7 @@ const WhatToExpect = () => {
     <div>
       <HamMenu></HamMenu>
 
-      <Banner bannerImg="bannerWTE.png" bannerText="WHAT TO EXPECT" />
+      <Banner bannerImg="bannerWTE.webp" bannerText="WHAT TO EXPECT" />
 
       <div className={styles.sectionOneWrapper}>
         <div className={styles.eachSegmentWrapper}>

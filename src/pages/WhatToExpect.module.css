@@ -56,7 +56,7 @@
 }
 
 .eachSegmentWrapper {
-  width: 100%;
+  width: 80%;
   margin: 15px 0px;
 
 }
@@ -76,7 +76,7 @@
 .paragraphStyle {
   color: var(--color-black);
   text-align: justify;
-  width: 60%;
+  width: 80%;
 }
 
 /*SECCION DOS */

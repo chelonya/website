@@ -9,18 +9,17 @@ import FooterMobile from "../components/FooterMobile";
 const WhatToExpect = () => {
   return (
     <div>
-     <HamMenu></HamMenu>
+      <HamMenu></HamMenu>
 
       <Banner
-        bannerImg="bannerFAQ.png"
+        bannerImg="bannerFaq.webp"
         bannerText="FREQUENTLY ASKED QUESTIONS"
       />
 
       <div className={styles.sectionOneWrapper}>
-
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
-            DO I NEED TO SPEAK SPANISH TO VOLUNTEER?
+            1.DO I NEED TO SPEAK SPANISH TO VOLUNTEER?
           </div>
           <div className={styles.paragraphStyle}>
             <p>
@@ -32,7 +31,7 @@ const WhatToExpect = () => {
         </div>
 
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>HOW OLD DO I HAVE TO BE?</div>
+          <div className={styles.titleStyle}>2.HOW OLD DO I HAVE TO BE?</div>
           <div className={styles.paragraphStyle}>
             You must be 18 years or older to volunteer with us. You must also be
             able to participate in some physical activity (ie. night patrols on
@@ -42,7 +41,7 @@ const WhatToExpect = () => {
 
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
-            HOW LONG IS THE MINIMUM/MAXIMUM STAY?
+            3.HOW LONG IS THE MINIMUM/MAXIMUM STAY?
           </div>
           <div className={styles.paragraphStyle}>
             During peak season (mid-June to August), the minimum stay is 2 weeks
@@ -54,7 +53,7 @@ const WhatToExpect = () => {
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
             {" "}
-            AM I GUARANTEED TO SEE A TURTLE?
+            4.AM I GUARANTEED TO SEE A TURTLE?
           </div>
           <div className={styles.paragraphStyle}>
             While volunteers typically are able to see turtles, we can not
@@ -66,7 +65,7 @@ const WhatToExpect = () => {
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
             {" "}
-            WHAT KIND OF WORK WILL I BE DOING?
+            5.WHAT KIND OF WORK WILL I BE DOING?
           </div>
           <div className={styles.paragraphStyle}>
             Volunteers help with construction and maintenance of the turtle
@@ -81,7 +80,7 @@ const WhatToExpect = () => {
 
         <div className={styles.eachSegmentWrapper}>
           <div className={styles.titleStyle}>
-            DO I NEED TO HAVE ANY PREVIOUS EXPERIENCE?
+            6.DO I NEED TO HAVE ANY PREVIOUS EXPERIENCE?
           </div>
           <div className={styles.paragraphStyle}>
             It is not mandatory to have any experience but volunteers must be in
@@ -92,7 +91,7 @@ const WhatToExpect = () => {
           </div>
         </div>
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>IS THERE WIFI?</div>
+          <div className={styles.titleStyle}>7.IS THERE WIFI?</div>
           <div className={styles.paragraphStyle}>
             There is wifi at the site, but the hours may be restricted depending
             on site conditions (streaming services like Netflix and Youtube are
@@ -103,19 +102,12 @@ const WhatToExpect = () => {
         </div>
       </div>
 
-
-
-
-
       <div className={styles.sectionTwoWrapper}>
-        
-       
-
         <div className={styles.paragraphRefundWrapper}>
-        <div className={styles.titleSectionTwo}>
-          WILL I HAVE A MONEY REFUND IF I LEAVE BEFORE FINISHING MY
-          VOLUNTEERING?
-        </div>
+          <div className={styles.titleSectionTwo}>
+            8.WILL I HAVE A MONEY REFUND IF I LEAVE BEFORE FINISHING MY
+            VOLUNTEERING?
+          </div>
           <p className={styles.paragraphRefundInf}>
             Each volunteer is free to choose how long they will participate in
             volunteering, therefore the organization makes its budget according
@@ -142,26 +134,24 @@ const WhatToExpect = () => {
             fees minus the expenses saved by the organization and any gains it
             may make by using the voluntary placement otherwise.
           </p>
-        </div>
-
-        <div className={styles.sectionThreeWrapper}>
-          <div className={styles.titleSectionThree}>
+          <p className={styles.paragraphRefundInf}>
             Consideration of the commonly saved expenses and the commonly
             possible gains from use alternative of the voluntary placement,
             compensation is calculated as follows:
-          </div>
-          <div className={styles.imgWrapper}>
-            <img
-              className={styles.imgSectionThree}
-              alt=""
-              src="/refundimg@2x.png"
-            />
-          </div>
+          </p>
+        </div>
+
+        <div className={styles.sectionThreeWrapper}>
+          <img
+            className={styles.imgSectionThree}
+            alt=""
+            src="/refundimg@2x.png"
+          />
         </div>
       </div>
 
       <Footer />
-      <FooterMobile/>
+      <FooterMobile />
 
       <LogoNav />
       <Nav />

@@ -9,7 +9,7 @@ const WhatToExpect = () => {
   return (
     <div>
       <HamMenu></HamMenu>
-      <Banner bannerImg="bannerProjects.jpg" bannerText="PROJECTS" />
+      <Banner bannerImg="bannerProjects.webp" bannerText="PROJECTS" />
 
       <div className={styles.sectionOneWrapper} id="seccion1">
 

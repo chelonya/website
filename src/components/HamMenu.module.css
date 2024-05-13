@@ -2,6 +2,7 @@
 
  .hamMenuContainer {
   display: none;
+  background-color: #9bc0c2;
 } 
 
 .menuToggle {
@@ -45,6 +46,7 @@
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   font-family: Lato;
+
 }
 
 .menu.open {
@@ -73,4 +75,32 @@
   .hamMenuContainer {
     display: flex;
   }
+}
+
+
+.logoNavComponent {
+  margin-left: 196px ;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.7rem;
+  color: var(--color-white);
+  font-family: var(--font-lato);
+}
+
+.textLogoNav,
+.imgLogoNav {
+  position: relative;
+  flex-shrink: 0;
+}
+.imgLogoNav {
+  width: 3.2rem;
+  height: 2.20rem;
+  overflow: hidden;
+}
+.textLogoNav {
+
+  align-self: center;
 }
