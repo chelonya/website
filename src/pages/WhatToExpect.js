@@ -15,7 +15,7 @@ const WhatToExpect = () => {
 
       <div className={styles.sectionOneWrapper}>
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>WHEATER</div>
+          <div className={styles.titleStyle}>WHEATER:</div>
           <div className={styles.paragraphStyle}>
             <p>
               You can expect a very hot and humid climate throughout the year in
@@ -34,7 +34,7 @@ const WhatToExpect = () => {
         </div>
 
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>CURRENCY</div>
+          <div className={styles.titleStyle}>CURRENCY:</div>
           <div className={styles.paragraphStyle}>
             The currency used in Costa Rica is the Costa Rican colon. The
             exchange rate fluctuates, but $ 1.00 USD is generally about 610
@@ -44,7 +44,7 @@ const WhatToExpect = () => {
         </div>
 
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>FOOD</div>
+          <div className={styles.titleStyle}>FOOD:</div>
           <div className={styles.paragraphStyle}>
             In our organization, we care about animals and the environment in
             general, but it is also our duty to support the local economy of the
@@ -56,7 +56,7 @@ const WhatToExpect = () => {
         </div>
 
         <div className={styles.eachSegmentWrapper}>
-          <div className={styles.titleStyle}>LANGUAGE</div>
+          <div className={styles.titleStyle}>LANGUAGE:</div>
           <div className={styles.paragraphStyle}>
             The official language of Costa Rica is Spanish. Although most young
             people speak some English, many places near our sites do not. Some

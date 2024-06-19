@@ -15,14 +15,14 @@
 
   }
   .titleStyle{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
   .paragraphStyle{
-   width: 100%;
+   width: 80%;
   }
 
 
@@ -31,7 +31,7 @@
 
 @media (min-width: 451px) {
  .titleStyle{
-  width: 17%;
+  width: 60%;
 
     
   }
@@ -157,19 +157,23 @@
 
 }
 .eachSegmentWrapper{
-  width: 80%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin: 0.7% 0%;
 }
 .titleStyle {
+  display: flex;
   font-size: 1.5rem;
   letter-spacing: -0.02em;
   font-weight: 800;
   color: var(--esmeralda);
   line-height: 150%;
-  margin: 3% 0%;
+  margin: 3px 0px;
+  flex-direction: column;
+  align-items: flex-start;
 
 }
 .paragraphStyle {

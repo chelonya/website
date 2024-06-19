@@ -2,7 +2,7 @@
 
  .hamMenuContainer {
   display: none;
-  background-color: #9bc0c2;
+  background-color: #0C6267;
 } 
 
 .menuToggle {
@@ -16,7 +16,7 @@
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #0c6267;
+  background-color: #FFF;
   margin: 6px 0;
   transition: 0.4s;
 }

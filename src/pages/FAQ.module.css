@@ -43,7 +43,7 @@
 /* SECTION ONE */
 
 .sectionOneWrapper {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-family: var(--font-lato);
   width: 100%;
   display: flex;
@@ -54,13 +54,13 @@
 }
 
 .eachSegmentWrapper {
-  margin: 15px 0px;
+  margin: 5px 0px;
   display: flex;
   flex-direction: column;
 }
 
 .titleStyle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: -0.02em;
   font-weight: 800;
   color: var(--esmeralda);
@@ -98,7 +98,7 @@
   align-items: center;
   text-align: justify;
   font-family: var(--font-lato);
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-bottom: 15px;
 
 }
@@ -120,7 +120,7 @@
 }
 
 .imgSectionThree {
-  width: 100%;
+  width: 55%;
   height: 100%;
   object-fit: cover;
 }

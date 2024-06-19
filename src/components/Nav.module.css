@@ -32,7 +32,7 @@
 }
 
 .navComponent>.navContainer>.navItemRegister {
- background-color: var(--color-silver);
+ background-color: #157075;
  padding: var(--padding-3xs);
  flex: 1;
  text-align: center;

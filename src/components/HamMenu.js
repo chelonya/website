@@ -46,7 +46,7 @@ const HamMenu = () => {
       </nav>
 
       <div className={styles.logoNavComponent}>
-        <img className={styles.imgLogoNav} alt="" src="/logoTransparente.png"/>
+        <img className={styles.imgLogoNav} alt="" src="/logoAsvpa.svg"/>
         <Link to="/">
           <b className={styles.textLogoNav}>ASVPA</b>
         </Link>

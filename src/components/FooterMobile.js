@@ -5,29 +5,32 @@ const FooterMobile = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.icons}>
-
-       
-      <a href="mailto:volunteercoordination@asvpa.org">
-          <div>
+        <a id = "email" href="mailto:volunteercoordination@asvpa.org">
+          <div className={styles.iconName}>
             <img alt="" src="/email3.svg" />
+            <b>Email</b>
+
           </div>
         </a>
 
-        <a href="https://wa.me/50686161973" target="_blank" rel="noreferrer">
-          <div>
+        <a id= "whatsapp" href="https://wa.me/50686161973" target="_blank" rel="noreferrer">
+          <div className={styles.iconName}>
             <img alt="" src="/wa2.svg" />
+            <b>WhatsApp</b>
+
           </div>
         </a>
-         
-    
-        <a href="https://ig.me/m/tortugasvpa" target="_blank" rel="noreferrer">
-          <div>
+
+        <a id= "instagram" href="https://ig.me/m/tortugasvpa" target="_blank" rel="noreferrer">
+          <div className={styles.iconName}>
             <img alt="" src="/instagram.svg" />
+            <b>Instagram</b>
+
           </div>
         </a>
       </div>
       <div className={styles.text}>
-        <a href="https://www.termsfeed.com/live/763603f9-fbc4-400f-be26-bd561ae72d60">
+        <a id= "terms and conditions" href="https://www.termsfeed.com/live/763603f9-fbc4-400f-be26-bd561ae72d60">
           <div>
             <b>Terms & Conditions</b>
           </div>
