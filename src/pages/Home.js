@@ -13,7 +13,7 @@ const Home = () => {
     <div>
       <HamMenu></HamMenu>
       <Banner
-        bannerImg="bannerHome.webp"
+        bannerImg="/bannerHome.webp"
         bannerText="VOLUNTEERING A WORK OF HEART"
       />
       <div className={styles.contentHomeWraper}>
