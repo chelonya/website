@@ -9,7 +9,7 @@ import FooterMobile from "../components/FooterMobile";
 const WhatToExpect = () => {
   return (
     <div>
-     <HamMenu></HamMenu>
+      <HamMenu></HamMenu>
 
       <Banner bannerImg="bannerServices.webp" bannerText="SERVICES" />
 

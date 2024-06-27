@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import HamMenu from "../components/HamMenu";
 import FooterMobile from "../components/FooterMobile";
-import { useRef, useState } from "react";
+
 const Register = () => {
   return (
     <div>

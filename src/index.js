@@ -8,10 +8,9 @@ import "./global.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-const basename = document.querySelector('base')?.getAttribute('href') ?? '/website'    
 
 root.render(
-  <BrowserRouter basename={basename}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
