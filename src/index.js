@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
@@ -7,9 +8,10 @@ import "./global.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
+const basename = document.querySelector('base')?.getAttribute('href') ?? '/website'    
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={basename}>
     <App />
   </BrowserRouter>
 );

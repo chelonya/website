@@ -1,9 +1,11 @@
+/* eslint-disable no-undef */
 import { useEffect } from "react";
 import {
   Routes,
   Route,
   useNavigationType,
   useLocation,
+  BrowserRouter
 } from "react-router-dom";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
@@ -83,7 +85,6 @@ function App() {
       <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/register" element={<Register />} />
-
     </Routes>
   );
 }

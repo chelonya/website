@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import styles from "./Projects.module.css";
 import Nav from "../components/Nav";
 import LogoNav from "../components/LogoNav";
