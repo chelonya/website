@@ -19,10 +19,10 @@ const Nav = () => {
           <div className={`${styles.aboutUsList} ${openAboutUs ? styles.openState : styles.closeState}`}>
             <ul className={styles.myList}>
               <li>
-                <Link to="/about-us">ABOUT US</Link>
+                <Link to="/what-to-expect">WHAT TO EXPECT</Link>
               </li>
               <li>
-                <Link to="/what-to-expect">WHAT TO EXPECT</Link>
+                <Link to="/about-us">ABOUT US</Link>
               </li>
               <li>
                 <Link to="/faq">FAQ</Link>

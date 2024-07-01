@@ -61,10 +61,10 @@ a { color: inherit;
 .aboutUsList {
   position: absolute;
   top: 25px;
-  background-color: #a7bfc7;
+  background-color: rgba(21, 112, 117, 0.5);
   border-radius: var(--border-radius);
   padding: 4px;
-  width: 180px;
+  width: 148px;
 }
 
 .aboutUsTrigger:hover {
@@ -75,4 +75,7 @@ a { color: inherit;
 
 ul.myList  {
   list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
 }

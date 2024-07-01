@@ -8,34 +8,34 @@ const Footer = ({ colorFooter = "/rectangle-132.svg" }) => {
         backgroundImage: `url(${colorFooter})`,
       }}
     >
+      <div className={styles.wrapRight}>
+        <div className={styles.descrFooter}>
+          <b>GET IN TOUCH</b>
+        </div>
+        <div className={styles.descrFooter2}>
+          <b>Protecting our oceans, one flipper at a time.</b>
+        </div>
+      </div>
 
-      
       <div className={styles.wrapLeft}>
         <a href="https://wa.me/50686161973" target="_blank" rel="noreferrer">
           <div className={styles.whatsappDiv}>
-            <img alt="" src="/whatsapp.svg" />
+            <img alt="" src="/wa2.svg" />
             <b>+506 86161973</b>
           </div>
         </a>
         <a href="mailto:volunteercoordination@asvpa.org">
           <div className={styles.emailDiv}>
-            <img alt="" src="/email.svg" />
+            <img alt="" src="/email3.svg" />
             <b>volunteercoordination@asvpa.org</b>
           </div>
         </a>
-      </div>
-
-      <div className={styles.wrapRight}>
-        <a href="https://www.termsfeed.com/live/763603f9-fbc4-400f-be26-bd561ae72d60" target="_blank" rel="noreferrer">
-          <div>
-            {" "}
-            <b>Terms & Conditions</b>
+        <a href="https://ig.me/m/tortugasvpa" target="_blank" rel="noreferrer">
+          <div className={styles.instaDiv}>
+            <img alt="" src="/instagram.svg" />
+            <b>@tortugasvpa</b>
           </div>
         </a>
-        <div>
-          {" "}
-          <b>Privacy Policy</b>
-        </div>
       </div>
     </div>
   );
