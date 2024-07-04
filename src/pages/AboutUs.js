@@ -105,7 +105,6 @@ const AboutUs = () => {
 
 
         <div className={styles.sectionthree}>
-
           <div className={styles.titlesectionthree1}>
             <b>OUR NATURE NEEDS VOLUNTEERS</b>
           </div>
