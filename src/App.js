@@ -5,7 +5,7 @@ import {
   Route,
   useNavigationType,
   useLocation,
-  BrowserRouter
+  BrowserRouter,
 } from "react-router-dom";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
@@ -55,11 +55,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-        case "/register":
-          title = "";
-          metaDescription = "";
-          break;
-
+      case "/register":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -78,14 +77,14 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={< Home />} />
-      <Route path="/es/inicio" element={< Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/what-to-expect" element={<WhatToExpect />} />
       <Route path="/about-us" element={<AboutUs />} />
       <Route path="/register" element={<Register />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 }
