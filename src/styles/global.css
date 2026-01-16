@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-esmeralda: #3b7a7d;
+  --color-teal-100: #157075;
+  --color-darkslategray: #0c6267;
+  --color-silver: #a7bfc7;
+  --color-lightblue: #9bc0c2;
+  
+  --font-family-lato: Lato, sans-serif;
+  
+  --font-size-title: 1.5rem;
+  --font-size-bigtitle: 1.8rem;
+  --font-size-11xl: 2.14rem;
+  --font-size-21xl: 1.6rem;
+  --font-size-17xl: 2.57rem;
+  --font-size-9xl: 2rem;
+  --font-size-29xl: 3.43rem;
+  --font-size-45xl: 4.57rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}

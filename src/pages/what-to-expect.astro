@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Banner from '../components/Banner.astro';
+import Nav from '../components/Nav.astro';
+import LogoNav from '../components/LogoNav.astro';
+import Footer from '../components/Footer.astro';
+import FooterMobile from '../components/FooterMobile.astro';
+import HamMenu from '../components/HamMenu.astro';
+---
+
+<BaseLayout title="ASVPA - What To Expect">
+  <HamMenu />
+  <Banner bannerImg="/bannerWTE.webp" bannerText="WHAT TO EXPECT" />
+
+  <div class="max-w-5xl mx-auto px-4 py-16">
+    <div class="space-y-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">WEATHER:</div>
+        <div class="text-gray-700 space-y-4">
+          <p>
+            You can expect a very hot and humid climate throughout the year in
+            Costa Rica. The seasons are divided into the wet season and the
+            dry season (from mid-November to April). The dry season is the
+            peak tourist season, as it coincides with winter in the countries
+            of the northern hemisphere. However, the rainy season is still a
+            beautiful time to visit Costa Rica, as it usually only rains for a
+            few hours each afternoon with plenty of sunshine.
+          </p>
+          <p>
+            To combat this, bring loose clothing, wear a hat, and remember to
+            stay hydrated.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">CURRENCY:</div>
+        <div class="text-gray-700">
+          The currency used in Costa Rica is the Costa Rican colon. The
+          exchange rate fluctuates, but $ 1.00 USD is generally about 610
+          colones. Many restaurants and businesses in tourist areas accept US
+          dollars.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">FOOD:</div>
+        <div class="text-gray-700">
+          In our organization, we care about animals and the environment in
+          general, but it is also our duty to support the local economy of the
+          places where we work that is why we buy fruits, vegetables, eggs,
+          milk, and cheese that are produced in the area and the diet of our
+          turtle camps is 100% vegetarian because we faithfully believe that
+          every action is important to build a better planet.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">LANGUAGE:</div>
+        <div class="text-gray-700">
+          The official language of Costa Rica is Spanish. Although most young
+          people speak some English, many places near our sites do not. Some
+          staff members at each site speak English, so it is not necessary
+          to speak Spanish to volunteer for ASVPA. We do, however, encourage
+          you to learn some basic Spanish before you arrive.
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 bg-gray-100 p-8 rounded-lg">
+      <b class="block text-3xl text-center text-esmeralda mb-8">What To Bring</b>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="text-gray-700 space-y-2">
+          <p>• Sunscreen and sunglasses</p>
+          <p>• Insect repellent (with DEET)</p>
+          <p>• Mosquito net (there are some on site)</p>
+          <p>• Open and closed-toed shoes</p>
+          <p>• Rain clothes</p>
+          <p>• Swimsuit</p>
+          <p>• Red light (you cannot use white light around the turtles)</p>
+          <p>• Towel (microfibre & beach towel)</p>
+          <p>• Working clothes</p>
+          <p>• Dark clothes for patrols</p>
+          <p>• Activities for your free time (i.e. music, board games, cards, books)</p>
+        </div>
+
+        <img
+          class="w-full h-auto rounded-lg shadow-lg"
+          alt="What to bring"
+          src="/whatsapp-image-20230921-at-1022-1@2x.png"
+        />
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+  <FooterMobile />
+  <LogoNav />
+  <Nav />
+</BaseLayout>

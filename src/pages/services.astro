@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Banner from '../components/Banner.astro';
+import Nav from '../components/Nav.astro';
+import LogoNav from '../components/LogoNav.astro';
+import Footer from '../components/Footer.astro';
+import FooterMobile from '../components/FooterMobile.astro';
+import HamMenu from '../components/HamMenu.astro';
+---
+
+<BaseLayout title="ASVPA - Services">
+  <HamMenu />
+  <Banner bannerImg="/bannerServices.webp" bannerText="SERVICES" />
+
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <b class="block text-4xl text-center text-esmeralda mb-12">VOLUNTEERS MAIN DUTIES</b>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Night Patrols</b>
+        <img class="w-24 h-24 object-contain" alt="Night Patrols" src="/flashlight-icon.png" />
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Hatchery Watch</b>
+        <img class="w-24 h-24 object-contain" alt="Hatchery Watch" src="/eye-icon.png" />
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Local Reforestation</b>
+        <img class="w-24 h-24 object-contain" alt="Local Reforestation" src="/tree-icon.png" />
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Camp Cleaning</b>
+        <img class="w-24 h-24 object-contain" alt="Camp Cleaning" src="/botter-icon.png" />
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Sloth Monitor</b>
+        <img class="w-24 h-24 object-contain" alt="Sloth Monitor" src="/person-icon.png" />
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <b class="text-xl text-esmeralda mb-4">Kitchen Help</b>
+        <img class="w-24 h-24 object-contain" alt="Kitchen Help" src="/fork-icon.png" />
+      </div>
+    </div>
+
+    <div class="space-y-8 max-w-4xl mx-auto">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Night Patrols</div>
+        <div class="text-gray-700 space-y-4">
+          <p>
+            You will be assigned minimum 3 night patrols each week. This shift
+            is around 3 hours depends on how many turtles are found.
+          </p>
+          <p>
+            Consist in walks through the beach at night so we see the turtles
+            while they are putting the eggs, then we take some information
+            from the turtle and take the eggs so we can relocate them at the
+            hatchery. The walks are from 1 km to 5 km, so be physically and
+            mentally prepared.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Hatchery Watch</div>
+        <div class="text-gray-700">
+          You will be assigned minimum 2 hatchery watchs per week. The shift
+          is a total of 6 hours, you are expected to check the nest to see if
+          baby turtles were born, also be aware that the nests are not attack
+          by any animal that may enter the hatchery such as raccons.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Local Reforestation</div>
+        <div class="text-gray-700">
+          You will have a local reforestation shift per week and also one
+          local beach cleaning per week. Each shift is around an hour and a
+          half long.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Camp Cleaning</div>
+        <div class="text-gray-700">
+          You will be assigned 2 house cleaning per week. One individual that
+          include showers and bathrooms and the other one is in groups and is
+          a general cleaning for comun areas such as kitchen and dining room.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Sloth Monitor</div>
+        <div class="text-gray-700">
+          You will be assinged one sloth monitor per week. The shift is around
+          1 hour and 30 minutes. You will have to make walks near the camp to
+          check the local sloth and make sure they are okay as sometimes they
+          can get injur.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Kitchen Help</div>
+        <div class="text-gray-700">
+          You will be assigned one kitchen shift per week. Usually you will be
+          asked to help with some simple kitchen tasks for meal prepare.
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="text-2xl font-bold text-esmeralda mb-4">Building Hatcheries</div>
+        <div class="text-gray-700">
+          We work on hatchery building when we are not on spawning turtle
+          season (from June to May).
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <b class="block text-3xl text-esmeralda mb-8">
+        This is how a camp work schedule may look
+      </b>
+
+      <img class="max-w-full h-auto mx-auto rounded-lg shadow-lg" alt="Schedule" src="/image-1@2x.png" />
+    </div>
+  </div>
+
+  <Footer />
+  <FooterMobile />
+  <LogoNav />
+  <Nav />
+</BaseLayout>

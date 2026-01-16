@@ -1,0 +1,60 @@
+---
+---
+
+<div class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-esmeralda">
+  <div class="flex justify-between items-center p-4">
+    <div class="flex items-center gap-3">
+      <img class="w-12 h-12" alt="ASVPA Logo" src="/logoAsvpa.svg" />
+      <a href="/">
+        <b class="text-white text-xl">ASVPA</b>
+      </a>
+    </div>
+    <button id="menuToggle" class="flex flex-col gap-1.5 w-8 h-8 justify-center items-center">
+      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar1"></div>
+      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar2"></div>
+      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar3"></div>
+    </button>
+  </div>
+  <nav id="mobileMenu" class="hidden bg-esmeralda">
+    <ul class="flex flex-col text-white font-bold">
+      <li class="border-t border-teal-100">
+        <a href="/" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Home</a>
+      </li>
+      <li class="border-t border-teal-100">
+        <a href="/about-us" class="block px-6 py-4 hover:bg-teal-100 transition-colors">About Us</a>
+      </li>
+      <li class="border-t border-teal-100">
+        <a href="/services" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Services</a>
+      </li>
+      <li class="border-t border-teal-100">
+        <a href="/projects" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Projects</a>
+      </li>
+      <li class="border-t border-teal-100">
+        <a href="/what-to-expect" class="block px-6 py-4 hover:bg-teal-100 transition-colors">What to expect</a>
+      </li>
+      <li class="border-t border-teal-100">
+        <a href="/faq" class="block px-6 py-4 hover:bg-teal-100 transition-colors">FAQ</a>
+      </li>
+      <li class="border-t border-teal-100 border-b">
+        <a href="/register" class="block px-6 py-4 bg-white text-esmeralda hover:bg-lightblue hover:text-white transition-colors">REGISTER</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const bar1 = document.getElementById('bar1');
+  const bar2 = document.getElementById('bar2');
+  const bar3 = document.getElementById('bar3');
+
+  menuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+    bar1?.classList.toggle('rotate-45');
+    bar1?.classList.toggle('translate-y-2');
+    bar2?.classList.toggle('opacity-0');
+    bar3?.classList.toggle('-rotate-45');
+    bar3?.classList.toggle('-translate-y-2');
+  });
+</script>

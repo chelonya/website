@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Banner from '../components/Banner.astro';
+import Card from '../components/Card.astro';
+import Nav from '../components/Nav.astro';
+import LogoNav from '../components/LogoNav.astro';
+import Footer from '../components/Footer.astro';
+import FooterMobile from '../components/FooterMobile.astro';
+import HamMenu from '../components/HamMenu.astro';
+---
+
+<BaseLayout title="ASVPA - Home">
+  <HamMenu />
+  <Banner
+    bannerImg="/bannerHome.webp"
+    bannerText="VOLUNTEERING A WORK OF HEART"
+  />
+  
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-16">
+      <p class="text-4xl font-bold text-esmeralda mb-4">
+        WELCOME TO ASVPA
+      </p>
+      <p class="text-xl text-gray-700">
+        Volunteer Association for Environmental Protection
+      </p>
+    </div>
+
+    <div class="mb-16">
+      <b class="block text-3xl text-center text-esmeralda mb-6">
+        VOLUNTEERING DRIVEN ECOLOGICAL CONSERVATION
+      </b>
+
+      <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+        At ASVPA's project sites, volunteers from around the world come
+        together to engage in ecological conservation alongside local
+        biologists. We primarily deal with the protection of sea turtles but
+        we also work to keep local beaches clean and provide aid for injured
+        animals such as sloths.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <b class="text-4xl text-esmeralda">PROJECTS</b>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <Card
+          title="Matapalo"
+          imageUrl="/mtpPerfil.png"
+          description="Pacific Coast, mostly olive ridley sea turtles."
+          linkTo="/projects"
+        />
+        <Card
+          title="Pacuare"
+          imageUrl="/pacuarePerfil.jpg"
+          description="Caribbean Coast, mostly leatherback turtles."
+          linkTo="/projects"
+        />
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+  <FooterMobile />
+  <LogoNav />
+  <Nav />
+</BaseLayout>
