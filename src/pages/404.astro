@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import LogoNav from '../components/LogoNav.astro';
+import Footer from '../components/Footer.astro';
+import FooterMobile from '../components/FooterMobile.astro';
+import HamMenu from '../components/HamMenu.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout 
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist. Return to ASVPA's homepage to explore our sea turtle conservation programs."
+  noindex={true}
+>
+  <HamMenu />
+  
+  <!-- 404 Content -->
+  <div class="min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="max-w-2xl w-full text-center">
+      <!-- 404 Illustration -->
+      <div class="mb-8">
+        <div class="text-9xl font-bold text-primary/20">404</div>
+      </div>
+      
+      <!-- ASVPA Logo -->
+      <div class="mb-8">
+        <img src={`${base}logoAsvpa.svg`} alt="ASVPA Logo" class="w-32 h-32 mx-auto" />
+      </div>
+      
+      <!-- Message -->
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        Oops! Page Not Found
+      </h1>
+      
+      <p class="text-xl text-gray-600 mb-8">
+        Looks like this sea turtle swam away! The page you're looking for doesn't exist or has been moved.
+      </p>
+      
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href={`${base}`}
+          class="px-8 py-4 bg-primary text-white rounded-full hover:bg-primary-dark transition-all font-semibold shadow-lg hover:shadow-xl hover:scale-105"
+        >
+          Return Home
+        </a>
+        <a 
+          href={`${base}register`}
+          class="px-8 py-4 bg-white text-primary border-2 border-primary rounded-full hover:bg-primary/10 transition-all font-semibold shadow-lg hover:shadow-xl"
+        >
+          Register as a Volunteer
+        </a>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <p class="text-sm text-gray-500 mb-4">Or explore these pages:</p>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <a href={`${base}about-us`} class="text-primary hover:underline">About Us</a>
+          <span class="text-gray-300">•</span>
+          <a href={`${base}projects`} class="text-primary hover:underline">Projects</a>
+          <span class="text-gray-300">•</span>
+          <a href={`${base}services`} class="text-primary hover:underline">Services</a>
+          <span class="text-gray-300">•</span>
+          <a href={`${base}what-to-expect`} class="text-primary hover:underline">What to Expect</a>
+          <span class="text-gray-300">•</span>
+          <a href={`${base}faq`} class="text-primary hover:underline">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+  <FooterMobile />
+  <LogoNav />
+  <Nav />
+</BaseLayout>

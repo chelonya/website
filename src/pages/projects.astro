@@ -6,129 +6,262 @@ import LogoNav from '../components/LogoNav.astro';
 import Footer from '../components/Footer.astro';
 import FooterMobile from '../components/FooterMobile.astro';
 import HamMenu from '../components/HamMenu.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="ASVPA - Projects">
+<BaseLayout 
+  title="Conservation Projects"
+  description="Explore ASVPA's two conservation sites: Matapalo on the Pacific Coast and Pacuare on the Caribbean Coast. Each offers unique sea turtle protection experiences."
+  image="/imgMatapalo.jpg"
+>
   <HamMenu />
-  <Banner bannerImg="/bannerProjects.webp" bannerText="PROJECTS" />
+  <Banner 
+    bannerImg="/bannerProjects.webp" 
+    bannerText="PROJECTS" 
+    subtitle="Explore our conservation sites on the Pacific and Caribbean coasts"
+    textAlign="center" 
+  />
 
-  <div class="bg-white py-16">
+  <!-- Matapalo Section -->
+  <div class="bg-white py-20">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-        <div>
-          <div class="text-3xl font-bold text-esmeralda mb-6">MATAPALO, PACIFIC COAST</div>
-          <p class="text-gray-700 text-lg">
-            Like all of our sites the main focus of the Matapalo site is the
-            conservation of sea turtles such as leatherbacks (Dermochelys
-            coriacea), green sea turtles (Chelonia mydas), olive ridley
-            (Lepidochelys kempii), and hawksbill (Eretmochelys
-            imbricata) turtles. The site also closely monitors the movement of
-            local sloth populations so volunteers can expect to participate in
-            4 or 5 "sloth walks" per week. Another important responsibility of
-            the project is the cleaning of the local beach and recycling of
-            bottles and cans.
-          </p>
+      <!-- Project Header -->
+      <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-primary">Matapalo</h2>
+            <p class="text-xl text-gray-600">Pacific Coast</p>
+          </div>
         </div>
-        <div>
-          <img class="w-full h-auto rounded-lg shadow-lg" alt="Matapalo" src="/imgMatapalo.jpg" />
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Like all of our sites the main focus of the Matapalo site is the
+              conservation of sea turtles such as leatherbacks (Dermochelys
+              coriacea), green sea turtles (Chelonia mydas), olive ridley
+              (Lepidochelys kempii), and hawksbill (Eretmochelys
+              imbricata) turtles.
+            </p>
+            <div class="bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
+              <p class="text-gray-700 leading-relaxed">
+                The site also closely monitors local sloth populations with volunteers participating in
+                4-5 "sloth walks" per week. Beach cleaning and recycling are also key responsibilities.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img class="w-full h-auto rounded-2xl shadow-2xl" alt="Matapalo" src={`${base}imgMatapalo.jpg`} />
+          </div>
         </div>
       </div>
 
+      <!-- Details Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div>
-          <div class="text-2xl font-bold text-esmeralda mb-4">FREE TIME ACTIVITIES</div>
-          <p class="text-gray-700">
-            Saturday afternoons and all day Sunday are free for volunteers to
-            explore the local region. There are surfing and beach horseback
-            riding lessons available within 100 meters of the site.
-            Additionally, if volunteers wish to do longer trips, the nearby
-            city of Quepos and the Manuel Antonio National Park are among the
-            most popular choices. There is also a beautiful swimming hole and
-            waterfall about a 30 minute hike from the site.
-          </p>
+        <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="text-2xl font-bold text-primary">Free Time Activities</h3>
+          </div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Surfing and beach horseback riding (100m from site)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Visit Quepos and Manuel Antonio National Park</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Swimming hole and waterfall (30-minute hike)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Free time: Saturday afternoons and all day Sunday</span>
+            </li>
+          </ul>
         </div>
 
-        <div>
-          <div class="text-2xl font-bold text-esmeralda mb-4">ACCOMMODATIONS</div>
-          <p class="text-gray-700">
-            The Matapalo site offers hostel-style accommodations. There are
-            mixed gender accommodations with shared bathrooms. Three meals per
-            day are provided at 8 am, 12 pm, and 6 pm. Coffee is served at
-            breakfast and juice is served at lunch and dinner. 100% vegetarian
-            food. There is a restaurant and bar located nearby the site if
-            volunteers would like to go there for a meal. The building beside
-            the restaurant is a convenience store which is ideal for
-            volunteers wanting a small snack or necessities such as shampoo
-            and deodorant.
-          </p>
+        <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <h3 class="text-2xl font-bold text-primary">Accommodations</h3>
+          </div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Hostel-style, mixed gender with shared bathrooms</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Three vegetarian meals daily (8am, 12pm, 6pm)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Nearby restaurant, bar, and convenience store</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <iframe 
-        class="w-full h-96 rounded-lg shadow-lg mb-16"
-        title="Our Camp Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.1798431752873!2d-83.96473927033749!3d9.320917258080836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa16876c3305951%3A0x2507e41dda751bed!2sASVPA%20Matapalo%20Sea%20Turtle%20Conservation!5e0!3m2!1ses-419!2scr!4v1709147843601!5m2!1ses-419!2scr"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <!-- Map -->
+      <div class="bg-gray-50 p-8 rounded-2xl">
+        <h3 class="text-2xl font-bold text-primary mb-6 text-center">Location</h3>
+        <iframe 
+          class="w-full h-96 rounded-xl shadow-lg"
+          title="Matapalo Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.1798431752873!2d-83.96473927033749!3d9.320917258080836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa16876c3305951%3A0x2507e41dda751bed!2sASVPA%20Matapalo%20Sea%20Turtle%20Conservation!5e0!3m2!1ses-419!2scr!4v1709147843601!5m2!1ses-419!2scr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </div>
 
-  <div class="bg-gray-100 py-16">
+  <!-- Pacuare Section -->
+  <div class="bg-gradient-to-b from-gray-50 to-white py-20">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-        <div>
-          <div class="text-3xl font-bold text-esmeralda mb-6">PACUARE, CARIBBEAN SIDE</div>
-          <p class="text-gray-700 text-lg">
-            Like all of our sites the main focus of the Pacuare site is the
-            conservation of sea turtles such as leatherbacks (Dermochelys
-            coriacea), green sea turtles (Chelonia mydas), and hawksbill
-            turtles (Eretmochelys imbricata). The Pacaure site also helps to
-            treat injured sea turtles more than the Matapalo site. Volunteers
-            will engage in community service by keeping the beach clean and
-            maintaining community facilities. Pacuare is slightly more
-            isolated than the Matapalo site and requires a boat to access it.
-          </p>
+      <!-- Project Header -->
+      <div class="mb-16">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-primary">Pacuare</h2>
+            <p class="text-xl text-gray-600">Caribbean Coast</p>
+          </div>
         </div>
-        <div>
-          <img class="w-full h-auto rounded-lg shadow-lg" alt="Pacuare" src="/imgPacuare.jpg" />
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="lg:order-2">
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Like all of our sites the main focus of the Pacuare site is the
+              conservation of sea turtles such as leatherbacks (Dermochelys
+              coriacea), green sea turtles (Chelonia mydas), and hawksbill
+              turtles (Eretmochelys imbricata).
+            </p>
+            <div class="bg-primary/5 p-6 rounded-xl border-l-4 border-primary">
+              <p class="text-gray-700 leading-relaxed">
+                The Pacuare site specializes in treating injured sea turtles. Volunteers engage in
+                community service, beach cleaning, and facility maintenance. This remote site requires
+                boat access, offering a truly unique wilderness experience.
+              </p>
+            </div>
+          </div>
+          <div class="lg:order-1">
+            <img class="w-full h-auto rounded-2xl shadow-2xl" alt="Pacuare" src={`${base}imgPacuare.jpg`} />
+          </div>
         </div>
       </div>
 
+      <!-- Details Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div>
-          <div class="text-2xl font-bold text-esmeralda mb-4">FREE TIME ACTIVITIES</div>
-          <p class="text-gray-700">
-            You will have lots of free time throughout the week so while
-            volunteering at Pacuare it is a good idea to bring books, music or
-            movies that have been pre-downloaded. There are bike tours in the
-            jungle available and volunteers will often play soccer and
-            volleyball in their free time. There is also a bar located near
-            the project site.
-          </p>
+        <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <h3 class="text-2xl font-bold text-primary">Free Time Activities</h3>
+          </div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Jungle bike tours available</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Soccer and volleyball games</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Bar located near the project site</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Bring books, music, or downloaded movies</span>
+            </li>
+          </ul>
         </div>
-        <div>
-          <div class="text-2xl font-bold text-esmeralda mb-4">ACCOMMODATIONS</div>
-          <p class="text-gray-700">
-            The Pacuare house was built completely by locally sourced wood.
-            The house has a rain water tank and solar panels in an effort to
-            be as sustainable as possible. All of the rooms are mixed gender
-            rooms. The rooms are also dorm style, with multiple bunk beds in
-            each room. The site is slightly more rustic with showers located
-            outside and limited access to electricity.
-          </p>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-primary hover:shadow-2xl transition-shadow duration-300">
+          <div class="flex items-center gap-3 mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <h3 class="text-2xl font-bold text-primary">Accommodations</h3>
+          </div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Eco-friendly: locally sourced wood, solar panels, rainwater</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Dorm-style, mixed gender with bunk beds</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Rustic experience: outdoor showers, limited electricity</span>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <iframe 
-        class="w-full h-96 rounded-lg shadow-lg"
-        title="Our Camp Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62824.42912939187!2d-83.27520109999999!3d10.2190271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa74040b6126fd3%3A0x5beca4394f5d93ea!2sTortugas%20de%20Pacuare!5e0!3m2!1ses-419!2scr!4v1709153353257!5m2!1ses-419!2scr"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <!-- Map -->
+      <div class="bg-gray-50 p-8 rounded-2xl">
+        <h3 class="text-2xl font-bold text-primary mb-6 text-center">Location</h3>
+        <iframe 
+          class="w-full h-96 rounded-xl shadow-lg"
+          title="Pacuare Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62824.42912939187!2d-83.27520109999999!3d10.2190271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa74040b6126fd3%3A0x5beca4394f5d93ea!2sTortugas%20de%20Pacuare!5e0!3m2!1ses-419!2scr!4v1709153353257!5m2!1ses-419!2scr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </div>
 

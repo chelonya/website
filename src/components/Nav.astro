@@ -1,37 +1,71 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
-<div class="hidden lg:block fixed top-0 right-0 z-50 p-8">
-  <div class="flex gap-8 items-center text-white font-bold">
-    <div class="hover:text-lightblue transition-colors">
-      <a href="/">HOME</a>
-    </div>
-    <div class="relative group">
-      <div class="cursor-pointer hover:text-lightblue transition-colors">
-        ABOUT US
+<nav class="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href={`${base}`} class="flex items-center gap-3 group">
+        <img class="w-12 h-12 transition-transform group-hover:scale-105" alt="ASVPA Logo" src={`${base}logoAsvpa.svg`} />
+        <div>
+          <div class="text-xl font-bold text-slate-800">ASVPA</div>
+          <div class="text-xs text-gray-600">Sea Turtle Conservation</div>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="flex items-center gap-8">
+        <a href={`${base}`} class="text-sm font-semibold text-slate-700 hover:text-primary transition-colors">
+          Home
+        </a>
+        
+        <!-- About Dropdown -->
+        <div class="relative group">
+          <button class="text-sm font-semibold text-slate-700 hover:text-primary transition-colors flex items-center gap-1">
+            About
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
+            <ul class="py-2">
+              <li>
+                <a href={`${base}about-us`} class="block px-4 py-3 text-sm text-slate-700 hover:bg-gray-50 hover:text-primary transition-colors">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href={`${base}what-to-expect`} class="block px-4 py-3 text-sm text-slate-700 hover:bg-gray-50 hover:text-primary transition-colors">
+                  What to Expect
+                </a>
+              </li>
+              <li>
+                <a href={`${base}faq`} class="block px-4 py-3 text-sm text-slate-700 hover:bg-gray-50 hover:text-primary transition-colors">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href={`${base}projects`} class="text-sm font-semibold text-slate-700 hover:text-primary transition-colors">
+          Projects
+        </a>
+        
+        <a href={`${base}services`} class="text-sm font-semibold text-slate-700 hover:text-primary transition-colors">
+          Services
+        </a>
+
+        <!-- CTA Button -->
+        <a href={`${base}register`} class="px-6 py-2.5 bg-primary text-white rounded-full hover:bg-primary-dark transition-all font-semibold shadow-md hover:shadow-lg">
+          Register Now
+        </a>
+
+        <!-- Language Switcher -->
+        <LanguageSwitcher />
       </div>
-      <div class="absolute top-full left-0 mt-2 bg-esmeralda rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-        <ul class="py-2 min-w-[200px]">
-          <li class="px-4 py-2 hover:bg-teal-100 transition-colors">
-            <a href="/what-to-expect">WHAT TO EXPECT</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-teal-100 transition-colors">
-            <a href="/about-us">ABOUT US</a>
-          </li>
-          <li class="px-4 py-2 hover:bg-teal-100 transition-colors">
-            <a href="/faq">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="hover:text-lightblue transition-colors">
-      <a href="/services">SERVICES</a>
-    </div>
-    <div class="hover:text-lightblue transition-colors">
-      <a href="/projects">PROJECTS</a>
-    </div>
-    <div class="bg-white text-esmeralda px-6 py-2 rounded hover:bg-lightblue hover:text-white transition-colors">
-      <a href="/register">REGISTER</a>
     </div>
   </div>
-</div>
+</nav>

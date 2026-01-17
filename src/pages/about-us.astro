@@ -8,88 +8,147 @@ import FooterMobile from '../components/FooterMobile.astro';
 import HamMenu from '../components/HamMenu.astro';
 ---
 
-<BaseLayout title="ASVPA - About Us">
+<BaseLayout 
+  title="About Us"
+  description="Learn about ASVPA's mission to protect sea turtles and preserve Costa Rica's natural resources through volunteer-driven conservation, research, and education."
+  image="/BannerAboutUs2.webp"
+>
   <HamMenu />
-  <Banner bannerImg="/BannerAboutUs2.webp" bannerText="ABOUT US" />
+  <Banner 
+    bannerImg="/BannerAboutUs2.webp" 
+    bannerText="ABOUT US" 
+    subtitle="Dedicated to sea turtle conservation and environmental protection in Costa Rica"
+    textAlign="center" 
+  />
 
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-      <div class="bg-esmeralda text-white p-8 rounded-lg">
-        <div class="text-3xl font-bold mb-6">OUR MISSION</div>
-        <div class="text-lg">
+  <!-- Mission & Vision Section -->
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+      <div class="bg-white rounded-2xl shadow-xl p-10 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold text-primary">Our Mission</h3>
+        </div>
+        <p class="text-lg text-gray-700 leading-relaxed">
           ASVPA strives to aid in species and environmental conservation,
           engaging in research and education in Costa Rica, while working to
           preserve natural resources.
-        </div>
+        </p>
       </div>
-      <div class="bg-teal-100 text-white p-8 rounded-lg">
-        <div class="text-3xl font-bold mb-6">OUR VISION</div>
-        <div class="text-lg">
+
+      <div class="bg-white rounded-2xl shadow-xl p-10 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+            <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold text-primary">Our Vision</h3>
+        </div>
+        <p class="text-lg text-gray-700 leading-relaxed">
           With the help of volunteers and community engagement, we can
           continue to protect the vulnerable sea turtle populations and
           other species living in the area. We have a competitive
           educational model of conservation, pursuing research and
           development projects with proactive, prospective, flexible and
           innovative character.
-        </div>
+        </p>
       </div>
     </div>
 
-    <div class="bg-gray-100 py-16 px-4 rounded-lg mb-16">
+    <!-- Impact Statistics -->
+    <div class="bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-2xl py-16 px-8 mb-20">
       <div class="text-center mb-12">
-        <p class="text-2xl text-gray-700 mb-4">Some Cool Facts</p>
-        <b class="text-3xl text-esmeralda block">
+        <h3 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Impact</h3>
+        <p class="text-xl text-white/90">
           These numbers were made with your support
-        </b>
+        </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div class="text-center">
-          <div class="text-6xl font-bold text-esmeralda mb-4">93%</div>
-          <div class="text-xl text-gray-700">
-            <p>Baby turtles</p>
-            <p>made it to the sea</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+          <div class="text-7xl font-bold text-white mb-4">93%</div>
+          <div class="text-xl text-white/90 font-medium">
+            Baby turtles made it to the sea
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="text-6xl font-bold text-esmeralda mb-4">310</div>
-          <div class="text-xl text-gray-700">
-            <p>Turtles were</p>
-            <p>seen on the beach</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+          <div class="text-7xl font-bold text-white mb-4">310</div>
+          <div class="text-xl text-white/90 font-medium">
+            Turtles seen on the beach
           </div>
         </div>
 
-        <div class="text-center">
-          <div class="text-6xl font-bold text-esmeralda mb-4">242</div>
-          <div class="text-xl text-gray-700">
-            <p>Nests were</p>
-            <p>found and protected</p>
+        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+          <div class="text-7xl font-bold text-white mb-4">242</div>
+          <div class="text-xl text-white/90 font-medium">
+            Nests found and protected
           </div>
         </div>
       </div>
     </div>
 
-    <div class="max-w-4xl mx-auto text-center">
-      <div class="text-4xl font-bold text-esmeralda mb-6">
-        OUR NATURE NEEDS VOLUNTEERS
+    <!-- Volunteer Section -->
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h3 class="text-4xl md:text-5xl font-bold text-primary mb-6">
+          Our Nature Needs Volunteers
+        </h3>
+        <div class="w-24 h-1 bg-primary mx-auto"></div>
       </div>
 
-      <div class="text-2xl font-bold text-gray-800 mb-8">
-        But what is being a volunteer?
-      </div>
+      <div class="bg-white rounded-2xl shadow-xl p-10 md:p-12">
+        <h4 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+          What Does It Mean to Be a Volunteer?
+        </h4>
+        
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            Voluntary refers to the subject who decides to provide a service
+            or perform a job of his own free will, without being obliged to do
+            so for legal, contractual, or economic reasons. In other words, a
+            volunteer is a person who has the will to invest time and money to
+            help a cause.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p class="text-gray-700 leading-relaxed">
+                  A volunteer looks for options and solutions in the face of adversity
+                </p>
+              </div>
+            </div>
 
-      <div class="text-lg text-gray-700 text-left">
-        <p>
-          Voluntary refers to the subject who decides to provide a service
-          or perform a job of his own free will, without being obliged to do
-          so for legal, contractual, or economic reasons. In other words, a
-          volunteer is a person who has the will to invest time and money to
-          help a cause. Therefore. A volunteer does not go to a conservation project to complain.
-          On the contrary, the volunteer is the person who looks for options
-          and solutions in the face of adversity. A volunteer does not
-          criticize the project but rather supports it to improve.
-        </p>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <p class="text-gray-700 leading-relaxed">
+                  A volunteer supports the project to improve and grow
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

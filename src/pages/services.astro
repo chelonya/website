@@ -6,126 +6,240 @@ import LogoNav from '../components/LogoNav.astro';
 import Footer from '../components/Footer.astro';
 import FooterMobile from '../components/FooterMobile.astro';
 import HamMenu from '../components/HamMenu.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="ASVPA - Services">
+<BaseLayout 
+  title="Volunteer Duties"
+  description="Discover the meaningful conservation work you'll do as an ASVPA volunteer: night patrols, hatchery watch, reforestation, sloth monitoring, and more."
+  image="/bannerServices.webp"
+>
   <HamMenu />
-  <Banner bannerImg="/bannerServices.webp" bannerText="SERVICES" />
+  <Banner 
+    bannerImg="/bannerServices.webp" 
+    bannerText="SERVICES" 
+    subtitle="Discover the meaningful work you'll do as a volunteer"
+    textAlign="center" 
+  />
 
-  <div class="max-w-7xl mx-auto px-4 py-16">
-    <b class="block text-4xl text-center text-esmeralda mb-12">VOLUNTEERS MAIN DUTIES</b>
+  <!-- Main Duties Overview -->
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-bold text-primary mb-6">Volunteer Duties</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Make a real difference through hands-on conservation work
+      </p>
+      <div class="w-24 h-1 bg-primary mx-auto mt-8"></div>
+    </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Night Patrols</b>
-        <img class="w-24 h-24 object-contain" alt="Night Patrols" src="/flashlight-icon.png" />
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Night Patrols" src={`${base}flashlight-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Night Patrols</h3>
       </div>
 
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Hatchery Watch</b>
-        <img class="w-24 h-24 object-contain" alt="Hatchery Watch" src="/eye-icon.png" />
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Hatchery Watch" src={`${base}eye-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Hatchery Watch</h3>
       </div>
 
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Local Reforestation</b>
-        <img class="w-24 h-24 object-contain" alt="Local Reforestation" src="/tree-icon.png" />
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Local Reforestation" src={`${base}tree-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Reforestation</h3>
       </div>
 
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Camp Cleaning</b>
-        <img class="w-24 h-24 object-contain" alt="Camp Cleaning" src="/botter-icon.png" />
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Camp Cleaning" src={`${base}botter-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Camp Cleaning</h3>
       </div>
 
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Sloth Monitor</b>
-        <img class="w-24 h-24 object-contain" alt="Sloth Monitor" src="/person-icon.png" />
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Sloth Monitor" src={`${base}person-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Sloth Monitor</h3>
       </div>
 
-      <div class="flex flex-col items-center text-center">
-        <b class="text-xl text-esmeralda mb-4">Kitchen Help</b>
-        <img class="w-24 h-24 object-contain" alt="Kitchen Help" src="/fork-icon.png" />
+      <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <img class="w-12 h-12 object-contain" alt="Kitchen Help" src={`${base}fork-icon.png`} />
+        </div>
+        <h3 class="text-lg font-bold text-primary">Kitchen Help</h3>
       </div>
     </div>
 
-    <div class="space-y-8 max-w-4xl mx-auto">
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Night Patrols</div>
-        <div class="text-gray-700 space-y-4">
-          <p>
-            You will be assigned minimum 3 night patrols each week. This shift
-            is around 3 hours depends on how many turtles are found.
-          </p>
-          <p>
-            Consist in walks through the beach at night so we see the turtles
-            while they are putting the eggs, then we take some information
-            from the turtle and take the eggs so we can relocate them at the
-            hatchery. The walks are from 1 km to 5 km, so be physically and
-            mentally prepared.
-          </p>
+    <!-- Detailed Duty Cards -->
+    <div class="space-y-8 max-w-5xl mx-auto mb-20">
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Night Patrols</h3>
+            <div class="text-gray-700 space-y-3 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">Minimum 3 patrols per week</span> • Duration: ~3 hours (varies by turtle activity)
+              </p>
+              <p>
+                Walk along the beach at night to observe nesting turtles. Collect data and carefully relocate eggs to the hatchery for protection. Patrols range from 1-5 km, so physical and mental preparation is essential.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Hatchery Watch</div>
-        <div class="text-gray-700">
-          You will be assigned minimum 2 hatchery watchs per week. The shift
-          is a total of 6 hours, you are expected to check the nest to see if
-          baby turtles were born, also be aware that the nests are not attack
-          by any animal that may enter the hatchery such as raccons.
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Hatchery Watch</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">Minimum 2 watches per week</span> • Duration: 6 hours per shift
+              </p>
+              <p class="mt-3">
+                Monitor nests for hatching baby turtles and protect them from predators like raccoons. This crucial duty ensures the safety of vulnerable hatchlings.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Local Reforestation</div>
-        <div class="text-gray-700">
-          You will have a local reforestation shift per week and also one
-          local beach cleaning per week. Each shift is around an hour and a
-          half long.
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Local Reforestation & Beach Cleaning</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">1 reforestation + 1 beach cleaning per week</span> • Duration: ~1.5 hours each
+              </p>
+              <p class="mt-3">
+                Help restore local ecosystems through tree planting and maintain pristine beaches by removing debris and recyclables.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Camp Cleaning</div>
-        <div class="text-gray-700">
-          You will be assigned 2 house cleaning per week. One individual that
-          include showers and bathrooms and the other one is in groups and is
-          a general cleaning for comun areas such as kitchen and dining room.
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Camp Cleaning</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">2 cleaning shifts per week</span>
+              </p>
+              <p class="mt-3">
+                Individual duty (showers and bathrooms) and group duty (kitchen and common areas). Maintaining a clean, comfortable living space for everyone.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Sloth Monitor</div>
-        <div class="text-gray-700">
-          You will be assinged one sloth monitor per week. The shift is around
-          1 hour and 30 minutes. You will have to make walks near the camp to
-          check the local sloth and make sure they are okay as sometimes they
-          can get injur.
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Sloth Monitoring</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">1 monitoring walk per week</span> • Duration: ~1.5 hours
+              </p>
+              <p class="mt-3">
+                Walk near camp to observe and check on local sloth populations, ensuring their wellbeing and documenting any injuries or concerns.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Kitchen Help</div>
-        <div class="text-gray-700">
-          You will be assigned one kitchen shift per week. Usually you will be
-          asked to help with some simple kitchen tasks for meal prepare.
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Kitchen Help</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">1 kitchen shift per week</span>
+              </p>
+              <p class="mt-3">
+                Assist with simple meal preparation tasks, helping to provide delicious vegetarian meals for the volunteer community.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-2xl font-bold text-esmeralda mb-4">Building Hatcheries</div>
-        <div class="text-gray-700">
-          We work on hatchery building when we are not on spawning turtle
-          season (from June to May).
+      <div class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-primary hover:shadow-2xl transition-shadow duration-300">
+        <div class="flex items-start gap-4 mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-bold text-primary mb-3">Building Hatcheries</h3>
+            <div class="text-gray-700 leading-relaxed">
+              <p>
+                <span class="font-semibold text-primary">Off-season project</span> • June to May (non-spawning season)
+              </p>
+              <p class="mt-3">
+                Participate in constructing and maintaining hatchery infrastructure to prepare for the next turtle nesting season.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-16 text-center">
-      <b class="block text-3xl text-esmeralda mb-8">
-        This is how a camp work schedule may look
-      </b>
+    <!-- Schedule Section -->
+    <div class="bg-gradient-to-br from-primary to-primary-dark rounded-3xl shadow-2xl p-10 md:p-12">
+      <div class="text-center mb-8">
+        <h3 class="text-4xl md:text-5xl font-bold text-white mb-4">Sample Work Schedule</h3>
+        <p class="text-xl text-white/90">
+          Here's an example of how your week might look
+        </p>
+      </div>
 
-      <img class="max-w-full h-auto mx-auto rounded-lg shadow-lg" alt="Schedule" src="/image-1@2x.png" />
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+        <img class="max-w-full h-auto mx-auto rounded-lg shadow-2xl" alt="Schedule" src={`${base}image-1@2x.png`} />
+      </div>
     </div>
   </div>
 

@@ -1,42 +1,51 @@
 ---
+const base = import.meta.env.BASE_URL;
 ---
 
-<div class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-esmeralda">
-  <div class="flex justify-between items-center p-4">
-    <div class="flex items-center gap-3">
-      <img class="w-12 h-12" alt="ASVPA Logo" src="/logoAsvpa.svg" />
-      <a href="/">
-        <b class="text-white text-xl">ASVPA</b>
-      </a>
-    </div>
-    <button id="menuToggle" class="flex flex-col gap-1.5 w-8 h-8 justify-center items-center">
-      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar1"></div>
-      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar2"></div>
-      <div class="w-full h-0.5 bg-white transition-all duration-300" id="bar3"></div>
+<div class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+  <div class="flex justify-between items-center px-4 h-16">
+    <!-- Logo -->
+    <a href={`${base}`} class="flex items-center gap-2.5">
+      <img class="w-10 h-10" alt="ASVPA Logo" src={`${base}logoAsvpa.svg`} />
+      <div>
+        <div class="text-base font-bold text-slate-800">ASVPA</div>
+        <div class="text-[10px] text-gray-600">Sea Turtle Conservation</div>
+      </div>
+    </a>
+
+    <!-- Hamburger Button -->
+    <button id="menuToggle" class="flex flex-col gap-1.5 w-8 h-8 justify-center items-center p-1 hover:bg-gray-100 rounded transition-colors">
+      <div class="w-full h-0.5 bg-slate-700 transition-all duration-300" id="bar1"></div>
+      <div class="w-full h-0.5 bg-slate-700 transition-all duration-300" id="bar2"></div>
+      <div class="w-full h-0.5 bg-slate-700 transition-all duration-300" id="bar3"></div>
     </button>
   </div>
-  <nav id="mobileMenu" class="hidden bg-esmeralda">
-    <ul class="flex flex-col text-white font-bold">
-      <li class="border-t border-teal-100">
-        <a href="/" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Home</a>
-      </li>
-      <li class="border-t border-teal-100">
-        <a href="/about-us" class="block px-6 py-4 hover:bg-teal-100 transition-colors">About Us</a>
-      </li>
-      <li class="border-t border-teal-100">
-        <a href="/services" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Services</a>
-      </li>
-      <li class="border-t border-teal-100">
-        <a href="/projects" class="block px-6 py-4 hover:bg-teal-100 transition-colors">Projects</a>
-      </li>
-      <li class="border-t border-teal-100">
-        <a href="/what-to-expect" class="block px-6 py-4 hover:bg-teal-100 transition-colors">What to expect</a>
-      </li>
-      <li class="border-t border-teal-100">
-        <a href="/faq" class="block px-6 py-4 hover:bg-teal-100 transition-colors">FAQ</a>
-      </li>
-      <li class="border-t border-teal-100 border-b">
-        <a href="/register" class="block px-6 py-4 bg-white text-esmeralda hover:bg-lightblue hover:text-white transition-colors">REGISTER</a>
+
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden bg-white border-t border-gray-200">
+    <ul class="py-2">
+      <li>
+        <a href={`${base}`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        Home
+      </a>
+      <a href={`${base}about-us`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        About Us
+      </a>
+      <a href={`${base}services`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        Services
+      </a>
+      <a href={`${base}projects`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        Projects
+      </a>
+      <a href={`${base}what-to-expect`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        What to Expect
+      </a>
+      <a href={`${base}faq`} class="block py-4 px-6 text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors font-semibold">
+        FAQ
+      </a>
+      <a href={`${base}register`} class="block py-4 px-6 bg-primary text-white hover:bg-primary-dark transition-colors font-bold">
+        Register Now
+      </a>
       </li>
     </ul>
   </nav>

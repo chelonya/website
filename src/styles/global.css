@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 @theme {
+  /* Main Site Colors */
+  --color-primary: #0e7490;        /* cyan-700 - main brand color */
+  --color-primary-dark: #0c5f7a;   /* darker shade for hover states */
+  --color-secondary: #ffffff;       /* white - secondary color */
+  --color-tertiary: #000000;        /* black - tertiary color */
+  
+  /* Legacy colors (kept for compatibility) */
   --color-esmeralda: #3b7a7d;
   --color-teal-100: #157075;
   --color-darkslategray: #0c6267;

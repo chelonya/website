@@ -1,22 +1,28 @@
 ---
 import '../styles/global.css';
+import SEO from '../components/SEO.astro';
+import StructuredData from '../components/StructuredData.astro';
 
 interface Props {
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
 }
 
-const { title = "ASVPA - Volunteer Association for Environmental Protection", description = "Volunteering driven ecological conservation" } = Astro.props;
+const { title, description, image, noindex } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/logoAsvpa.svg" />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <SEO 
+      title={title}
+      description={description}
+      image={image}
+      noindex={noindex}
+    />
+    <StructuredData />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">

@@ -6,16 +6,29 @@ import LogoNav from '../components/LogoNav.astro';
 import Footer from '../components/Footer.astro';
 import FooterMobile from '../components/FooterMobile.astro';
 import HamMenu from '../components/HamMenu.astro';
+import FAQSchema from '../components/FAQSchema.astro';
+
+const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="ASVPA - FAQ">
+<BaseLayout 
+  title="Frequently Asked Questions"
+  description="Get answers to common questions about volunteering with ASVPA, including program details, costs, accommodations, and what to expect during your stay."
+  image="/bannerFAQ.webp"
+>
+  <FAQSchema />
   <HamMenu />
-  <Banner bannerImg="/bannerFaq.webp" bannerText="FREQUENTLY ASKED QUESTIONS" />
+  <Banner 
+    bannerImg="/bannerFaq.webp" 
+    bannerText="FREQUENTLY ASKED QUESTIONS" 
+    subtitle="Find answers to common questions about volunteering with ASVPA"
+    textAlign="center" 
+  />
 
   <div class="max-w-5xl mx-auto px-4 py-16">
     <div class="space-y-8">
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           1. DO I NEED TO SPEAK SPANISH TO VOLUNTEER?
         </div>
         <div class="text-gray-700">
@@ -28,7 +41,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           2. HOW OLD DO I HAVE TO BE?
         </div>
         <div class="text-gray-700">
@@ -39,7 +52,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           3. HOW LONG IS THE MINIMUM/MAXIMUM STAY?
         </div>
         <div class="text-gray-700">
@@ -50,7 +63,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           4. AM I GUARANTEED TO SEE A TURTLE?
         </div>
         <div class="text-gray-700">
@@ -62,7 +75,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           5. WHAT KIND OF WORK WILL I BE DOING?
         </div>
         <div class="text-gray-700">
@@ -77,7 +90,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           6. DO I NEED TO HAVE ANY PREVIOUS EXPERIENCE?
         </div>
         <div class="text-gray-700">
@@ -90,7 +103,7 @@ import HamMenu from '../components/HamMenu.astro';
       </div>
 
       <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="text-xl font-bold text-esmeralda mb-4">
+        <div class="text-xl font-bold text-primary mb-4">
           7. IS THERE WIFI?
         </div>
         <div class="text-gray-700">
@@ -104,7 +117,7 @@ import HamMenu from '../components/HamMenu.astro';
     </div>
 
     <div class="mt-16 bg-gray-100 p-8 rounded-lg">
-      <div class="text-2xl font-bold text-esmeralda mb-6">
+      <div class="text-2xl font-bold text-primary mb-6">
         8. WILL I HAVE A MONEY REFUND IF I LEAVE BEFORE FINISHING MY VOLUNTEERING?
       </div>
       <div class="space-y-4 text-gray-700">
@@ -143,7 +156,7 @@ import HamMenu from '../components/HamMenu.astro';
         <img
           class="max-w-full h-auto rounded-lg shadow-md"
           alt="Refund calculation"
-          src="/refundimg@2x.png"
+          src={`${base}refundimg@2x.png`}
         />
       </div>
     </div>

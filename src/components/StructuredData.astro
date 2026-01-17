@@ -1,0 +1,103 @@
+---
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "ASVPA",
+  "alternateName": "Asociación Salvemos las Tortugas de Parismina",
+  "url": "https://www.asvpa.org",
+  "logo": "https://www.asvpa.org/logo.png",
+  "description": "ASVPA is dedicated to sea turtle conservation and environmental protection in Costa Rica through volunteer programs, research, and education.",
+  "foundingDate": "2000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CR",
+    "addressRegion": "Costa Rica"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Volunteer Coordinator",
+    "email": "info@asvpa.org"
+  },
+  "sameAs": [
+    "https://www.instagram.com/tortugasvpa",
+    "https://wa.me/50686161973"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Costa Rica"
+  },
+  "knowsAbout": [
+    "Sea Turtle Conservation",
+    "Marine Biology",
+    "Environmental Protection",
+    "Wildlife Conservation",
+    "Volunteer Programs"
+  ]
+};
+
+const matapaloLocation = {
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "ASVPA Matapalo Sea Turtle Conservation Site",
+  "description": "Pacific Coast conservation site focusing on olive ridley, leatherback, green, and hawksbill sea turtles.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Matapalo",
+    "addressRegion": "Puntarenas",
+    "addressCountry": "CR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "9.320917",
+    "longitude": "-83.964739"
+  }
+};
+
+const pacuareLocation = {
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "ASVPA Pacuare Sea Turtle Conservation Site",
+  "description": "Caribbean Coast conservation site specializing in leatherback and green sea turtle protection.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pacuare",
+    "addressRegion": "Limón",
+    "addressCountry": "CR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "10.219027",
+    "longitude": "-83.275201"
+  }
+};
+
+const volunteerProgram = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalProgram",
+  "name": "Sea Turtle Conservation Volunteer Program",
+  "description": "Hands-on volunteer program for sea turtle conservation in Costa Rica. Participate in night patrols, hatchery management, and environmental education.",
+  "provider": {
+    "@type": "NGO",
+    "name": "ASVPA"
+  },
+  "occupationalCategory": "Conservation Volunteer",
+  "timeToComplete": "P14D",
+  "programPrerequisites": "Minimum 14 days commitment, physical fitness for beach patrols",
+  "offers": {
+    "@type": "Offer",
+    "price": "35",
+    "priceCurrency": "USD",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "35",
+      "priceCurrency": "USD",
+      "unitText": "per day"
+    }
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(matapaloLocation)} />
+<script type="application/ld+json" set:html={JSON.stringify(pacuareLocation)} />
+<script type="application/ld+json" set:html={JSON.stringify(volunteerProgram)} />
