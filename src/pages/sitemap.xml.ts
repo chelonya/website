@@ -10,7 +10,7 @@ const pages = [
   'register',
 ];
 
-const siteUrl = 'https://asvpa.org';
+const siteUrl = 'https://www.asvpa.org';
 
 export const GET: APIRoute = () => {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
