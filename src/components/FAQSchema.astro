@@ -1,0 +1,74 @@
+---
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the minimum volunteer stay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum volunteer stay is 14 days (2 weeks). This allows you to fully immerse yourself in the conservation work and make a meaningful impact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost per day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost is $35 USD per day, which includes accommodation at the conservation site, three vegetarian meals per day, training from local biologists, and all conservation activities and materials. Transportation to/from the site and personal expenses are not included."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What type of accommodation is provided?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accommodation varies by site. Matapalo offers hostel-style, mixed-gender accommodations with shared bathrooms. Pacuare provides eco-friendly dorm-style rooms with bunk beds, outdoor showers, and limited electricity for a more rustic experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to speak Spanish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spanish is not required to volunteer with ASVPA. Staff members at each site speak English. However, we encourage learning some basic Spanish before you arrive to enhance your experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What volunteer duties will I perform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Volunteers participate in night patrols (minimum 3 per week), hatchery watch (minimum 2 per week), local reforestation, beach cleaning, sloth monitoring, camp cleaning, and kitchen help. Each duty is designed to contribute to sea turtle conservation and environmental protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I bring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Essential items include sunscreen, sunglasses, insect repellent with DEET, open and closed-toed shoes, rain clothes, swimsuit, red light for turtle patrols, towels, working clothes, dark clothes for patrols, and activities for free time such as books, games, or music."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the weather like in Costa Rica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Costa Rica has a hot and humid climate year-round. The dry season runs from mid-November to April, while the rainy season typically brings afternoon showers with plenty of sunshine. Bring loose clothing, wear a hat, and stay hydrated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the food vegetarian?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the diet at our turtle camps is 100% vegetarian. We buy locally produced fruits, vegetables, eggs, milk, and cheese to support the local economy and reduce environmental impact. Three meals are provided daily."
+      }
+    }
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

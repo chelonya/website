@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "aboutUs": "About Us",
+    "whatToExpect": "What to Expect",
+    "services": "Services",
+    "projects": "Projects",
+    "faq": "FAQ",
+    "register": "Register"
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "ASVPA is dedicated to the conservation of sea turtles and their habitats in Costa Rica. Join us in making a difference through volunteer work and environmental education.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get in Touch",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "followUs": "Follow us on Instagram",
+    "allRightsReserved": "All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  },
+  "home": {
+    "bannerTitle": "VOLUNTEERING A WORK OF HEART",
+    "bannerSubtitle": "Join us in protecting sea turtles and preserving Costa Rica's coastlines",
+    "ctaButton": "Start Your Journey"
+  },
+  "register": {
+     "title": "Register as a Volunteer",
+    "calculateCost": "Calculate Your Cost"
+  },
+  "404": {
+    "title": "Oops! Page Not Found",
+    "message": "Looks like this sea turtle swam away! The page you're looking for doesn't exist or has been moved.",
+    "returnHome": "Return Home",
+    "registerButton": "Register as a Volunteer",
+    "explorePages": "Or explore these pages:"
+  }
+}

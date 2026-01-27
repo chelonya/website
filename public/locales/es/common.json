@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "aboutUs": "Nosotros",
+    "whatToExpect": "Qué Esperar",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "faq": "Preguntas Frecuentes",
+    "register": "Registrarse"
+  },
+  "footer": {
+    "about": "Acerca de",
+    "aboutText": "ASVPA se dedica a la conservación de las tortugas marinas y sus hábitats en Costa Rica. Únete a nosotros para marcar la diferencia a través del trabajo voluntario y la educación ambiental.",
+    "quickLinks": "Enlaces Rápidos",
+    "getInTouch": "Contáctanos",
+    "email": "Correo",
+    "whatsapp": "WhatsApp",
+    "followUs": "Síguenos en Instagram",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad"
+  },
+  "home": {
+    "bannerTitle": "VOLUNTARIADO UN TRABAJO DEL CORAZÓN",
+    "bannerSubtitle": "Únete a nosotros para proteger las tortugas marinas y preservar las costas de Costa Rica",
+    "ctaButton": "Comienza Tu Viaje"
+  },
+  "register": {
+    "title": "Regístrate como Voluntario",
+    "calculateCost": "Calcular Tu Costo"
+  },
+  "404": {
+    "title": "¡Ups! Página No Encontrada",
+    "message": "¡Parece que esta tortuga marina se fue nadando! La página que buscas no existe o ha sido movida.",
+    "returnHome": "Volver al Inicio",
+    "registerButton": "Regístrate como Voluntario",
+    "explorePages": "O explora estas páginas:"
+  }
+}

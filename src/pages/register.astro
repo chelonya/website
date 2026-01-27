@@ -1,0 +1,74 @@
+---
+import { t } from "i18next";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Banner from '../components/Banner.astro';
+import Nav from '../components/Nav.astro';
+import LogoNav from '../components/LogoNav.astro';
+import Footer from '../components/Footer.astro';
+import FooterMobile from '../components/FooterMobile.astro';
+import HamMenu from '../components/HamMenu.astro';
+import CostCalculator from '../components/CostCalculator.vue';
+
+---
+
+<BaseLayout 
+  title="Register Now"
+  description="Start your sea turtle conservation journey today. Register for ASVPA's volunteer program in Costa Rica. Minimum 14 days, $35 per day includes accommodation and meals."
+  image="/bannerRegister.webp"
+>
+  <HamMenu />
+  <Banner 
+    bannerImg="/bannerRegister.webp" 
+    bannerText="JOIN OUR MISSION" 
+    subtitle="Start your sea turtle conservation adventure in Costa Rica"
+    textAlign="center" 
+  />
+
+  <!-- Registration Form Section - Main Focus -->
+  <div class="max-w-7xl mx-auto px-4 py-20">
+    <div class="text-center mb-12">
+      <h2 class="text-5xl md:text-6xl font-bold text-primary mb-6">Complete Your Registration</h2>
+      <p class="text-xl text-gray-600 mb-4">
+        Fill out the form below to start your volunteer journey
+      </p>
+      <button 
+        id="openCalculator"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-all font-semibold"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+        </svg>
+        Calculate Your Cost
+      </button>
+      <p class="text-sm text-gray-500 mt-2">Minimum stay: 14 days (2 weeks)</p>
+      <div class="w-24 h-1 bg-primary mx-auto mt-8"></div>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-2xl p-4 md:p-8">
+      <iframe 
+        class="w-full h-[1200px] rounded-lg"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScev8I7FXIFIe99Q-1VDZoWpnX2Z83I975rKnVCOjgF2i-p3Q/viewform?embedded=true"
+        title="Participation Form"
+      ></iframe>
+    </div>
+  </div>
+
+  <CostCalculator client:only="vue" />
+
+  <Footer />
+  <FooterMobile />
+  <LogoNav />
+  <Nav />
+
+  <script>
+    // Simple modal toggle for Vue component
+    const openBtn = document.getElementById('openCalculator');
+    
+    if (openBtn) {
+      openBtn.addEventListener('click', () => {
+        // Dispatch custom event to open Vue modal
+        window.dispatchEvent(new CustomEvent('open-calculator'));
+      });
+    }
+  </script>
+</BaseLayout>

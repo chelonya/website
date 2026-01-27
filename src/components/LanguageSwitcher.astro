@@ -1,0 +1,45 @@
+---
+const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
+
+// Detect current locale from URL path - check if path includes /es/
+const isSpanish = currentPath.includes('/es/') || currentPath.endsWith('/es');
+const currentLocale = isSpanish ? 'es' : 'en';
+
+// Build the alternate path
+let alternatePath: string;
+if (isSpanish) {
+  // Remove /es/ from path to get English version
+  alternatePath = currentPath.replace('/es/', '/').replace('/es', '/');
+} else {
+  // Add /es/ to path for Spanish version
+  // Handle base path correctly
+  const pathWithoutBase = currentPath.replace(base, '/');
+  alternatePath = `${base}es${pathWithoutBase === '/' ? '' : pathWithoutBase}`;
+}
+---
+
+<div class="relative group">
+  <button 
+    class="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-slate-700 hover:text-primary transition-colors rounded-lg hover:bg-gray-100"
+    aria-label="Switch language"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+    </svg>
+    <span class="uppercase">{currentLocale}</span>
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  
+  <!-- Dropdown -->
+  <div class="absolute right-0 mt-2 w-32 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <a 
+      href={alternatePath}
+      class="block px-4 py-3 text-sm text-slate-700 hover:bg-primary/10 hover:text-primary transition-colors rounded-lg"
+    >
+      <span>{isSpanish ? "English" : "Español"}</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import SEO from '../components/SEO.astro';
+import StructuredData from '../components/StructuredData.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  noindex?: boolean;
+}
+
+const { title, description, image, noindex } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <SEO 
+      title={title}
+      description={description}
+      image={image}
+      noindex={noindex}
+    />
+    <StructuredData />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Redirect non-www to www -->
+    {Astro.url.hostname === 'asvpa.org' && (
+      <script is:inline>
+        if (window.location.hostname === 'asvpa.org') {
+          window.location.replace('https://www.asvpa.org' + window.location.pathname + window.location.search + window.location.hash);
+        }
+      </script>
+    )}
+  </head>
+  <body class="font-lato overflow-x-hidden">
+    <slot />
+  </body>
+</html>
