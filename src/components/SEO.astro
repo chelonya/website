@@ -17,7 +17,7 @@ const {
   canonical,
 } = Astro.props;
 
-const siteUrl = 'https://www.asvpa.org'; // Update with your actual domain
+const siteUrl = 'https://asvpa.org';
 const fullTitle = `${title} | ASVPA - Sea Turtle Conservation Costa Rica`;
 const canonicalURL = canonical || new URL(Astro.url.pathname, siteUrl).href;
 const imageUrl = new URL(image, siteUrl).href;
